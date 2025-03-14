@@ -298,10 +298,6 @@
       "source": "CRAWL"
     },
     {
-      "url": "https://www.creditacceptance.com/dealers/the-lot/questions-to-ask-customers-looking-to-buy-a-car/",
-      "source": "CRAWL"
-    },
-    {
       "url": "https://www.creditacceptance.com/dealers/the-lot/subprime-car-financing/",
       "source": "CRAWL"
     },
@@ -1076,6 +1072,10 @@
     {
       "url": "https://www.creditacceptance.com/assets/documents/legal/Privacy-Notice.pdf?t=1685731373963",
       "status": "content type is not text/html"
+    },
+    {
+      "url": "https://www.creditacceptance.com/dealers/the-lot/questions-to-ask-customers-looking-to-buy-a-car/",
+      "status": "fetch failed"
     }
   ]
 }

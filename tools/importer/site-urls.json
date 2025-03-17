@@ -3,75 +3,67 @@
   "urls": [
     {
       "url": "https://www.myelomaandme.co.uk/",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/appointment-support",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/care-partner",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/communicating-effectively",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/connecting-with-others",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/diet",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/find-what-matters-to-you",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/find-what-matters-to-you?mm-tool-id=4",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/managing-conversations",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/mental-health",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/physical-health",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/preparing-for-your-appointments",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/speaking-with-your-care-partner",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/speaking-your-healthcare-team",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/website-terms-use",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/wellbeing",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/Wellbeing",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     },
     {
       "url": "https://www.myelomaandme.co.uk/working-through-potential-disagreements",
-      "source": "CRAWL"
+      "source": "SITEMAPS"
     }
   ],
   "crawlOptions": {
@@ -81,13 +73,8 @@
     "limit": -1,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "crawl",
+    "strategy": "sitemaps",
     "logger": {}
   },
-  "extractionErrors": [
-    {
-      "url": "https://www.myelomaandme.co.uk/pre-appointment-checklist",
-      "status": "404 Not Found"
-    }
-  ]
+  "extractionErrors": []
 }

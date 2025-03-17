@@ -6,7 +6,43 @@
       "source": "CRAWL"
     },
     {
+      "url": "https://www.myelomaandme.co.uk/appointment-support",
+      "source": "CRAWL"
+    },
+    {
       "url": "https://www.myelomaandme.co.uk/care-partner",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/communicating-effectively",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/connecting-with-others",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/diet",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/find-what-matters-to-you",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/managing-conversations",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/mental-health",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/physical-health",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/preparing-for-your-appointments",
       "source": "CRAWL"
     },
     {
@@ -14,15 +50,19 @@
       "source": "CRAWL"
     },
     {
-      "url": "https://www.myelomaandme.co.uk/working-through-potential-disagreements",
-      "source": "CRAWL"
-    },
-    {
       "url": "https://www.myelomaandme.co.uk/speaking-your-healthcare-team",
       "source": "CRAWL"
     },
     {
-      "url": "https://www.myelomaandme.co.uk/preparing-for-your-appointments",
+      "url": "https://www.myelomaandme.co.uk/website-terms-use",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/wellbeing",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.myelomaandme.co.uk/working-through-potential-disagreements",
       "source": "CRAWL"
     }
   ],

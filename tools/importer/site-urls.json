@@ -1,31 +1,6 @@
 {
-  "originUrl": "https://www.myelomaandme.co.uk/",
-  "urls": [
-    {
-      "url": "https://www.myelomaandme.co.uk/",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/care-partner",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/speaking-with-your-care-partner",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/working-through-potential-disagreements",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/speaking-your-healthcare-team",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/preparing-for-your-appointments",
-      "source": "CRAWL"
-    }
-  ],
+  "originUrl": "https://main--stini--bhellema.aem.live/nav.plain.html",
+  "urls": [],
   "crawlOptions": {
     "timeout": 64800000,
     "inclusionPatterns": [],
@@ -36,5 +11,10 @@
     "strategy": "SITEMAPS",
     "logger": {}
   },
-  "extractionErrors": []
+  "extractionErrors": [
+    {
+      "url": "https://main--stini--bhellema.aem.live/nav.plain.html",
+      "status": "parseSitemapFromUrl (https://main--stini--bhellema.aem.live/nav.plain.html): Failed to fetch or parse the sitemap. Failed to fetch the sitemap. Content-Type: text/html; charset=utf-8"
+    }
+  ]
 }

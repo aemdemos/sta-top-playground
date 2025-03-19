@@ -1,6 +1,59 @@
 {
   "originUrl": "https://main--stini--bhellema.aem.live/nav.plain.html",
-  "urls": [],
+  "urls": [
+    {
+      "url": "https://main--stini--bhellema.aem.live/",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/accessories",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/cats",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/contact-us",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/dogs",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/faq",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/gallery",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/lizards",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/nav.plain.html",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/lucky-lizzy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/mac-daddy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/rock-fluffy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/videos",
+      "source": "CRAWL"
+    }
+  ],
   "crawlOptions": {
     "timeout": 64800000,
     "inclusionPatterns": [],
@@ -8,13 +61,8 @@
     "limit": -1,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "SITEMAPS",
+    "strategy": "crawl",
     "logger": {}
   },
-  "extractionErrors": [
-    {
-      "url": "https://main--stini--bhellema.aem.live/nav.plain.html",
-      "status": "parseSitemapFromUrl (https://main--stini--bhellema.aem.live/nav.plain.html): Failed to fetch or parse the sitemap. Failed to fetch the sitemap. Content-Type: text/html; charset=utf-8"
-    }
-  ]
+  "extractionErrors": []
 }

@@ -1,28 +1,20 @@
 {
-  "originUrl": "https://www.myelomaandme.co.uk/",
+  "originUrl": "https://main--stini--bhellema.aem.live/",
   "urls": [
     {
-      "url": "https://www.myelomaandme.co.uk/",
+      "url": "https://main--stini--bhellema.aem.live/",
       "source": "CRAWL"
     },
     {
-      "url": "https://www.myelomaandme.co.uk/care-partner",
+      "url": "https://main--stini--bhellema.aem.live/products/lucky-lizzy",
       "source": "CRAWL"
     },
     {
-      "url": "https://www.myelomaandme.co.uk/speaking-with-your-care-partner",
+      "url": "https://main--stini--bhellema.aem.live/products/mac-daddy",
       "source": "CRAWL"
     },
     {
-      "url": "https://www.myelomaandme.co.uk/working-through-potential-disagreements",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/speaking-your-healthcare-team",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://www.myelomaandme.co.uk/preparing-for-your-appointments",
+      "url": "https://main--stini--bhellema.aem.live/products/rock-fluffy",
       "source": "CRAWL"
     }
   ],
@@ -33,7 +25,7 @@
     "limit": -1,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "SITEMAPS",
+    "strategy": "crawl",
     "logger": {}
   },
   "extractionErrors": []

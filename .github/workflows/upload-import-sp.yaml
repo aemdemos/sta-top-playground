@@ -44,34 +44,34 @@ jobs:
       - name: Check inputs
         run: |
           if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
-            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
+            echo "::warning Error: IMPORT_DOWNLOAD_API_KEY is not set."
             exit 1
           fi
           if [ -z "${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" ]; then
-            echo "Error: SHAREPOINT_ACCESS_TOKEN is not set."
+            echo "::warning Error: SHAREPOINT_ACCESS_TOKEN is not set."
             exit 1
           fi
           if [ -z "${{ github.event.inputs.zip_url }}" ]; then
-            echo "Error: Import Zip URL is not set."
+            echo "::warning Error: Import Zip URL is not set."
             exit 1
           fi
           if [ -z "${{ github.event.inputs.mountpoints }}" ]; then
-            echo "Error: Sharepoint mountpoints are not set."
+            echo "::warning Error: Sharepoint mountpoints are not set."
             exit 1
           fi
           if [ -z "${{ github.event.inputs.sharepoint_upload_url }}" ]; then
-            echo "Error: Sharepoint upload url is not set."
+            echo "::warning Error: Sharepoint upload url is not set."
             exit 1
           fi
 
       - name: Set up the callback URL
         run: |
           if [ -z "${{ vars.CALLBACK_BASE_PATH }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing CALLBACK_BASE_PATH."
+            echo "::warning Warning: Status call backs will not be executed. Missing CALLBACK_BASE_PATH."
           elif [ -z "${{ github.event.owner_repo_id }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing event.owner_repo_id."
+            echo "::warning Warning: Status call backs will not be executed. Missing event.owner_repo_id."
           elif [ -z "${{ github.event.callback_api_key }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing api key."
+            echo "::warning Warning: Status call backs will not be executed. Missing api key."
           else
             ok_callback_url="${{ vars.CALLBACK_BASE_PATH }}/ok/${{ github.event.owner_repo_id }}"
             error_callback_url="${{ vars.CALLBACK_BASE_PATH }}/error/${{ github.event.owner_repo_id }}"
@@ -98,7 +98,7 @@ jobs:
         run: |
           temp_dir=$(mktemp -d)
           curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir"/import.zip ${{ github.event.inputs.zip_url }} \
-           || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
+           || { echo "::warning Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report extraction progress
         run: |
@@ -113,7 +113,7 @@ jobs:
       - name: Extract import zip file
         run: |
           unzip "$temp_dir"/import.zip -d "$temp_dir"/content \
-          || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
+          || { echo "::warning Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report upload progress
         run: |
@@ -129,7 +129,8 @@ jobs:
         run: |
           for file in "$temp_dir"/*; do
             curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" \
-            -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }}
+            -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }} \
+          || { echo "::warning Upload to Sharepoint failed. Please wait a few minutes and try again."; exit 1; }
             # Preview the file now?  Or wait until all files are uploaded?
           done
 

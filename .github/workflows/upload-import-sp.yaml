@@ -1,0 +1,153 @@
+name: site-transfer-agent-coordinator - Download and extract Import zip and upload contents to SharePoint
+
+# TODO
+# 1) incorporate fstab.yml to determine mountpoints and folders instead of passing them in.
+# 2) Use the issue context to determine import zip (and still allow it as an optional parameter)
+# 3) Use the error callback for errors.
+
+env:
+  IMPORT_DOWNLOAD_API_KEY: ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}
+  SHAREPOINT_ACCESS_TOKEN: ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}
+  CALLBACK_BASE_PATH: ${{ vars.CALLBACK_BASE_PATH }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: 'The URL of the zip file to download'
+        required: true
+      mountpoints:
+        description: 'The mountpoints to upload the zip file to'
+        required: true
+      folders:
+        description: 'The folders to upload the zip file to'
+        required: true
+      owner_repo_id:
+        description: 'The owner, repo and id to use to target the callbacks.'
+        required: true
+      callback_api_key:
+        description: 'The api-key to use for callback functions.'
+        required: true
+      aemy_context:
+        description: 'The AEMY context.'
+        required: true
+      sharepoint_upload_url:
+        description: 'The URL to use for the Sharepoint upload.'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  read-and-upload-import-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check inputs
+        run: |
+          if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
+            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
+            exit 1
+          fi
+          if [ -z "${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" ]; then
+            echo "Error: SHAREPOINT_ACCESS_TOKEN is not set."
+            exit 1
+          fi
+          if [ -z "${{ github.event.inputs.zip_url }}" ]; then
+            echo "Error: Import Zip URL is not set."
+            exit 1
+          fi
+          if [ -z "${{ github.event.inputs.mountpoints }}" ]; then
+            echo "Error: Sharepoint mountpoints are not set."
+            exit 1
+          fi
+          if [ -z "${{ github.event.inputs.sharepoint_upload_url }}" ]; then
+            echo "Error: Sharepoint upload url is not set."
+            exit 1
+          fi
+
+      - name: Set up the callback URL
+        run: |
+          if [ -z "${{ vars.CALLBACK_BASE_PATH }}" ]; then
+            echo "Warning: Status call backs will not be executed. Missing CALLBACK_BASE_PATH."
+          elif [ -z "${{ github.event.owner_repo_id }}" ]; then
+            echo "Warning: Status call backs will not be executed. Missing event.owner_repo_id."
+          elif [ -z "${{ github.event.callback_api_key }}" ]; then
+            echo "Warning: Status call backs will not be executed. Missing api key."
+          else
+            ok_callback_url="${{ vars.CALLBACK_BASE_PATH }}/ok/${{ github.event.owner_repo_id }}"
+            error_callback_url="${{ vars.CALLBACK_BASE_PATH }}/error/${{ github.event.owner_repo_id }}"
+            progress_callback_url="${{ vars.CALLBACK_BASE_PATH }}/progress/${{ github.event.owner_repo_id }}"
+            echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
+            echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
+            echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
+          fi
+
+      - name: Install dependencies
+        run: sudo apt-get install -y unzip
+
+      - name: Report download progress
+        run: |
+          if [ -n "${{ env.progress_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+             -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloading zip...\" }}" \
+             ${{ env.progress_callback_url }}
+          fi
+
+      - name: Download import zip file
+        run: |
+          temp_dir=$(mktemp -d)
+          curl -H "Authorization: Bearer ${{ env.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir"/import.zip ${{ github.event.inputs.zip_url }} \
+           || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
+
+      - name: Report extraction progress
+        run: |
+          if [ -n "${{ env.progress_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+             -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Extracting zip...\" }}" \
+             ${{ env.progress_callback_url }}
+          fi
+
+      - name: Extract import zip file
+        run: |
+          unzip "$temp_dir"/import.zip -d "$temp_dir"/content \
+          || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
+
+      - name: Report upload progress
+        run: |
+          if [ -n "${{ env.progress_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+             -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Uploading context...\" }}" \
+             ${{ env.progress_callback_url }}
+          fi
+
+      - name: Upload content to SharePoint
+        run: |
+          for file in "$temp_dir"/*; do
+            curl -X POST -H "Authorization: Bearer ${{ env.SHAREPOINT_ACCESS_TOKEN. }}" \
+            -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }}
+            # Preview the file now?  Or wait until all files are uploaded?
+          done
+
+      - name: Report upload success
+        run: |
+          echo "upload to Sharepoint was successful" > success_message.txt
+          if [ -n "${{ env.ok_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+              -X POST \
+              -F 'response={"message": "Upload successful"}' \
+              -F "status_file=@success_message.txt" \
+              ${{ env.ok_callback_url }}
+          fi
+
+      - name: Clean up temporary files
+        if: always()
+        run: |
+          # Delete the temp dir immediately, having system delete it eventually as a redundancy.
+          rm -rf "$temp_dir"

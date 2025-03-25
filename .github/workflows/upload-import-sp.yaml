@@ -6,8 +6,6 @@ name: site-transfer-agent-coordinator - Download and extract Import zip and uplo
 # 3) Use the error callback for errors.
 
 env:
-  IMPORT_DOWNLOAD_API_KEY: ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}
-  SHAREPOINT_ACCESS_TOKEN: ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}
   CALLBACK_BASE_PATH: ${{ vars.CALLBACK_BASE_PATH }}
 
 on:
@@ -99,7 +97,7 @@ jobs:
       - name: Download import zip file
         run: |
           temp_dir=$(mktemp -d)
-          curl -H "Authorization: Bearer ${{ env.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir"/import.zip ${{ github.event.inputs.zip_url }} \
+          curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir"/import.zip ${{ github.event.inputs.zip_url }} \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report extraction progress
@@ -130,7 +128,7 @@ jobs:
       - name: Upload content to SharePoint
         run: |
           for file in "$temp_dir"/*; do
-            curl -X POST -H "Authorization: Bearer ${{ env.SHAREPOINT_ACCESS_TOKEN. }}" \
+            curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN. }}" \
             -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }}
             # Preview the file now?  Or wait until all files are uploaded?
           done

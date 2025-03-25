@@ -128,7 +128,7 @@ jobs:
       - name: Upload content to SharePoint
         run: |
           for file in "$temp_dir"/*; do
-            curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN. }}" \
+            curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" \
             -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }}
             # Preview the file now?  Or wait until all files are uploaded?
           done

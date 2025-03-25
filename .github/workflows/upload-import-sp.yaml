@@ -63,6 +63,9 @@ jobs:
             echo "Error: Sharepoint upload url is not set."
             exit 1
           fi
+          # Create temp directory to download the zip and extract its contents into.
+          temp_dir=$(mktemp -d)
+          echo "temp_dir=${temp_dir}" >> $GITHUB_ENV
 
       - name: Set up the callback URL
         run: |
@@ -97,10 +100,8 @@ jobs:
 
       - name: Download import zip file
         run: |
-          temp_dir=$(mktemp -d)
-          echo "temp_dir=${temp_dir}" >> $GITHUB_ENV
-          echo "Downloading the import zip to $temp_dir..."
-          curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir/import.zip" "${{ github.event.inputs.zip_url }}" \
+          echo "Downloading the import zip to ${{ env.temp_dir }}..."
+          curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report extraction progress
@@ -115,11 +116,11 @@ jobs:
 
       - name: Extract import zip contents
         run: |
-          if [ ! -f "$temp_dir/import.zip" ]; then
+          if [ ! -f "${{ env.temp_dir }}/import.zip" ]; then
             echo "Import zip file not found. Exiting."
             exit 1
           fi
-          unzip "$temp_dir"/import.zip -d "$temp_dir"/content \
+          unzip "${{ env.temp_dir }}"/import.zip -d "${{ env.temp_dir }}"/content \
           || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report upload progress
@@ -134,7 +135,7 @@ jobs:
 
       - name: Upload content to SharePoint
         run: |
-          for file in "$temp_dir"/*; do
+          for file in "${{ env.temp_dir }}"/*; do
             curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" \
             -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }} \
           || { echo "Upload to Sharepoint failed. Please wait a few minutes and try again."; exit 1; }
@@ -156,4 +157,4 @@ jobs:
         if: always()
         run: |
           # Delete the temp dir immediately, having system delete it eventually as a redundancy.
-          rm -rf "$temp_dir"
+          rm -rf "${{ env.temp_dir }}"

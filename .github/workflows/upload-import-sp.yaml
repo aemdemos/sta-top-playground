@@ -98,7 +98,7 @@ jobs:
       - name: Download import zip file
         run: |
           temp_dir=$(mktemp -d)
-          curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir"/import.zip ${{ github.event.inputs.zip_url }} \
+          curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir/import.zip" "${{ github.event.inputs.zip_url }}" \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report extraction progress

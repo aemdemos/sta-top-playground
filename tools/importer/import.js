@@ -9,6 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+/* eslint-disable no-redeclare, no-console, camelcase,  */
 /* global window, WebImporter, XPathResult */
 /* eslint-disable no-console */
 import embed__video_1Parser from './parsers/embed__video_1.js';
@@ -33,7 +34,8 @@ WebImporter.Import = {
   isEmpty: (cells) => {
     if (Array.isArray(cells)) {
       return cells.length === 0;
-    } else if (typeof cells === 'object' && cells !== null) {
+    } 
+    if (typeof cells === 'object' && cells !== null) {
       return Object.keys(cells).length === 0;
     }
     return !cells;
@@ -54,14 +56,14 @@ WebImporter.Import = {
 };
 
 const parsers = {
-      'Embed (video) 1': embed__video_1Parser,
-    'Accordion 2': accordion2Parser,
-    'Fragment 3': fragment3Parser,
-    'Embed (social) 4': embed__social_4Parser,
-    'Columns 6': columns6Parser,
-    'Quote 7': quote7Parser,
-    'Cards 8': cards8Parser,
-    'Accordion 9': accordion9Parser,
+  'Embed (video) 1': embed__video_1Parser,
+  'Accordion 2': accordion2Parser,
+  'Fragment 3': fragment3Parser,
+  'Embed (social) 4': embed__social_4Parser,
+  'Columns 6': columns6Parser,
+  'Quote 7': quote7Parser,
+  'Cards 8': cards8Parser,
+  'Accordion 9': accordion9Parser,
 };
 
 /**

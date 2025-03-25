@@ -98,6 +98,8 @@ jobs:
       - name: Download import zip file
         run: |
           temp_dir=$(mktemp -d)
+          echo "temp_dir=${temp_dir}" >> $GITHUB_ENV
+          echo "Downloading the import zip to $temp_dir..."
           curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "$temp_dir/import.zip" "${{ github.event.inputs.zip_url }}" \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
 
@@ -111,7 +113,7 @@ jobs:
              ${{ env.progress_callback_url }}
           fi
 
-      - name: Extract import zip file
+      - name: Extract import zip contents
         run: |
           if [ ! -f "$temp_dir/import.zip" ]; then
             echo "Import zip file not found. Exiting."

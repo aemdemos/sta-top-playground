@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 export default function parse(element, { document }) {
   // Safely check if the button element exists
   const button = element.querySelector('button');
@@ -16,7 +17,7 @@ export default function parse(element, { document }) {
   // Construct the table using the helper function
   const cells = [
     headerRow, // Add the header row
-    contentRow // Add the content row with the extracted text
+    contentRow, // Add the content row with the extracted text
   ];
   const blockTable = WebImporter.DOMUtils.createTable(cells, document);
 

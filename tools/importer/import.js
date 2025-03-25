@@ -34,7 +34,7 @@ WebImporter.Import = {
   isEmpty: (cells) => {
     if (Array.isArray(cells)) {
       return cells.length === 0;
-    } 
+    }
     if (typeof cells === 'object' && cells !== null) {
       return Object.keys(cells).length === 0;
     }

@@ -1,4 +1,5 @@
-export default function parse(element, {document}) {
+/* eslint-disable no-undef */
+export default function parse(element, { document }) {
   const cells = [];
 
   // Header row
@@ -18,7 +19,7 @@ export default function parse(element, {document}) {
 
     const fields = [];
     const labels = element.querySelectorAll('[data-ux="InputFloatLabelLabel"]');
-    labels.forEach(label => {
+    labels.forEach((label) => {
       const field = document.createElement('p');
       field.textContent = label.textContent;
       fields.push(field);
@@ -42,7 +43,7 @@ export default function parse(element, {document}) {
 
     const policyLinks = policySection.querySelectorAll('a');
 
-    policyLinks.forEach(link => {
+    policyLinks.forEach((link) => {
       const contentCell = document.createElement('p');
       const clonedLink = link.cloneNode(true);
       contentCell.appendChild(clonedLink);

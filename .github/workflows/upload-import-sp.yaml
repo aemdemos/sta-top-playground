@@ -69,7 +69,7 @@ jobs:
           if [ -z "${{ vars.CALLBACK_BASE_PATH }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing CALLBACK_BASE_PATH."
           elif [ -z "${{ github.event.inputs.owner_repo_id }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing event.owner_repo_id."
+            echo "Warning: Status call backs will not be executed. Missing owner_repo_id."
           elif [ -z "${{ github.event.inputs.callback_api_key }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
           else
@@ -79,6 +79,7 @@ jobs:
             echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
             echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
             echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
+            echo "OK callback URL is: $ok_callback_url"
           fi
 
       - name: Install dependencies

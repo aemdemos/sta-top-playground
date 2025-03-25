@@ -1,4 +1,5 @@
-export default function parse(element, {document}) {
+/* eslint-disable no-undef */
+export default function parse(element, { document }) {
     const headerRow = [document.createElement('strong')];
     headerRow[0].textContent = 'Cards';
 

@@ -5,7 +5,7 @@ export default function parse(element, { document }) {
 
   // Extract text from the button or provide a fallback value
   const buttonText = button && button.innerText ? button.innerText.trim() : 'No text available';
- 
+
   // Create the header row for the table
   const headerCell = document.createElement('strong');
   headerCell.textContent = 'Quote'; // Ensure this matches the example exactly

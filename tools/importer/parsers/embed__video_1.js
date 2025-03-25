@@ -1,4 +1,4 @@
-export default function parse(element, {document}) {
+export default function parse(element, { document }) {
   // Extract the image from the element
   const imageElement = element.querySelector('img');
   const image = imageElement ? imageElement.cloneNode(true) : null;
@@ -26,10 +26,11 @@ export default function parse(element, {document}) {
   // Create cells for the table
   const cells = [
     headerRow,
-    [contentCell]
+    [contentCell],
   ];
 
   // Create the table block
+  // eslint-disable-next-line no-undef
   const block = WebImporter.DOMUtils.createTable(cells, document);
 
   // Replace the original element with the new block structure

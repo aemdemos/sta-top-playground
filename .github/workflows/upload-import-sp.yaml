@@ -113,6 +113,10 @@ jobs:
 
       - name: Extract import zip file
         run: |
+          if [ ! -f "$temp_dir/import.zip" ]; then
+            echo "Import zip file not found. Exiting."
+            exit 1
+          fi
           unzip "$temp_dir"/import.zip -d "$temp_dir"/content \
           || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 

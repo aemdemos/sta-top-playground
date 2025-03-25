@@ -1,4 +1,4 @@
-export default function parse(element, {document}) {
+export default function parse(element, { document }) {
   // Extract the block name and URL dynamically
   const blockName = 'Fragment';
   const fragmentURL = 'https://main--helix-block-collection--adobe.hlx.page/block-collection/fragment-include';
@@ -19,6 +19,7 @@ export default function parse(element, {document}) {
   ];
 
   // Create the table and replace the element
+  // eslint-disable-next-line no-undef
   const block = WebImporter.DOMUtils.createTable(rows, document);
   element.replaceWith(block);
 }

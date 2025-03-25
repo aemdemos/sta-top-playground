@@ -1,4 +1,5 @@
-export default function parse(element, {document}) {
+/* eslint-disable no-undef */
+export default function parse(element, { document }) {
   // Extract headings and unique content blocks
   const headings = element.querySelectorAll('[data-ux="ContentCardHeading"]');
   const collapsedTextBlock = element.querySelector('#collapsedTextBlock119753');

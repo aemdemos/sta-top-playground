@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, no-unused-vars */
 export default function parse(element, { document }) {
   // Helper function to extract text content from an element
   const extractContent = (el) => {

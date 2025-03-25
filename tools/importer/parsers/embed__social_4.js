@@ -1,4 +1,5 @@
-export default function parse(element, {document}) {
+/* eslint-disable no-undef */
+export default function parse(element, { document }) {
   // Import the external utility function
   const { createTable } = WebImporter.DOMUtils;
 
@@ -15,7 +16,7 @@ export default function parse(element, {document}) {
   // Define the cells for the new table
   const cells = [
     [headerCell], // Header row with the block name
-    [socialURL] // Content row containing the URL
+    [socialURL], // Content row containing the URL
   ];
 
   // Create the block table using the utility function

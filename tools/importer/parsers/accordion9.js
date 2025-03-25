@@ -1,4 +1,5 @@
-export default function parse(element, {document}) {
+/* eslint-disable no-undef */
+export default function parse(element, { document }) {
   // Helper function to extract text content from an element
   const extractContent = (el) => {
     if (!el) return '';

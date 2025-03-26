@@ -1,5 +1,6 @@
 {
-  "originUrl": "https://ottawagranite.com",
+  "originUrl": "https://main--stini--bhellema.aem.live",
+  "lastCrawled": "https://main--stini--bhellema.aem.live/",
   "urls": [],
   "crawlOptions": {
     "timeout": 64800000,
@@ -11,10 +12,5 @@
     "strategy": "SITEMAPS",
     "logger": {}
   },
-  "extractionErrors": [
-    {
-      "url": "https://ottawagranite.com/sitemap.xml",
-      "status": "parseSitemapFromUrl (https://ottawagranite.com/sitemap.xml): Failed to fetch or parse the sitemap. Failed to fetch the sitemap. Status: 404"
-    }
-  ]
+  "extractionErrors": []
 }

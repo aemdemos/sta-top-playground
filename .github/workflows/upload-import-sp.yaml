@@ -76,6 +76,7 @@ jobs:
 
       - name: Set up the callback URLs
         run: |
+          m365 help
           if [ -z "${{ github.event.inputs.aemy_callbacks }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else

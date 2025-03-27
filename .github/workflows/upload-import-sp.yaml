@@ -136,11 +136,14 @@ jobs:
           config: ${{ github.workspace }}/fstab.yaml
 
       - name: Set up the mountpoints and folders
+        continue-on-error: true
         run: |
-          mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }}
-          folders=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
+          echo ${{ steps.read_action_js.outputs }}
+          mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }} || { echo "FSTab folders were not found. Exiting..."; exit 1; }
           echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
           echo "mountpoints ${mountpoints}"
+          
+          folders=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
           echo "folders=${folders}" >> $GITHUB_ENV
           echo "folders ${folders}"
 

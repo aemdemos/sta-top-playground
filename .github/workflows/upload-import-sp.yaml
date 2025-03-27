@@ -3,7 +3,11 @@ name: site-transfer-agent-coordinator - Download and extract Import zip and uplo
 # TODO
 # 1) incorporate fstab.yml to determine mountpoints and folders instead of passing them in.
 # 2) Use the issue context to determine import zip (and still allow it as an optional parameter)
-# 3) Use the error callback for errors.
+
+env:
+  SHAREPOINT_CLIENT_SECRET: ${{ secrets.SHAREPOINT_CLIENT_SECRET }}
+  SHAREPOINT_TENANT: ${{ vars.SHAREPOINT_TENANT }}
+  SHAREPOINT_CLIENT_ID: ${{ vars.SHAREPOINT_CLIENT_ID }}
 
 on:
   workflow_dispatch:
@@ -28,10 +32,14 @@ on:
         description: 'The folders to upload the zip file to'
         required: true
         default: 'getting_there'
-      sharepoint_upload_url:
-        description: 'The URL to use for the Sharepoint upload.'
+      sharepoint_tenant:
+        description: 'The Client Id to use for the Sharepoint upload.'
         required: true
-        default: 'getting_there'
+        default: 'sp_client_id'
+      sharepoint_client_id:
+        description: 'The Client Id to use for the Sharepoint upload.'
+        required: true
+        default: 'sp_client_id'
 
 permissions:
   contents: write
@@ -48,8 +56,16 @@ jobs:
       - name: Check inputs
         run: |
           npm --version
-          if [ -z "${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" ]; then
-            echo "Error: SHAREPOINT_ACCESS_TOKEN is not set."
+          if [ -z "${{ env.SHAREPOINT_CLIENT_SECRET }}" ]; then
+            echo "Error: SHAREPOINT_CLIENT_SECRET is not set."
+            exit 1
+          fi
+          if [ -z "${{ env.SHAREPOINT_TENANT }}" ]; then
+            echo "Error: SHAREPOINT_TENANT is not set."
+            exit 1
+          fi
+          if [ -z "${{ env.SHAREPOINT_CLIENT_ID }}" ]; then
+            echo "Error: SHAREPOINT_CLIENT_ID is not set."
             exit 1
           fi
           if [ -z "${{ github.event.inputs.zip_url }}" ]; then
@@ -93,19 +109,19 @@ jobs:
           
           echo "ok_callback_url=${ok_callback_url}"
           
-          if [ -z "${{ env.callback_apikey }}" ] -o [ "${{ env.callback_apikey }}" -eq "null" ]; then
+          if [ -z "${{ env.callback_apikey }}" ] || [ "${{ env.callback_apikey }}" == "null" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
             callback_apikey=''
           fi
-          if [ -z "${{ env.ok_callback_url }}" ] -o [ "${{ env.ok_callback_url }}" -eq "null" ]; then
+          if [ -z "${{ env.ok_callback_url }}" ] || [ "${{ env.ok_callback_url }}" == "null" ]; then
             echo "Warning: OK status call backs will not be executed. Missing ok url."
             ok_callback_url=''
           fi
-          if [ -z "${{ env.error_callback_url }}" ] -o [ "${{ env.error_callback_url }}" -eq "null" ]; then
+          if [ -z "${{ env.error_callback_url }}" ] || [ "${{ env.error_callback_url }}" == "null" ]; then
             echo "Warning: Error status call backs will not be executed. Missing error url."
             error_callback_url=''
           fi
-          if [ -z "${{ env.progress_callback_url }}" ] -o [ "${{ env.progress_callback_url }}" -eq "null" ]; then
+          if [ -z "${{ env.progress_callback_url }}" ] || [ "${{ env.progress_callback_url }}" == "null" ]; then
             echo "Warning: Progress status call backs will not be executed. Missing progress url."
             progress_callback_url=''
           fi
@@ -172,22 +188,33 @@ jobs:
           unzip ${{ env.temp_dir }}/import.zip -d "${{ env.temp_dir }}/content" \
           || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 
-      - name: Report upload progress
-        run: |
-          if [ -n "${{ env.progress_callback_url }}" ]; then
-            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
-             -H "Content-Type: application/json" \
-             -X POST \
-             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Uploading context...\" }}" \
-             ${{ env.progress_callback_url }}
-          fi
+      - name: Get Sharepoint access token
+        run: |                   
+          wwwauthenticate=$(curl -i -H "Authorization: Bearer" -s "https://${{ env.SHAREPOINT_TENANT }}.sharepoint.com/_vti_bin/client.svc/" | grep -i "www-authenticate")
+          bearer_realm=$(echo ${wwwauthenticate} | awk -F"," '{print $1}' | awk -F"=" '{print $2}' | tr -d '"')
+          app_id=$(echo ${wwwauthenticate} | awk -F"," '{print $2}' | awk -F"=" '{print $2}'  | tr -d '"')
+          
+          access_token=$(curl -X POST -H "Content-Type: application/x-www-form-urlencoded" \
+            --data-urlencode "grant_type=client_credentials" \
+            --data-urlencode "client_id=${{ env.SHAREPOINT_CLIENT_ID }}@$bearer_realm" \
+            --data-urlencode "client_secret=${{ env.SHAREPOINT_CLIENT_SECRET }}" \
+            --data-urlencode "resource=$app_id/${{ env.SHAREPOINT_TENANT }}.sharepoint.com@$bearer_realm" \
+            -s "https://accounts.accesscontrol.windows.net/$bearer_realm/tokens/OAuth/2" | awk -F":" '{print $NF}' | tr -d '"}')
+          echo "access_token=${access_token}" >> $GITHUB_ENV
 
       - name: Upload content to SharePoint
         run: |
           for file in ${{ env.temp_dir }}/content/*; do
-            curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" \
-            -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }} \
-          || { echo "Upload to Sharepoint failed. Please wait a few minutes and try again."; exit 1; }
+            # Report progress
+            if [ -n "${{ env.progress_callback_url }}" ]; then
+              curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+              -H "Content-Type: application/json" \
+              -X POST \
+              -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Uploading $file...\" }}" \
+              ${{ env.progress_callback_url }}
+            fi
+            curl -i -H "Authorization: Bearer $access_token" -H "Accept: application/json;odata=verbose" -s "<"          
+
             # Preview the file now?  Or wait until all files are uploaded?
           done
 

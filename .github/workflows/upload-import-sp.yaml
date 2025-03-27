@@ -137,7 +137,7 @@ jobs:
 
       - name: Set up the mountpoints and folders
         env:
-          FSTAB_CONTEXT: ${{ toJSON(steps.fstab_data.outputs) }}
+          FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
           echo "JOINED ${{ join(fromJSON(FSTAB_CONTEXT), ' ') }}"

@@ -131,12 +131,12 @@ jobs:
 
       - name: Read fstab file
         uses: pietrobolcato/action-read-yaml@1.0.0
+        continue-on-error: true
         id: read_action_js
         with:
           config: ${{ github.workspace }}/fstab.yaml
 
       - name: Set up the mountpoints and folders
-        continue-on-error: true
         run: |
           echo ${{ steps.read_action_js.outputs }}
           mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }} || { echo "FSTab folders were not found. Exiting..."; exit 1; }

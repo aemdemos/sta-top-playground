@@ -40,10 +40,10 @@ jobs:
   read-and-upload-import-zip:
     runs-on: ubuntu-latest
 
-    #           if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
-    #            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
-    #            exit 1
-    #          fi
+# if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
+# echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
+# exit 1
+# fi
     steps:
       - name: Check inputs
         run: |
@@ -101,12 +101,11 @@ jobs:
       - name: Download import zip file
         run: |
           echo "Downloading the import zip to ${{ env.temp_dir }}..."
-          curl -o "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
+          curl -ko "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; }
 
       - name: Report extraction progress
         run: |
-          ls -l "${{ env.temp_dir }}/import.zip"
           if [ ! -f "${{ env.temp_dir }}/import.zip" ]; then
             if [ -n "${{ env.error_callback_url }}" ]; then
               curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
@@ -115,9 +114,11 @@ jobs:
                -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Failed to download zip...\" }}" \
                ${{ env.error_callback_url }}
             fi
-            echo " Import zip file not found. Exiting."
+            echo " Import zip file not found. Check the output of the previous step. Exiting."
             exit 1
           else 
+            chmod 755 "${{ env.temp_dir }}/import.zip"
+            ls -l "${{ env.temp_dir }}/import.zip"
             if ! file "${{ env.temp_dir }}/import.zip" | grep -q 'Zip archive data'; then
               echo "Downloaded file is not a valid zip file. Exiting."
               exit 1

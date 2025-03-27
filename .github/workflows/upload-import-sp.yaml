@@ -40,13 +40,13 @@ jobs:
   read-and-upload-import-zip:
     runs-on: ubuntu-latest
 
+    #           if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
+    #            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
+    #            exit 1
+    #          fi
     steps:
       - name: Check inputs
         run: |
-#           if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
-#            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
-#            exit 1
-#          fi
           if [ -z "${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" ]; then
             echo "Error: SHAREPOINT_ACCESS_TOKEN is not set."
             exit 1

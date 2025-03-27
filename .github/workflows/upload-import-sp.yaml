@@ -153,10 +153,10 @@ jobs:
           #              folders+="${parts[0]}:${parts[1]}, "
           #            fi
           #          done
-          mountpoints+='}'
-          folders+='}'
-          echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
-          echo "folders=${folders}" >> $GITHUB_ENV
+          #          mountpoints+='}'
+          #          folders+='}'
+          #          echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
+          #          echo "folders=${folders}" >> $GITHUB_ENV
           
           # mountpoints=${{ steps.fstab_data.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
           # echo "mountpoints=${mountpoints}" >> $GITHUB_ENV

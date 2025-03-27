@@ -97,14 +97,10 @@ jobs:
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
             echo "Callbacks: ${{ github.event.inputs.aemy_callbacks }}"
-            ok_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.ok }}
-            error_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.error }}
-            progress_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.progress }}
-            callback_apikey=${{ fromJSON(github.event.inputs.aemy_callbacks.apikey }}
-            echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
-            echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
-            echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
-            echo "callback_apikey=${callback_apikey}" >> $GITHUB_ENV
+            callback_apikey=${{ fromJSON(github.event.inputs.aemy_callbacks.apikey) }}
+            ok_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.ok) }}
+            error_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.error) }}
+            progress_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.progress) }}
           fi
           
           echo "ok_callback_url=${ok_callback_url}"

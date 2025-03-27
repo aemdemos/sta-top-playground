@@ -12,6 +12,10 @@ on:
         description: 'The URL of the zip file to download'
         required: true
         default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/f27b4729-00ea-48e5-b3ca-8fbc7605d28a/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4FC7DS2OW%2F20250327%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250327T141404Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEN3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQC8SBdmu2%2BXE3poTFu%2FRZemqBg0J9ByrMXBB3duawh3DAIhAOwrXqUDZ1DI9fjX78mDUqvkS92e%2Fnjgnewd6O%2FIKI8AKpEDCEYQAxoMMjgyODk4OTc1NjcyIgyp9Or%2BVyt9r8gD2lkq7gI8Sb9a9PtsgNE5vQ7BV8UD0hpTwGZ4BbihPh5ahNfjM3B8bLbB9TMJur6HhGQU03QRK3dnSCdo1esGt8DWNF27bWAi5RBn2vtaQl88LYXuVHx34olaQHY0Tp2P4v3BqBKkcJjQU1q1AbTJpLHU2r6aeUAanFaGTr8aLJ7I1wUxG6lQB4pbCvjrr424%2BAHrWOCRfeswb5uXIPWcV360gj73z9ifLDBBJjIbeJery3DWS64zXIUJnShrgXGqgWWd%2FxYyGKyaoB9rRL2CZak0PMkDXHtTxYwwJ6iBL4R3f560lkN%2Fpn53edMk%2Ffpw8Q808SsR9zmJs7%2BjDA4vIprdas7MjM4g0i5eu%2B9ONjtp9JJ0zR1dn%2BMpFbQXD7xqvFJZc7mtznR5wIDGWXB1SHarR0neYpFSek1OXKuWIa0JbhUb1LUvk%2BrNHCeLjT9rnm8mi6G'
+      aemy_callbacks:
+        description: 'The AEMY context as a string.'
+        required: true
+        default: "{\"ok\":\"https://sta-dev-fapp-coordinator.azurewebsites.net/api/fn-ghapp/callbacks/ok/aemdemos/sta-top-playground/36\",\"error\":\"https://sta-dev-fapp-coordinator.azurewebsites.net/api/fn-ghapp/callbacks/error/aemdemos/sta-top-playground/36\",\"progress\":\"https://sta-dev-fapp-coordinator.azurewebsites.net/api/fn-ghapp/callbacks/progress/aemdemos/sta-top-playground/36\",\"apiKey\":\"bAfZqyBfo05H1ANCbxKzB1Y7KkR4yofDKI6hXNq7\"}"
       aemy_context:
         description: 'The AEMY context as a string.'
         required: true
@@ -70,13 +74,14 @@ jobs:
 
       - name: Set up the callback URLs
         run: |
-          if [ -z "${{ github.event.inputs.aemy_context }}" ]; then
+          if [ -z "${{ github.event.inputs.aemy_callbacks }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
-            ok_callback_url=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.ok')
-            error_callback_url=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.error')
-            progress_callback_url=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.progress')
-            callback_apikey=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.apikey')
+            echo "Context: ${{ github.event.inputs.aemy_callbacks }}"
+            ok_callback_url=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.callbacks.ok')
+            error_callback_url=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.callbacks.error')
+            progress_callback_url=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.callbacks.progress')
+            callback_apikey=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.callbacks.apikey')
             echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
             echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
             echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
@@ -85,7 +90,7 @@ jobs:
           
           echo "ok_callback_url=${ok_callback_url}"
           
-          if [ -z "${{ env.callback_apikey }}" ]; then
+          if [ -z "${{ env.callback_apikey }}" ] -a [ -z "${{ env.callback_apikey }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
           fi
           if [ -z "${{ env.ok_callback_url }}" ]; then

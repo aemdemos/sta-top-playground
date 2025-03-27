@@ -147,13 +147,13 @@ jobs:
               parts=(${mp//: / })
               mountpoints+="${parts[0]}:${parts[1]}, "
             elif [[ $item == folders.* ]]; then
-              fd+=${item:8}
+              fd=${item:8}
               parts=(${fd//: / })
               folders+="${parts[0]}:${parts[1]}, "
             fi
           done
-          mountpoints+='}';
-          folders+='}';
+          mountpoints+='}'
+          folders+='}'
           echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
           echo "folders=${folders}" >> $GITHUB_ENV
           

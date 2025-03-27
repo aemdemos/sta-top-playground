@@ -88,7 +88,7 @@ jobs:
         run: |
           sudo apt-get install -y unzip
           sudo apt-get install jq
-          npm install -g @pnp/cli-microsoft365
+          # npm install -g @pnp/cli-microsoft365
 
       - name: Set up the callback URLs
         run: |
@@ -126,7 +126,7 @@ jobs:
           echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
           echo "callback_apikey=${callback_apikey}" >> $GITHUB_ENV
 
-      - name: checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Read fstab file
@@ -138,12 +138,33 @@ jobs:
       - name: Set up the mountpoints and folders
         run: |
           echo ${{ toJson(steps.fstab_data.outputs) }}
-          mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
-          echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
+          mountpoints='{';
+          folders='{';
+          for item in ${{ join(fromJSON(steps.fstab_data.outputs.json), ' ') }} do
+            echo "item=${item}"
+            if [ $item == mountpoints.* ]; then
+              mp=${item:12}
+              parts=(${mp//: / }
+              mountpoints+='${parts[0]}:${parts[1]}'
+              mountpoints+=', '
+            elif [ $item == folders.* ]; then
+              fd+=${item:8}
+              parts=(${fd//: / }
+              folders+='${parts[0]}:${parts[1]}'
+              mountpoints+=', '
+            fi
+          done
+          mountpoints+='}';
+          folders+='}';
+          echo "mountpoints=${toJson(mountpoints)}" >> $GITHUB_ENV
+          echo "folders=${toJson(folders)}" >> $GITHUB_ENV
+          
+          # mountpoints=${{ steps.fstab_data.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
+          # echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
           echo "mountpoints ${mountpoints}"
           
-          mountpoints=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
-          echo "folders=${folders}" >> $GITHUB_ENV
+          # folders=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
+          # echo "folders=${folders}" >> $GITHUB_ENV
           echo "folders ${folders}"
 
       - name: Report download progress

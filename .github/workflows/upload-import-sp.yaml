@@ -106,6 +106,7 @@ jobs:
 
       - name: Report extraction progress
         run: |
+          ls -l "${{ env.temp_dir }}/import.zip"
           if [ ! -f "${{ env.temp_dir }}/import.zip" ]; then
             if [ -n "${{ env.error_callback_url }}" ]; then
               curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
@@ -114,10 +115,13 @@ jobs:
                -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Failed to download zip...\" }}" \
                ${{ env.error_callback_url }}
             fi
-            echo "Import zip file not found. Exiting."
+            echo " Import zip file not found. Exiting."
             exit 1
           else 
-            ls -l "${{ env.temp_dir }}/import.zip"
+            if ! file "${{ env.temp_dir }}/import.zip" | grep -q 'Zip archive data'; then
+              echo "Downloaded file is not a valid zip file. Exiting."
+              exit 1
+            fi
             if [ -n "${{ env.progress_callback_url }}" ]; then
               curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
                -H "Content-Type: application/json" \

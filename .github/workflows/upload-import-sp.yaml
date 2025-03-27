@@ -76,10 +76,10 @@ jobs:
             echo "Error: Sharepoint mountpoints are not set."
             exit 1
           fi
-          if [ -z "${{ github.event.inputs.sharepoint_upload_url }}" ]; then
-            echo "Error: Sharepoint upload url is not set."
-            exit 1
-          fi
+#          if [ -z "${{ github.event.inputs.sharepoint_upload_url }}" ]; then
+#            echo "Error: Sharepoint upload url is not set."
+#            exit 1
+#          fi
           # Create temp directory to download the zip and extract its contents into.
           temp_dir=$(mktemp -d)
           echo "temp_dir=${temp_dir}" >> $GITHUB_ENV

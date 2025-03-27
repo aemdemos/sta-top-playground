@@ -100,8 +100,9 @@ jobs:
 
       - name: Download import zip file
         run: |
+          curl --help
           echo "Downloading the import zip to ${{ env.temp_dir }}..."
-          curl -ko "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
+          curl -Lo "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; }
 
       - name: Report extraction progress
@@ -120,8 +121,15 @@ jobs:
             chmod 755 "${{ env.temp_dir }}/import.zip"
             ls -hl "${{ env.temp_dir }}/import.zip"
             if ! file "${{ env.temp_dir }}/import.zip" | grep -q 'Zip archive data'; then
+              if [ -n "${{ env.error_callback_url }}" ]; then
+                curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+                 -H "Content-Type: application/json" \
+                 -X POST \
+                 -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file.\" }}" \
+                 ${{ env.error_callback_url }}
+              fi
               echo "Downloaded file is not a valid zip file. Exiting."
-              exit 1
+              exit 1          
             fi
             if [ -n "${{ env.progress_callback_url }}" ]; then
               curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \

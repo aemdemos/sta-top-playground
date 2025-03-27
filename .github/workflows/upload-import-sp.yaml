@@ -137,7 +137,7 @@ jobs:
 
       - name: Set up the mountpoints and folders
         run: |
-          echo ${{ steps.fstab_data.outputs }}
+          echo ${{ toJson(steps.fstab_data.outputs) }}
           mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
           echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
           echo "mountpoints ${mountpoints}"

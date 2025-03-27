@@ -11,22 +11,22 @@ on:
       zip_url:
         description: 'The URL of the zip file to download'
         required: true
-      mountpoints:
-        description: 'The mountpoints to upload the zip content to'
-        required: true
-      folders:
-        description: 'The folders to upload the zip file to'
-        required: true
-      callback_api_key:
-        description: 'The api-key to use for callback functions.'
-        required: true
       aemy_context:
         description: 'The AEMY context as a string.'
         required: true
         default: "{\"project\":{\"owner\":\"aemdemos\",\"repo\":\"sta-top-playground\",\"defaultBranch\":\"main\"},\"conversation\":{\"id\":35,\"instruction\":\"Analyzesite\",\"input\":\"\",\"plan\":[\"Site-urls\",\"Step2\"]},\"development\":{\"issueId\":35,\"branch\":\"issue-35\",\"changed\":false,\"changes\":[]},\"agentIndex\":1,\"agentCalls\":[{\"agentId\":\"ghagent\",\"function\":\"gh_create_branch\",\"parameters\":{}},{\"agentId\":\"inventory\",\"function\":\"site-urls\",\"parameters\":{\"url\":\"https://unifyrare.com/\"}},{\"agentId\":\"ghagent\",\"function\":\"gh_create_pull_request\",\"parameters\":{}},{\"agentId\":\"ghagent\",\"function\":\"gh_request_linting\",\"parameters\":{}}]}"
+      mountpoints:
+        description: 'The mountpoints to upload the zip content to'
+        required: true
+        default: 'getting_there'
+      folders:
+        description: 'The folders to upload the zip file to'
+        required: true
+        default: 'getting_there'
       sharepoint_upload_url:
         description: 'The URL to use for the Sharepoint upload.'
         required: true
+        default: 'getting_there'
 
 permissions:
   contents: write
@@ -62,20 +62,27 @@ jobs:
           temp_dir=$(mktemp -d)
           echo "temp_dir=${temp_dir}" >> $GITHUB_ENV
 
-      - name: Set up the callback URL
+      - name: Install dependencies
         run: |
-          if [ -z "${{ toJson(github.event.inputs.aemy_context.callbacks }}" ]; then
+          sudo apt-get install -y unzip
+          sudo apt-get install jq
+
+      - name: Set up the callback URLs
+        run: |
+          if [ -z "${{ github.event.inputs.aemy_context }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
-            ok_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.ok')
-            error_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.error')
-            progress_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.progress')
-            callback_apikey=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.apikey')
+            ok_callback_url=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.ok')
+            error_callback_url=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.error')
+            progress_callback_url=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.progress')
+            callback_apikey=$(echo '${{ github.event.inputs.aemy_context }}' | jq -r '.callbacks.apikey')
             echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
             echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
             echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
             echo "callback_apikey=${callback_apikey}" >> $GITHUB_ENV
           fi
+          
+          echo "ok_callback_url=${ok_callback_url}"
           
           if [ -z "${{ callback_apikey }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
@@ -89,9 +96,6 @@ jobs:
           if [ -z "${{ progress_callback_url }}" ]; then
             echo "Warning: Progress status call backs will not be executed. Missing progress url."
           fi
-
-      - name: Install dependencies
-        run: sudo apt-get install -y unzip
 
       - name: Report download progress
         run: |

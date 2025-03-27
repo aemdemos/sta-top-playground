@@ -90,16 +90,16 @@ jobs:
           
           echo "ok_callback_url=${ok_callback_url}"
           
-          if [ -z "${{ env.callback_apikey }}" ] -a [ "${{ env.callback_apikey }}" -ne "null" ]; then
+          if [ -z "${{ env.callback_apikey }}" ] -o [ "${{ env.callback_apikey }}" -eq "null" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
           fi
-          if [ -z "${{ env.ok_callback_url }}" ] -a [ "${{ env.ok_callback_url }}" -ne "null" ]; then
+          if [ -z "${{ env.ok_callback_url }}" ] -o [ "${{ env.ok_callback_url }}" -eq "null" ]; then
             echo "Warning: OK status call backs will not be executed. Missing ok url."
           fi
-          if [ -z "${{ env.error_callback_url }}" ] -a [ "${{ env.error_callback_url }}" -ne "null" ]; then
+          if [ -z "${{ env.error_callback_url }}" ] -o [ "${{ env.error_callback_url }}" -eq "null" ]; then
             echo "Warning: Error status call backs will not be executed. Missing error url."
           fi
-          if [ -z "${{ env.progress_callback_url }}" ] -a [ "${{ env.progress_callback_url }}" -ne "null" ]; then
+          if [ -z "${{ env.progress_callback_url }}" ] -o [ "${{ env.progress_callback_url }}" -eq "null" ]; then
             echo "Warning: Progress status call backs will not be executed. Missing progress url."
           fi
 

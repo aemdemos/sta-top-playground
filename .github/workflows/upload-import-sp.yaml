@@ -23,7 +23,7 @@ on:
       aemy_context:
         description: 'The AEMY context as a string.'
         required: true
-        default: "{|\"project\":{|\"owner\":\"aemdemos\",|\"repo\":\"sta-top-playground\",|\"defaultBranch\":\"main\"|},|\"conversation\":{|\"id\":35,|\"instruction\":\"Analyzesite\",|\"input\":\"\",|\"plan\":[\"Site-urls\",\"Step2\"]|},|\"development\":{|\"issueId\":35,|\"branch\":\"issue-35\",|\"changed\":false,|\"changes\":[]|},|\"agentIndex\":1,|\"agentCalls\":[|{|\"agentId\":\"ghagent\",|\"function\":\"gh_create_branch\",|\"parameters\":{}|},|{|\"agentId\":\"inventory\",|\"function\":\"site-urls\",|\"parameters\":{|\"url\":\"https://unifyrare.com/\"|}|},|{|\"agentId\":\"ghagent\",|\"function\":\"gh_create_pull_request\",|\"parameters\":{}|},|{|\"agentId\":\"ghagent\",|\"function\":\"gh_request_linting\",|\"parameters\":{}|}|]|}"
+        default: "{\"project\":{\"owner\":\"aemdemos\",\"repo\":\"sta-top-playground\",\"defaultBranch\":\"main\"},\"conversation\":{\"id\":35,\"instruction\":\"Analyzesite\",\"input\":\"\",\"plan\":[\"Site-urls\",\"Step2\"]},\"development\":{\"issueId\":35,\"branch\":\"issue-35\",\"changed\":false,\"changes\":[]},\"agentIndex\":1,\"agentCalls\":[{\"agentId\":\"ghagent\",\"function\":\"gh_create_branch\",\"parameters\":{}},{\"agentId\":\"inventory\",\"function\":\"site-urls\",\"parameters\":{\"url\":\"https://unifyrare.com/\"}},{\"agentId\":\"ghagent\",\"function\":\"gh_create_pull_request\",\"parameters\":{}},{\"agentId\":\"ghagent\",\"function\":\"gh_request_linting\",\"parameters\":{}}]}"
       sharepoint_upload_url:
         description: 'The URL to use for the Sharepoint upload.'
         required: true
@@ -67,10 +67,10 @@ jobs:
           if [ -z "${{ toJson(github.event.inputs.aemy_context.callbacks }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
-            ok_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.ok) }}' | jq -r ".$option")
-            error_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.error) }}' | jq -r ".$option")
-            progress_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.progress) }}' | jq -r ".$option")
-            callback_apikey=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.progress) }}' | jq -r ".$option")
+            ok_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.ok')
+            error_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.error')
+            progress_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.progress')
+            callback_apikey=$(echo '${{ toJson(github.event.inputs.aemy_context) }}' | jq -r '.callbacks.apikey')
             echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
             echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
             echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
@@ -161,7 +161,7 @@ jobs:
 
       - name: Upload content to SharePoint
         run: |
-          for file in ${{ env.temp_dir }}/*; do
+          for file in ${{ env.temp_dir }}/content/*; do
             curl -X POST -H "Authorization: Bearer ${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" \
             -F "file=@$file" ${{ github.event.inputs.sharepoint_upload_url }} \
           || { echo "Upload to Sharepoint failed. Please wait a few minutes and try again."; exit 1; }

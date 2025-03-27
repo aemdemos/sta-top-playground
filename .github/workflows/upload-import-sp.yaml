@@ -142,7 +142,7 @@ jobs:
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
           # mountpoints='{'
           # folders='{'
-          #          for item in ${{ join($FSTAB_CONTEXT, ' ') }}; do
+          #          for item in ${{ join(FSTAB_CONTEXT, ' ') }}; do
           #            echo "item=${item}"
           #            if [ $item == mountpoints.* ]; then
           #              mp=${item:12}

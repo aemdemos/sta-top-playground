@@ -15,7 +15,7 @@ on:
         description: 'The URL of the zip file to download'
         required: true
       mountpoints:
-        description: 'The mountpoints to upload the zip file to'
+        description: 'The mountpoints to upload the zip content to'
         required: true
       folders:
         description: 'The folders to upload the zip file to'
@@ -43,10 +43,10 @@ jobs:
     steps:
       - name: Check inputs
         run: |
-          if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
-            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
-            exit 1
-          fi
+#           if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
+#            echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
+#            exit 1
+#          fi
           if [ -z "${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" ]; then
             echo "Error: SHAREPOINT_ACCESS_TOKEN is not set."
             exit 1
@@ -101,25 +101,34 @@ jobs:
       - name: Download import zip file
         run: |
           echo "Downloading the import zip to ${{ env.temp_dir }}..."
-          curl -H "Authorization: Bearer ${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" -o "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" \
-           || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; exit 1; }
+          curl -H -o "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" \
+           || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; }
 
       - name: Report extraction progress
         run: |
-          if [ -n "${{ env.progress_callback_url }}" ]; then
-            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
-             -H "Content-Type: application/json" \
-             -X POST \
-             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Extracting zip...\" }}" \
-             ${{ env.progress_callback_url }}
+          if [ ! -f "${{ env.temp_dir }}/import.zip" ]; then
+            ls -l "${{ env.temp_dir }}/import.zip"
+            if [ -n "${{ env.error_callback_url }}" ]; then
+              curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+               -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Failed to download zip...\" }}" \
+               ${{ env.error_callback_url }}
+            fi
+            echo "Import zip file not found. Exiting."
+            exit 1
+          else 
+            if [ -n "${{ env.progress_callback_url }}" ]; then
+              curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+               -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Extracting zip...\" }}" \
+               ${{ env.progress_callback_url }}
+            fi
           fi
 
       - name: Extract import zip contents
         run: |
-          if [ ! -f "${{ env.temp_dir }}/import.zip" ]; then
-            echo "Import zip file not found. Exiting."
-            exit 1
-          fi
           unzip "${{ env.temp_dir }}"/import.zip -d "${{ env.temp_dir }}"/content \
           || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 

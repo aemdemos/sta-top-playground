@@ -5,9 +5,6 @@ name: site-transfer-agent-coordinator - Download and extract Import zip and uplo
 # 2) Use the issue context to determine import zip (and still allow it as an optional parameter)
 # 3) Use the error callback for errors.
 
-env:
-  CALLBACK_BASE_PATH: ${{ vars.CALLBACK_BASE_PATH }}
-
 on:
   workflow_dispatch:
     inputs:
@@ -20,15 +17,13 @@ on:
       folders:
         description: 'The folders to upload the zip file to'
         required: true
-      owner_repo_id:
-        description: 'The owner, repo and id to use to target the callbacks.'
-        required: true
       callback_api_key:
         description: 'The api-key to use for callback functions.'
         required: true
       aemy_context:
-        description: 'The AEMY context.'
+        description: 'The AEMY context as a string.'
         required: true
+        default: "{|\"project\":{|\"owner\":\"aemdemos\",|\"repo\":\"sta-top-playground\",|\"defaultBranch\":\"main\"|},|\"conversation\":{|\"id\":35,|\"instruction\":\"Analyzesite\",|\"input\":\"\",|\"plan\":[\"Site-urls\",\"Step2\"]|},|\"development\":{|\"issueId\":35,|\"branch\":\"issue-35\",|\"changed\":false,|\"changes\":[]|},|\"agentIndex\":1,|\"agentCalls\":[|{|\"agentId\":\"ghagent\",|\"function\":\"gh_create_branch\",|\"parameters\":{}|},|{|\"agentId\":\"inventory\",|\"function\":\"site-urls\",|\"parameters\":{|\"url\":\"https://unifyrare.com/\"|}|},|{|\"agentId\":\"ghagent\",|\"function\":\"gh_create_pull_request\",|\"parameters\":{}|},|{|\"agentId\":\"ghagent\",|\"function\":\"gh_request_linting\",|\"parameters\":{}|}|]|}"
       sharepoint_upload_url:
         description: 'The URL to use for the Sharepoint upload.'
         required: true
@@ -69,20 +64,30 @@ jobs:
 
       - name: Set up the callback URL
         run: |
-          if [ -z "${{ vars.CALLBACK_BASE_PATH }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing CALLBACK_BASE_PATH."
-          elif [ -z "${{ github.event.inputs.owner_repo_id }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing owner_repo_id."
-          elif [ -z "${{ github.event.inputs.callback_api_key }}" ]; then
-            echo "Warning: Status call backs will not be executed. Missing api key."
+          if [ -z "${{ toJson(github.event.inputs.aemy_context.callbacks }}" ]; then
+            echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
-            ok_callback_url="${{ vars.CALLBACK_BASE_PATH }}/ok/${{ github.event.inputs.owner_repo_id }}"
-            error_callback_url="${{ vars.CALLBACK_BASE_PATH }}/error/${{ github.event.inputs.owner_repo_id }}"
-            progress_callback_url="${{ vars.CALLBACK_BASE_PATH }}/progress/${{ github.event.inputs.owner_repo_id }}"
+            ok_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.ok) }}' | jq -r ".$option")
+            error_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.error) }}' | jq -r ".$option")
+            progress_callback_url=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.progress) }}' | jq -r ".$option")
+            callback_apikey=$(echo '${{ toJson(github.event.inputs.aemy_context.callbacks.progress) }}' | jq -r ".$option")
             echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
             echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
             echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
-            echo "OK callback URL is: $ok_callback_url"
+            echo "callback_apikey=${callback_apikey}" >> $GITHUB_ENV
+          fi
+          
+          if [ -z "${{ callback_apikey }}" ]; then
+            echo "Warning: Status call backs will not be executed. Missing api key."
+          fi
+          if [ -z "${{ ok_callback_url }}" ]; then
+            echo "Warning: OK status call backs will not be executed. Missing ok url."
+          fi
+          if [ -z "${{ error_callback_url }}" ]; then
+            echo "Warning: Error status call backs will not be executed. Missing error url."
+          fi
+          if [ -z "${{ progress_callback_url }}" ]; then
+            echo "Warning: Progress status call backs will not be executed. Missing progress url."
           fi
 
       - name: Install dependencies
@@ -100,7 +105,6 @@ jobs:
 
       - name: Download import zip file
         run: |
-          curl --help
           echo "Downloading the import zip to ${{ env.temp_dir }}..."
           curl -Lo "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; }

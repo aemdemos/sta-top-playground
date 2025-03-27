@@ -129,7 +129,7 @@ jobs:
 
       - name: Extract import zip contents
         run: |
-          unzip "${{ env.temp_dir }}"/import.zip -d "${{ env.temp_dir }}"/content \
+          unzip ${{ env.temp_dir }}/import.zip -d "${{ env.temp_dir }}/content" \
           || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 
       - name: Report upload progress

@@ -92,16 +92,26 @@ jobs:
           
           if [ -z "${{ env.callback_apikey }}" ] -o [ "${{ env.callback_apikey }}" -eq "null" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
+            callback_apikey=''
           fi
           if [ -z "${{ env.ok_callback_url }}" ] -o [ "${{ env.ok_callback_url }}" -eq "null" ]; then
             echo "Warning: OK status call backs will not be executed. Missing ok url."
+            ok_callback_url=''
           fi
           if [ -z "${{ env.error_callback_url }}" ] -o [ "${{ env.error_callback_url }}" -eq "null" ]; then
             echo "Warning: Error status call backs will not be executed. Missing error url."
+            error_callback_url=''
           fi
           if [ -z "${{ env.progress_callback_url }}" ] -o [ "${{ env.progress_callback_url }}" -eq "null" ]; then
             echo "Warning: Progress status call backs will not be executed. Missing progress url."
+            progress_callback_url=''
           fi
+
+          # Ensure change from 'null' to '' is set in the environment.
+          echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
+          echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
+          echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
+          echo "callback_apikey=${callback_apikey}" >> $GITHUB_ENV
 
       - name: Report download progress
         run: |

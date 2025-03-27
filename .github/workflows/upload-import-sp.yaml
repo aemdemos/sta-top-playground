@@ -96,11 +96,11 @@ jobs:
           if [ -z "${{ github.event.inputs.aemy_callbacks }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
-            echo "Context: ${{ github.event.inputs.aemy_callbacks }}"
-            ok_callback_url=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.ok')
-            error_callback_url=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.error')
-            progress_callback_url=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.progress')
-            callback_apikey=$(echo '${{ github.event.inputs.aemy_callbacks }}' | jq -r '.apikey')
+            echo "Callbacks: ${{ github.event.inputs.aemy_callbacks }}"
+            ok_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.ok }}
+            error_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.error }}
+            progress_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks.progress }}
+            callback_apikey=${{ fromJSON(github.event.inputs.aemy_callbacks.apikey }}
             echo "ok_callback_url=${ok_callback_url}" >> $GITHUB_ENV
             echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
             echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
@@ -109,19 +109,19 @@ jobs:
           
           echo "ok_callback_url=${ok_callback_url}"
           
-          if [ -z "${{ env.callback_apikey }}" ] || [ "${{ env.callback_apikey }}" == "null" ]; then
+          if [ -z "${callback_apikey}" || ${callback_apikey} == "null" ]; then
             echo "Warning: Status call backs will not be executed. Missing api key."
             callback_apikey=''
           fi
-          if [ -z "${{ env.ok_callback_url }}" ] || [ "${{ env.ok_callback_url }}" == "null" ]; then
+          if [ -z "${ok_callback_url}" || ${ok_callback_url} == "null" ]; then
             echo "Warning: OK status call backs will not be executed. Missing ok url."
             ok_callback_url=''
           fi
-          if [ -z "${{ env.error_callback_url }}" ] || [ "${{ env.error_callback_url }}" == "null" ]; then
+          if [ -z "${error_callback_url}" || ${error_callback_url} == "null" ]; then
             echo "Warning: Error status call backs will not be executed. Missing error url."
             error_callback_url=''
           fi
-          if [ -z "${{ env.progress_callback_url }}" ] || [ "${{ env.progress_callback_url }}" == "null" ]; then
+          if [ -z "${progress_callback_url}" || "${progress_callback_url} == "null" ]; then
             echo "Warning: Progress status call backs will not be executed. Missing progress url."
             progress_callback_url=''
           fi
@@ -171,7 +171,7 @@ jobs:
                  -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file. Did the URL expire (i.e. UnauthorizedDownloaded)?\" }}" \
                  ${{ env.error_callback_url }}
               fi
-              echo "Downloaded file is not a valid zip file. Exiting."
+              echo "Downloaded file is not a valid zip file.  Did the URL expire? Exiting."
               exit 1          
             fi
             if [ -n "${{ env.progress_callback_url }}" ]; then

@@ -140,35 +140,34 @@ jobs:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
-          echo "JOINED ${{ join(fromJSON(steps.fstab_data.outputs), ' ') }}"
-          mountpoints='{'
-          folders='{'
-          for item in ${{ join(fromJSON(steps.fstab_data.outputs), ' ') }}; do
-            echo "item=${item}"
-            if [ $item == mountpoints.* ]; then
-              mp=${item:12}
-              parts=(${mp//: / }
-              mountpoints+='${parts[0]}:${parts[1]}'
-              mountpoints+=', '
-            elif [ $item == folders.* ]; then
-              fd+=${item:8}
-              parts=(${fd//: / }
-              folders+='${parts[0]}:${parts[1]}'
-              mountpoints+=', '
-            fi
-          done
-          mountpoints+='}';
-          folders+='}';
-          echo "mountpoints=${toJson(mountpoints)}" >> $GITHUB_ENV
-          echo "folders=${toJson(folders)}" >> $GITHUB_ENV
+          # mountpoints='{'
+          # folders='{'
+          #          for item in ${{ join($FSTAB_CONTEXT, ' ') }}; do
+          #            echo "item=${item}"
+          #            if [ $item == mountpoints.* ]; then
+          #              mp=${item:12}
+          #              parts=(${mp//: / }
+          #              mountpoints+='${parts[0]}:${parts[1]}'
+          #              mountpoints+=', '
+          #            elif [ $item == folders.* ]; then
+          #              fd+=${item:8}
+          #              parts=(${fd//: / }
+          #              folders+='${parts[0]}:${parts[1]}'
+          #              mountpoints+=', '
+          #            fi
+          #          done
+          #          mountpoints+='}';
+          #          folders+='}';
+          #          echo "mountpoints=${toJson(mountpoints)}" >> $GITHUB_ENV
+          #          echo "folders=${toJson(folders)}" >> $GITHUB_ENV
           
           # mountpoints=${{ steps.fstab_data.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
           # echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
-          echo "mountpoints ${mountpoints}"
+          # echo "mountpoints ${mountpoints}"
           
           # folders=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
           # echo "folders=${folders}" >> $GITHUB_ENV
-          echo "folders ${folders}"
+          # echo "folders ${folders}"
 
       - name: Report download progress
         run: |

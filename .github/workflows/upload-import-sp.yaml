@@ -137,7 +137,8 @@ jobs:
 
       - name: Set up the mountpoints and folders
         run: |
-          echo outputs: ${{ steps.fstab_data.outputs }}
+          echo outputs: ${{ steps.fstab_data.outputs.json }}
+          echo outputs: ${{ toJson(steps.fstab_data.outputs) }}
           echo mountpoints: ${{ steps.fstab_data.outputs['mountpoints'] }}
           echo folders: ${{ steps.fstab_data.outputs['folders'] }}
 

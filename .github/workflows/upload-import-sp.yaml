@@ -92,11 +92,9 @@ jobs:
 
       - name: Set up the callback URLs
         run: |
-          m365 help
           if [ -z "${{ github.event.inputs.aemy_callbacks }}" ]; then
             echo "Warning: Status call backs will not be executed. Missing callback in the context."
           else
-            echo "Callbacks: ${{ github.event.inputs.aemy_callbacks }}"
             callback_apikey=${{ fromJSON(github.event.inputs.aemy_callbacks).apikey }}
             ok_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks).ok }}
             error_callback_url=${{ fromJSON(github.event.inputs.aemy_callbacks).error }}
@@ -127,6 +125,24 @@ jobs:
           echo "error_callback_url=${error_callback_url}" >> $GITHUB_ENV
           echo "progress_callback_url=${progress_callback_url}" >> $GITHUB_ENV
           echo "callback_apikey=${callback_apikey}" >> $GITHUB_ENV
+
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: Read fstab file
+        uses: pietrobolcato/action-read-yaml@1.0.0
+        id: read_action_js
+        with:
+          config: ${{ github.workspace }}/fstab.yaml
+
+      - name: Set up the mountpoints and folders
+        run: |
+          mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }}
+          folders=${{ steps.read_action_js.outputs['folders'] }}
+          echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
+          echo "folders=${folders}" >> $GITHUB_ENV
+          echo "mountpoints ${mountpoints}"
+          echo "folders ${folders}"
 
       - name: Report download progress
         run: |

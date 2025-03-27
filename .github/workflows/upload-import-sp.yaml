@@ -47,6 +47,7 @@ jobs:
     steps:
       - name: Check inputs
         run: |
+          npm --version
           if [ -z "${{ secrets.SHAREPOINT_ACCESS_TOKEN }}" ]; then
             echo "Error: SHAREPOINT_ACCESS_TOKEN is not set."
             exit 1

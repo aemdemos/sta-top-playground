@@ -140,10 +140,10 @@ jobs:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
-          echo "JOINED ${{ join(fromJSON(FSTAB_CONTEXT), ' ') }}"
+          echo "JOINED ${{ join(fromJSON(steps.fstab_data.outputs), ' ') }}"
           mountpoints='{'
           folders='{'
-          for item in ${{ join(fromJSON(STAB_CONTEXT), ' ') }}; do
+          for item in ${{ join(fromJSON(steps.fstab_data.outputs), ' ') }}; do
             echo "item=${item}"
             if [ $item == mountpoints.* ]; then
               mp=${item:12}

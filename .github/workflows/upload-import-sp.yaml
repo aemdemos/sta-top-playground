@@ -136,11 +136,10 @@ jobs:
           config: ${{ github.workspace }}/fstab.yaml
 
       - name: Set up the mountpoints and folders
+        env:
+          FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
-          echo outputs: ${{ steps.fstab_data.outputs.json }}
-          echo outputs: ${{ toJson(steps.fstab_data.outputs) }}
-          echo mountpoints: ${{ steps.fstab_data.outputs['mountpoints'] }}
-          echo folders: ${{ steps.fstab_data.outputs['folders'] }}
+          echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
 
       - name: Report download progress
         run: |

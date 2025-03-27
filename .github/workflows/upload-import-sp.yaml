@@ -140,8 +140,8 @@ jobs:
           echo ${{ steps.fstab_data.outputs['mountpoints'] }}
           echo ${{ steps.fstab_data.outputs['folders'] }}
           # echo ${{ toJson(steps.fstab_data.outputs) }}
-          mountpoints='{'
-          folders='{'
+          # mountpoints='{'
+          # folders='{'
           #          for item in ${{ join(fromJSON(steps.fstab_data.outputs.json), ' ') }}; do
           #            echo "item=${item}"
           #            if [[ $item == mountpoints.* ]]; then
@@ -158,14 +158,13 @@ jobs:
           #          folders+='}'
           #          echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
           #          echo "folders=${folders}" >> $GITHUB_ENV
-          
           # mountpoints=${{ steps.fstab_data.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
           # echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
-          echo "mountpoints ${mountpoints}"
+          # echo "mountpoints ${mountpoints}"
           
           # folders=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
           # echo "folders=${folders}" >> $GITHUB_ENV
-          echo "folders ${folders}"
+          # echo "folders ${folders}"
 
       - name: Report download progress
         run: |

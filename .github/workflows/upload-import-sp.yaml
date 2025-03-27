@@ -140,7 +140,7 @@ jobs:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
-          echo "outputs ${{ steps.fstab_data.outputs }}"
+          echo "outputs ${{ steps.fstab_data.outputs['mountpoints'] }}"
 
       - name: Report download progress
         run: |

@@ -138,10 +138,10 @@ jobs:
       - name: Set up the mountpoints and folders
         run: |
           mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }}
-          folders=${{ steps.read_action_js.outputs['folders'] }}
+          folders=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
           echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
-          echo "folders=${folders}" >> $GITHUB_ENV
           echo "mountpoints ${mountpoints}"
+          echo "folders=${folders}" >> $GITHUB_ENV
           echo "folders ${folders}"
 
       - name: Report download progress

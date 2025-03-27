@@ -101,7 +101,7 @@ jobs:
       - name: Download import zip file
         run: |
           echo "Downloading the import zip to ${{ env.temp_dir }}..."
-          curl -H -o "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" \
+          curl -H -o "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; }
 
       - name: Report extraction progress

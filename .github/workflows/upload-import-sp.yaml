@@ -131,19 +131,18 @@ jobs:
 
       - name: Read fstab file
         id: fstab_data
-        uses: jbutcher5/read-yaml@1.6
+        uses: pietrobolcato/action-read-yaml@1.1.0
         with:
-          file: ${{ github.workspace }}/fstab.yaml
-          key-path: '["mountpoints","folders"]'
+          config: ${{ github.workspace }}/fstab.yaml
 
       - name: Set up the mountpoints and folders
         run: |
-          echo ${{ steps.fstab_data.outputs.data }}
-          mountpoints=${{ steps.read_action_js.outputs.data['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
+          echo ${{ steps.fstab_data.outputs }}
+          mountpoints=${{ steps.read_action_js.outputs['mountpoints'] }} || { echo "FSTab mountpoints were not found. Exiting..."; exit 1; }
           echo "mountpoints=${mountpoints}" >> $GITHUB_ENV
           echo "mountpoints ${mountpoints}"
           
-          mountpoints=${{ steps.read_action_js.outputs.data['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
+          mountpoints=${{ steps.read_action_js.outputs['folders'] }} || { echo "FSTab folders were not found.  Proceeding."; }
           echo "folders=${folders}" >> $GITHUB_ENV
           echo "folders ${folders}"
 

@@ -11,7 +11,7 @@ on:
       zip_url:
         description: 'The URL of the zip file to download'
         required: true
-        default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/f27b4729-00ea-48e5-b3ca-8fbc7605d28a/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4FC7DS2OW%2F20250327%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250327T141404Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEN3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQC8SBdmu2%2BXE3poTFu%2FRZemqBg0J9ByrMXBB3duawh3DAIhAOwrXqUDZ1DI9fjX78mDUqvkS92e%2Fnjgnewd6O%2FIKI8AKpEDCEYQAxoMMjgyODk4OTc1NjcyIgyp9Or%2BVyt9r8gD2lkq7gI8Sb9a9PtsgNE5vQ7BV8UD0hpTwGZ4BbihPh5ahNfjM3B8bLbB9TMJur6HhGQU03QRK3dnSCdo1esGt8DWNF27bWAi5RBn2vtaQl88LYXuVHx34olaQHY0Tp2P4v3BqBKkcJjQU1q1AbTJpLHU2r6aeUAanFaGTr8aLJ7I1wUxG6lQB4pbCvjrr424%2BAHrWOCRfeswb5uXIPWcV360gj73z9ifLDBBJjIbeJery3DWS64zXIUJnShrgXGqgWWd%2FxYyGKyaoB9rRL2CZak0PMkDXHtTxYwwJ6iBL4R3f560lkN%2Fpn53edMk%2Ffpw8Q808SsR9zmJs7%2BjDA4vIprdas7MjM4g0i5eu%2B9ONjtp9JJ0zR1dn%2BMpFbQXD7xqvFJZc7mtznR5wIDGWXB1SHarR0neYpFSek1OXKuWIa0JbhUb1LUvk%2BrNHCeLjT9rnm8mi6G'
+        default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/6beaca84-ef1e-4555-93a1-1687d869aefd/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4FIKJXAS2%2F20250327%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250327T164001Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEN%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDsDXAiaXc7so%2FooqqrrL7vbYjFvN6VJdCQ8lUjM77ylwIgLcMqB%2FJMHnLRxykVpNQEGk%2BbaOBiemrb770xb2eZTJsqkQMISBADGgwyODI4OTg5NzU2NzIiDNBihaVrtmyY6phKSSruAqXjCXrmD4%2FllqpzZYujVdA%2BdmGsk7RHipPPwO89nwX4G1GJq5hi34ISIr0ZQ5NmRZb%2BcBJWxykzGHeJypBdI8rPpsM%2Bo3khp9ICun3Uf0FbKh3SXCbfwfu%2BNsJYrpnSwpLoIFQzqSzqRXi6tSgz2rWOyAKoJ7aZogmsw%2BCT0ZqnSxx%2B3moXMrmuZqiYVAOAPwIDaZGHyLH4%2FYAyq3V%2B53iiuZmvgwQHGvrSXHsG%2FRKB56Kz9hFRG1Vhca21QiUnxusbFp%2FpPjt6SJbOzphgGOStfxZdyIwMHZqsMUnqmAsusBdnqQLmpjJ7dZZJmEjBPewC4K%2BQG6w1xqqXNU8xXxFKTVN4Y6FqZ2bVN9JV%2F77S%2FJQyWEajSRFzhvZgg%2B62ZclXlGqOYOeqV4KxzEaDdQxfc499fhBMnDM0hIJF6zfITmBY2IYbF7SUQXOvYjrT5Y91jRArFc81736FrJY3bNUn%2Ftcw4WUZyItf5B1MHTCZz5W%2FBjqdAb3KcqakgclBy2TzDQNW9arA7EelFlEay1hL5S0OR9OVvnwpf2w8QxAMqjzDjBRPnJZxHzJYbXbE2pA3gt3p6Qc6EVnHsT6r1l5E4aYISBGSaPn7de1T6tmz2CXQVW9%2BdeHJQcm3G1vevyle%2B9IH8ZsL9qdta1IZt6qqBfvsLnYTPVNPI%2FMWSipqOvUgSSK5kF0tZM6hmNG%2Fbet%2F7Ac%3D&X-Amz-Signature=df8747fbcd9b11e1b769f610efe72177cbd75a46ec48569a89cec14da96faa58&X-Amz-SignedHeaders=host&x-id=GetObject'
       aemy_callbacks:
         description: 'The AEMY context as a string.'
         required: true
@@ -149,7 +149,7 @@ jobs:
                 curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
                  -H "Content-Type: application/json" \
                  -X POST \
-                 -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file.\" }}" \
+                 -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file. Did the URL expire (i.e. UnauthorizedDownloaded)?\" }}" \
                  ${{ env.error_callback_url }}
               fi
               echo "Downloaded file is not a valid zip file. Exiting."

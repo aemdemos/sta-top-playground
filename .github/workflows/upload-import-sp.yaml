@@ -162,7 +162,7 @@ jobs:
             value=$(echo "$line" | cut -f2- -d:)
             # parts=$(echo "$line" | sed 's/: /\n/g')
             echo "$name and $value"
-            next="\"${$name}\": \"${value}\","
+            next="\"${name}\": \"${value}\","
             if ($foundFolders); then
               folders+="$next"
             else

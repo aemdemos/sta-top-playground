@@ -158,8 +158,8 @@ jobs:
               echo Skipping...
               continue;
             fi
-            name=$(echo "$line" | cut -f1 -d:)
-            value=$(echo "$line" | cut -f2- -d:)
+            name=$(echo "$line" | cut -f1 -d:) | xargs
+            value=$(echo "$line" | cut -f2- -d:) | xargs
             echo "$name and $value"
             next="\"$name\": \"$value\","
             if ($foundFolders); then

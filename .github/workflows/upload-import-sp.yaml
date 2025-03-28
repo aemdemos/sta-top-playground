@@ -163,13 +163,13 @@ jobs:
             echo "$name and $value"
             next="\"$name\": \"$value\""
             if ($foundFolders); then
-              if [ $folders == '{ ' ]; then
+              if [ "$folders" == "{ " ]; then
                 folders+="$next"
               else
                 folders+=", $next"
               fi
             else
-              if [ mountpoints == '{ ' ]; then
+              if [ "$mountpoints" == "{ " ]; then
                 mountpoints+="$next"
               else
                 mountpoints+=", $next"

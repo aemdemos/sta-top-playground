@@ -158,9 +158,11 @@ jobs:
               echo Skipping...
               continue;
             fi
-            parts=$(echo "$line" | sed 's/: /\n/g')
-            echo "$parts[0] and $parts[1]"
-            next="\"${parts[0]}\": \"${parts[1]}\","
+            name=${echo "$line" | cut -f1 -d'\\:\\ '}
+            value=${echo "$line" | cut -f1 -d'\\:\\ '}
+            # parts=$(echo "$line" | sed 's/: /\n/g')
+            echo "$name and $value"
+            next="\"${$name}\": \"${value}\","
             if ($foundFolders); then
               folders+="$next"
             else

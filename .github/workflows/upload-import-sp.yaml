@@ -159,7 +159,8 @@ jobs:
             else
               mountpoints+='"$name": "$value",'
             fi
-          done <<< "${{ github.workspace }}/fstab.yaml"
+          done < "${{ github.workspace }}/fstab.yaml"
+
           mountpoints+='}'
           folders+='}'
           echo "mountpoint: $mountpoints"

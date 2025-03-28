@@ -140,8 +140,30 @@ jobs:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
-          echo "outputs ${{ steps.fstab_data.outputs }}"
-          echo "json ${{ toJson(steps.fstab_data.outputs) }}"
+          mountpoints='{';
+          folders='{';
+          foundFolders=false;
+          while read line; do
+            echo "line: $line"
+            if (echo $line | grep -q 'folders:'); then
+              foundFolders=true;
+              continue;
+            fi
+            if (echo $line | grep -q 'mountpoints:'); then
+              continue;
+            fi
+            name=$(echo $line | awk '{print $0}')
+            value=$(echo $line | awk '{print $1}')
+            if ($foundFolders); then
+              folders+='"$name": "$value",'
+            else
+              mountpoints+='"$name": "$value",'
+            fi
+          done <<< "${{ github.workspace }}/fstab.yaml"
+          mountpoints+='}'
+          folders+='}'
+          echo "mountpoint: $mountpoints"
+          echo "folder: $folders"
 
       - name: Report download progress
         run: |

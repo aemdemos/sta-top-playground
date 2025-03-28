@@ -160,6 +160,7 @@ jobs:
             fi
             name=$(echo "$line" | cut -f1 -d:) | xargs
             value=$(echo "$line" | cut -f2- -d:) | xargs
+            value=$(echo "$value" | cut -c2-
             echo "$name and $value"
             next="\"$name\": \"$value\","
             if ($foundFolders); then

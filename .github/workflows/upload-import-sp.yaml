@@ -146,7 +146,7 @@ jobs:
           while read line; do
             echo "line: $line"
             if (echo $line | grep -q 'folders:'); then
-              foundFolders=true;
+              foundFolders=true
               continue;
             fi
             if (echo $line | grep -q 'mountpoints:'); then
@@ -155,8 +155,9 @@ jobs:
             if [ -z $line ]; then
               continue;
             fi
-            parts=${line.split(': ')}
-            next=${"parts[0]": "parts[1]",}
+            parts=echo $line | sed 's/: /\n/g'
+            echo $parts 
+            next="$parts[0]": "$parts[1]",
             if ($foundFolders); then
               folders+=next
             else

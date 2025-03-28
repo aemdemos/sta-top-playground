@@ -152,12 +152,15 @@ jobs:
             if (echo $line | grep -q 'mountpoints:'); then
               continue;
             fi
-            name=$(echo $line | awk '{print $0}')
-            value=$(echo $line | awk '{print $1}')
+            if [ -z $line ]; then
+              continue;
+            fi
+            parts=${line.split(': ')}
+            next=${"parts[0]": "parts[1]",}
             if ($foundFolders); then
-              folders+='"$name": "$value",'
+              folders+=next
             else
-              mountpoints+='"$name": "$value",'
+              mountpoints+=next
             fi
           done < "${{ github.workspace }}/fstab.yaml"
 

@@ -161,11 +161,19 @@ jobs:
             name=$(echo "$line" | cut -f1 -d:)
             value=$(echo "$line" | cut -f2- -d: | cut -c2-)
             echo "$name and $value"
-            next="\"$name\": \"$value\", "
+            next="\"$name\": \"$value\""
             if ($foundFolders); then
-              folders+="$next"
+              if [ $folders == '{ ' ]; then
+                folders+="$next"
+              else
+                folders+=", $next"
+              fi
             else
-              mountpoints+="$next"
+              if [ mountpoints == '{ ' ]; then
+                mountpoints+="$next"
+              else
+                mountpoints+=", $next"
+              fi
             fi
           done < "${{ github.workspace }}/fstab.yaml"
 

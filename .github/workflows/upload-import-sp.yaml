@@ -147,12 +147,15 @@ jobs:
             echo "line: $line"
             if (echo $line | grep -q 'folders:'); then
               foundFolders=true
+              echo Skipping...
               continue;
             fi
             if (echo $line | grep -q 'mountpoints:'); then
+              echo Skipping...
               continue;
             fi
             if [ -z $line ]; then
+              echo Skipping...
               continue;
             fi
             parts=echo $line | sed 's/: /\n/g'

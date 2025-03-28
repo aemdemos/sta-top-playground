@@ -181,8 +181,8 @@ jobs:
           folders+=' }'
           echo "mountpoint: $mountpoints"
           echo "folder: $folders"
-          echo "$mountpoints=${mountpoints}" >> $GITHUB_ENV
-          echo "$folders=${folders}" >> $GITHUB_ENV
+          echo "mountpoints=$mountpoints" >> $GITHUB_ENV
+          echo "folders=$folders" >> $GITHUB_ENV
 
       - name: Report download progress
         run: |

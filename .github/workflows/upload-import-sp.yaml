@@ -145,26 +145,26 @@ jobs:
           foundFolders=false;
           while read line; do
             echo "line: $line"
-            if (echo $line | grep -q 'folders:'); then
+            if (echo "$line" | grep -q 'folders:'); then
               foundFolders=true
               echo Skipping...
               continue;
             fi
-            if (echo $line | grep -q 'mountpoints:'); then
+            if (echo "$line" | grep -q 'mountpoints:'); then
               echo Skipping...
               continue;
             fi
-            if [ -z $line ]; then
+            if [ -z "$line" ]; then
               echo Skipping...
               continue;
             fi
-            parts=echo $line | sed 's/: /\n/g'
-            echo $parts 
-            next="$parts[0]": "$parts[1]",
+            parts=$(echo "$line" | sed 's/: /\n/g')
+            echo "$parts"
+            next="${parts[0]}: ${parts[1]},"
             if ($foundFolders); then
-              folders+=next
+              folders+="$next"
             else
-              mountpoints+=next
+              mountpoints+="$next"
             fi
           done < "${{ github.workspace }}/fstab.yaml"
 

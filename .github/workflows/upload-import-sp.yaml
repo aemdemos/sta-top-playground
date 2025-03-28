@@ -158,8 +158,8 @@ jobs:
               echo Skipping...
               continue;
             fi
-            name=${echo "$line" | cut -f1 -d'\\:\\ '}
-            value=${echo "$line" | cut -f1 -d'\\:\\ '}
+            name=${echo "$line" | cut -f1 -d:}
+            value=${echo "$line" | cut -f2- -d:}
             # parts=$(echo "$line" | sed 's/: /\n/g')
             echo "$name and $value"
             next="\"${$name}\": \"${value}\","

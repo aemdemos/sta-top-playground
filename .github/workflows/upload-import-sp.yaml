@@ -161,7 +161,7 @@ jobs:
             name=$(echo "$line" | cut -f1 -d:)
             value=$(echo "$line" | cut -f2- -d: | cut -c2-)
             echo "$name and $value"
-            next="\"$name\": \"$value\","
+            next="\"$name\": \"$value\", "
             if ($foundFolders); then
               folders+="$next"
             else
@@ -173,9 +173,13 @@ jobs:
           folders+=' }'
           echo "mountpoint: $mountpoints"
           echo "folder: $folders"
+          echo "$mountpoints=${$mountpoints}" >> $GITHUB_ENV
+          echo "$folders=${$folders}" >> $GITHUB_ENV
 
       - name: Report download progress
         run: |
+          echo mp: ${{ toJson(env.mountpoints) }}
+          echo fld: ${{ toJson(env.folders) }}
           if [ -n "${{ env.progress_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
              -H "Content-Type: application/json" \

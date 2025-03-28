@@ -186,8 +186,7 @@ jobs:
 
       - name: Report download progress
         run: |
-          echo mp: ${{ toJson(env.mountpoints) }}
-          echo fld: ${{ toJson(env.folders) }}
+          echo mp: ${{ env.mountpoints }}
           if [ -n "${{ env.progress_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
              -H "Content-Type: application/json" \

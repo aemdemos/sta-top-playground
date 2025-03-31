@@ -12,13 +12,21 @@
 
 import core from '@actions/core';
 
-try {
-  const callbacks = core.getInput('aemy_callbacks');
-  const aemyContext = core.getInput('aemy_context');
-  const uploadSource = core.getInput('upload_source');
-  const uploadTarget = core.getInput('upload_target');
+export async function run() {
+  try {
+    const callbacks = core.getInput('aemy_callbacks');
+    const aemyContext = core.getInput('aemy_context');
+    const uploadSource = core.getInput('upload_source');
+    const uploadTarget = core.getInput('upload_target');
 
-  core.setOutput('results', `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`);
-} catch (error) {
-  core.setFailed(error.message);
+    core.setOutput('results', `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`);
+  } catch (error) {
+    core.setFailed(error.message);
+    throw error;
+  }
 }
+
+run().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

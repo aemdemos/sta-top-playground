@@ -15,7 +15,7 @@ on:
       zip_url:
         description: 'The URL of the zip file to download'
         required: true
-        default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/f4de0fed-611a-40d5-b825-8178d055cdd3/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4DAXA2XJQ%2F20250331%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250331T181008Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEIaCXVzLWVhc3QtMSJHMEUCIQD%2BpN7wyy5OoyZIWzUqsz0nvwjsqfUZUjb%2BGad9Bb%2Bo7gIgBL7O2juNnm4XFlnplMshZiv9lgwqUB4ANw9QntgfdTgqmgMIq%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgwyODI4OTg5NzU2NzIiDPagNBvownihqZQz%2BiruAqG59retlHGWgH4q%2BLUI2IgPjDHHvDJf1OchJOMjZozeIJKl34ZexOGtiixx2upcLR9Ebn15Gw2Kmtn6xvxIenETy0HrO4XR8SAf9CW5Zf4UcOjgpLuGk9dJ0jBEDASoZ3gtmiA3mP2cuI5yLpwIcpgug39Tnxff7qDeNQzv1q22uQD7YIpyWLubXKU6xh%2FdGhfh6EE%2BgMjG7eza2eIAfxHzFVWYQGa9YA6SIj5ZSjL%2F4o%2BfVtvWH5oDWD82OFNhSUnAoYsSzB5FXc07cY9YaqUE%2BYBZO%2Fa5M4SQIk%2FlisdyjLEUrCvI93xCSNEPteEUlgmRVZNCJ3Kx5ycFi%2FMVLEdXpzDCcpugu%2FHadC0rRMKjd0zWXwRO4SzQTSmFCJQxJlfSSQnwekPeWjLiTkK6wH0biibdxY59MUnzrlWzcTKWHSci2UwdIwOWqucAZmRKinngsm0UpwBHZjGkkAIit1hLa5u%2BsSemR5L00wcj%2BDChsKu%2FBjqdAbJbnza4p7t55DsAf%2B3z7pyVrtek3FwTPXtdefOHGKx%2Fm6srtimrkmTPX5OqBXe4QBhiBxQnOUyXnGNNUQFWKk7eBEPCZ%2BdhKT0xrwpHv1bi3IdxxiXEyBqRectd6JBLdczcnvkI4z1ETMs0WpPegCo5JDs%2FHHK%2Bd68cCNAf4HSX522Eihk4fy8nR9X1jvlcn5%2FMFTYp%2FsJi%2FCQGhKo%3D&X-Amz-Signature=b67213abb3e0a97e8b1ff44772e39ca544c0a689e50342c76d44a861a8b5348e&X-Amz-SignedHeaders=host&x-id=GetObject'
+        default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/fffe70f4-7789-4e00-b1f6-e5551338d911/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4O754Y6LT%2F20250331%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250331T210032Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEQaCXVzLWVhc3QtMSJHMEUCIQCm%2Boh2FNlaFU%2B4PS69ealfPxl4PAvG7%2BgP84FSRlKSygIgdRkRf3ns6MBCC1j5GdFeyKeZVEL2I1aNyycbdWy61MQqmgMIrf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgwyODI4OTg5NzU2NzIiDP%2FuCzWeEE9FDNTWSiruAtEgxEGO1QHwvW%2FL4li8iNZ%2BbsS%2BkgwlXCbuWMZrfzkA91GdMJP%2BMRE1cFzymNcWaD4EyHaMCw2xeiW6BclMiaFoJUlrz%2FwdfQf9G78flTxFXe6aeJoRiGvxIUA5%2BekiQ3KznKWSzwfGINGNgbEwCC5f6YBGWEcvotkrXXPHxzWITLu7V2GFvmKjDKXPkhL13RO7iWrZHGglIxCHwC7ifD605G6ZlSX9FJ%2FVpSg0LJgQ6dZQCkFNWmU6QkiJ3O28SJBIWftMtn0V3KgPXYnrhZVs188VLSsjch6K%2Fvirfr%2F9wEylEOtJEpOKrBFrwBBAtq%2F6mF5Ah5bf8AFfJhdPiepATYXi8z%2FrOywJ9I8mwRkQBuUXg5l5bgcdSfDxuzXYB%2B95fDG0y4bXDHrBJ%2FrWQ09MxPAMrUPk4VLBNZY93I8B5HBdHjm20iIUzEZmV4LGi%2B9j6UXqx3tK5zEVhKJoE45gRByt6S6GvleH081LDzCL5Ku%2FBjqdATfa8s73Teq9jVLDkp8WSm9f49LHO0OAuN76CRRkNVbxBTsekUy3dSNuhQSH89Nfhv0CFnJsKlRiphbWWY3nLpmrZ%2F2MBNz5L%2BNGUcLhIaqtcfLI3v6ho5Cmnf0r%2F3cnF%2FMaVt6ylvzHr5DaK5aRL0u5EtBtAxbylvVKW1QXarWjRTyidA9pRh7CcedB4ec4xGbiIGgI2Moxjk4ZVk4%3D&X-Amz-Signature=134361f643cb955195416498ef2d5ce18d4b5c9d8cb78f1bc395bc3c4ded7090&X-Amz-SignedHeaders=host&x-id=GetObject'
       aemy_callbacks:
         description: 'The AEMY context as a string.'
         required: true
@@ -59,6 +59,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install -y unzip
+          sudo apt-get install jq
           npm install -g @pnp/cli-microsoft365
 
       - name: Set up the callback URLs
@@ -236,37 +237,60 @@ jobs:
           #    -s "https://accounts.accesscontrol.windows.net/$bearer_realm/tokens/OAuth/2" | awk -F":" '{print $NF}' | tr -d '"}')
           #  echo "access_token=${access_token}" >> $GITHUB_ENV
 
-      - name: Upload content to SharePoint
+
+      - name: Run SharePoint Upload Action
         id: sharepoint-upload-step
-        uses: ./.github/actions/upload-sharepoint
+        uses: ./  # Use local action
         with:
           aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
           aemy_context: ${{ github.event.inputs.aemy_context }}
           upload_source: ${{ env.temp_dir }}/content
           upload_target: ${{ env.FIRST_MP }}
 
-      - name: Report upload success
-        if: success()
+      - name: Analyze upload results
         run: |
-          MESSAGE="${{ fromJson(steps.sharepoint-upload-step.outputs.result).message }}"
-          echo "Upload Failed: $MESSAGE"
-          if [ -n "${{ env.ok_callback_url }}" ]; then
+          result='${{ steps.sharepoint-upload-step.outputs.result }}'
+          success_count=$(echo "$result" | jq -r '.success_count')
+          failed_count=$(echo "$result" | jq -r '.failed_count')
+          failed_files=$(echo "$result" | jq -c '.failed_files')
+          
+          progress="✅ Success count: $success_count \n❌ Failed count: $failed_count \n🚨 Failed files: $failed_files"
+          echo $progress
+          
+          if [ -n "${{ env.progress_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
-              -X POST \
-              -F 'response={"message": "$MESSAGE"}' \
-              ${{ env.ok_callback_url }}
+             -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"$progress\" }}" \
+             ${{ env.progress_callback_url }}
           fi
 
-      - name: Report upload failure
-        if: failure()
+      - name: Fail if upload fails
+        if: ${{ fromJson(steps.sharepoint-upload-step.outputs.result).failed_count > 0 }}
         run: |
-          MESSAGE="${{ fromJson(steps.sharepoint-upload-step.outputs.result).message }}"
-          echo "Upload Failed: $MESSAGE"
+          failed_count=$(echo "$result" | jq -r '.failed_count')       
+          success_count=$(echo "$result" | jq -r '.success_count')   
+          failed_files=$(echo "$result" | jq -r '.failed_files')   
+          message="Failed to upload $failed_count files. Uploaded $success_count files successfully."
+          echo "Upload Failed: $message"
+          echo "These files failed to upload: $failed_files"
           if [ -n "${{ env.error_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
               -X POST \
-              -F 'response={"message": "$MESSAGE"}' \
+              -F 'response={"message": "$message"}' \
               ${{ env.error_callback_url }}
+          fi
+          exit 1
+
+      - name: Report upload success
+        run: |
+          success_count=$(echo "$result" | jq -r '.success_count')      
+          message="Upload succeeded. Uploaded $success_count files."
+          if [ -n "${{ env.ok_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+              -X POST \
+              -F 'response={"message": "$message"}' \
+              ${{ env.ok_callback_url }}
           fi
 
       - name: Clean up temporary files

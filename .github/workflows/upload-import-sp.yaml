@@ -248,10 +248,10 @@ jobs:
       - name: Upload content to SharePoint
         uses: ./.github/actions/upload-sharepoint
         with:
-          callbacks: ${{ github.event.inputs.aemy_callbacks }}
-          aemyContext: ${{ github.event.inputs.aemy_context }}
-          uploadSource: ${{ env.temp_dir }}/content
-          uploadTarget: ${{ env.FIRST_MP }}
+          aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
+          aemy_context: ${{ github.event.inputs.aemy_context }}
+          upload_source: ${{ env.temp_dir }}/content
+          upload_target: ${{ env.FIRST_MP }}
 
         # for file in ${{ env.temp_dir }}/content/*; do
         #  # Report progress

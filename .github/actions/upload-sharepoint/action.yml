@@ -15,7 +15,7 @@ inputs:
     description: 'The target Sharepoint folder to upload the files to.'
     required: true
 outputs:
-  greeting:
+  result:
     description: "The results of the upload."
 runs:
   using: "node16"

@@ -246,7 +246,7 @@ jobs:
       - name: Report upload success
         if: success()
         run: |
-          MESSAGE=${{ fromJson(steps.my-action-step.outputs.result).message }}"
+          MESSAGE=${{ fromJson(steps.sharepoint-upload-step.outputs.result).message }}"
           echo "Upload Failed: $MESSAGE"
           if [ -n "${{ env.ok_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
@@ -258,7 +258,7 @@ jobs:
       - name: Report upload failure
         if: failure()
         run: |
-          MESSAGE=${{ fromJson(steps.my-action-step.outputs.result).message }}"
+          MESSAGE=${{ fromJson(steps.sharepoint-upload-step.outputs.result).message }}"
           echo "Upload Failed: $MESSAGE"
           if [ -n "${{ env.error_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \

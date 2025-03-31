@@ -246,6 +246,7 @@ jobs:
           #  echo "access_token=${access_token}" >> $GITHUB_ENV
 
       - name: Upload content to SharePoint
+        id: sharepoint-upload-step
         uses: ./.github/actions/upload-sharepoint
         with:
           aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
@@ -268,14 +269,25 @@ jobs:
         # done
 
       - name: Report upload success
+        if: success()
         run: |
-          echo "upload to Sharepoint was successful" > success_message.txt
+          echo "Upload Succeeded: ${{ steps.sharepoint-upload-step.outputs.success_message }}"
           if [ -n "${{ env.ok_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
               -X POST \
-              -F 'response={"message": "Upload successful"}' \
-              -F "status_file=@success_message.txt" \
+              -F 'response={"message": "${{ steps.sharepoint-upload-step.outputs.success_message }}"}' \
               ${{ env.ok_callback_url }}
+          fi
+
+      - name: Report upload failure
+        if: failure()
+        run: |
+          echo "Upload Failure: ${{ steps.sharepoint-upload-step.outputs.error_message }}"
+          if [ -n "${{ env.error_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+              -X POST \
+              -F 'response={"message": "${{ steps.sharepoint-upload-step.outputs.error_message }}"}' \
+              ${{ env.error_callback_url }}
           fi
 
       - name: Clean up temporary files

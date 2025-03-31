@@ -246,22 +246,24 @@ jobs:
       - name: Report upload success
         if: success()
         run: |
-          echo "Upload Succeeded: ${{ steps.sharepoint-upload-step.outputs.message }}"
+          MESSAGE=${{ fromJson(steps.my-action-step.outputs.result).message }}"
+          echo "Upload Failed: $MESSAGE"
           if [ -n "${{ env.ok_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
               -X POST \
-              -F 'response={"message": "${{ steps.sharepoint-upload-step.outputs.success_message }}"}' \
+              -F 'response={"message": "$MESSAGE"}' \
               ${{ env.ok_callback_url }}
           fi
 
       - name: Report upload failure
         if: failure()
         run: |
-          echo "Upload Failure: ${{ steps.sharepoint-upload-step.outputs.result }}"
+          MESSAGE=${{ fromJson(steps.my-action-step.outputs.result).message }}"
+          echo "Upload Failed: $MESSAGE"
           if [ -n "${{ env.error_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
               -X POST \
-              -F 'response={"message": "${{ steps.sharepoint-upload-step.outputs.result.message }}"}' \
+              -F 'response={"message": "$MESSAGE"}' \
               ${{ env.error_callback_url }}
           fi
 

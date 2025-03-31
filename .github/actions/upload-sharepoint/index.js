@@ -21,7 +21,7 @@ export async function run() {
 
     const response = {
       status: 'success',
-      message: `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`,
+      message: `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${uploadSource}, target: ${uploadTarget}`,
       filesUploaded: 12,
     };
 
@@ -36,12 +36,4 @@ export async function run() {
   }
 }
 
-run().catch((error) => {
-  const errorResult = {
-    status: 'failure',
-    message: `Failed to upload files: ${error.message}`,
-  };
-  core.setOutput('result', JSON.stringify(errorResult));
-  core.setFailed(error);
-  process.exit(1);
-});
+run();

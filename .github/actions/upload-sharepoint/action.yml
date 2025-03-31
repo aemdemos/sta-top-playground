@@ -16,7 +16,7 @@ inputs:
     required: true
 outputs:
   result:
-    description: "The results of the upload."
+    description: "The results of the upload as a JSON string with status and message properties."
 runs:
   using: "node16"
   main: "index.js"

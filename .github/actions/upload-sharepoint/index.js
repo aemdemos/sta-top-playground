@@ -32,7 +32,7 @@ export async function run() {
       message: `Failed to upload files: ${error.message}`,
     };
     core.setOutput('result', JSON.stringify(errorResult));
-    core.setFailed(JSON.stringify(errorResult));
+    core.setFailed(error);
   }
 }
 
@@ -42,6 +42,6 @@ run().catch((error) => {
     message: `Failed to upload files: ${error.message}`,
   };
   core.setOutput('result', JSON.stringify(errorResult));
-  core.setFailed(JSON.stringify(errorResult));
+  core.setFailed(error);
   process.exit(1);
 });

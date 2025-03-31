@@ -3,20 +3,26 @@ description: "Upload files to Sharepoint"
 author: "Experience Catalyst"
 inputs:
   aemy_callbacks:
-    description: 'The AEMY callback information.'
+    description: "The AEMY callback information."
     required: true
   aemy_context:
-    description: 'The AEMY context as a string.'
+    description: "The AEMY context as a string."
+    required: true
+  sharepoint_site:
+    description: "The SharePoint site URL."
     required: true
   upload_source:
-    description: 'The folder containing the files to upload.'
+    description: "The folder containing the files to upload."
     required: true
   upload_target:
-    description: 'The target Sharepoint folder to upload the files to.'
+    description: "The target Sharepoint folder to upload the files to."
     required: true
 outputs:
   result:
     description: "The results of the upload as a JSON string with status and message properties."
 runs:
-  using: "node16"
-  main: "index.js"
+  using: "composite"
+  steps:
+    - run: bash upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
+        "${{ inputs.upload_target }}" "${{ inputs.aemy_callbacks }}" "${{ inputs.aemy_context }}"
+      shell: bash

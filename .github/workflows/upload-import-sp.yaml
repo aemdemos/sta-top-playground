@@ -245,7 +245,7 @@ jobs:
           echo "access_token=${access_token}" >> $GITHUB_ENV
 
       - name: Upload content to SharePoint
-        uses: ${{ github.repository_owner }}/upload-sharepoint@main
+        uses: ./.github/actions/upload-sharepoint
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           aemyContext: ${{ github.event.inputs.aemy_context }}

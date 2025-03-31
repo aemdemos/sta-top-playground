@@ -247,7 +247,7 @@ jobs:
       - name: Upload content to SharePoint
         uses: ${{ env.OWNER }}/upload-sharepoint@main
         with:
-          callbacks: ${{ ENV.aemy_callbacks }}
+          callbacks: ${{ github.event.inputs.aemy_callbacks }}
           aemyContext: ${{ github.event.inputs.aemy_context }}
           uploadSource: ${{ env.temp_dir }}/content
           uploadTarget: ${{ env.FIRST_MP }}

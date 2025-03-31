@@ -1,8 +1,7 @@
 name: site-transfer-agent-coordinator - Download and extract Import zip and upload contents to SharePoint
 
 # TODO
-# 1) incorporate fstab.yml to determine mountpoints and folders instead of passing them in.
-# 2) Use the issue context to determine import zip (and still allow it as an optional parameter)
+# Use the issue context to determine import zip (and still allow it as an optional parameter)
 
 env:
   SHAREPOINT_CLIENT_SECRET: ${{ secrets.SHAREPOINT_CLIENT_SECRET }}
@@ -24,22 +23,6 @@ on:
         description: 'The AEMY context as a string.'
         required: true
         default: "{\"project\":{\"owner\":\"aemdemos\",\"repo\":\"sta-top-playground\",\"defaultBranch\":\"main\"},\"conversation\":{\"id\":35,\"instruction\":\"Analyzesite\",\"input\":\"\",\"plan\":[\"Site-urls\",\"Step2\"]},\"development\":{\"issueId\":35,\"branch\":\"issue-35\",\"changed\":false,\"changes\":[]},\"agentIndex\":1,\"agentCalls\":[{\"agentId\":\"ghagent\",\"function\":\"gh_create_branch\",\"parameters\":{}},{\"agentId\":\"inventory\",\"function\":\"site-urls\",\"parameters\":{\"url\":\"https://unifyrare.com/\"}},{\"agentId\":\"ghagent\",\"function\":\"gh_create_pull_request\",\"parameters\":{}},{\"agentId\":\"ghagent\",\"function\":\"gh_request_linting\",\"parameters\":{}}]}"
-      mountpoints:
-        description: 'The mountpoints to upload the zip content to'
-        required: true
-        default: 'getting_there'
-      folders:
-        description: 'The folders to upload the zip file to'
-        required: true
-        default: 'getting_there'
-      sharepoint_tenant:
-        description: 'The Client Id to use for the Sharepoint upload.'
-        required: true
-        default: 'sp_client_id'
-      sharepoint_client_id:
-        description: 'The Client Id to use for the Sharepoint upload.'
-        required: true
-        default: 'sp_client_id'
 
 permissions:
   contents: write
@@ -48,10 +31,6 @@ jobs:
   read-and-upload-import-zip:
     runs-on: ubuntu-latest
 
-# if [ -z "${{ secrets.IMPORT_DOWNLOAD_API_KEY }}" ]; then
-# echo "Error: IMPORT_DOWNLOAD_API_KEY is not set."
-# exit 1
-# fi
     steps:
       - name: Check inputs
         run: |
@@ -72,10 +51,6 @@ jobs:
             echo "Error: Import Zip URL is not set."
             exit 1
           fi
-          if [ -z "${{ github.event.inputs.mountpoints }}" ]; then
-            echo "Error: Sharepoint mountpoints are not set."
-            exit 1
-          fi
           #          if [ -z "${{ github.event.inputs.sharepoint_upload_url }}" ]; then
           #            echo "Error: Sharepoint upload url is not set."
           #            exit 1
@@ -89,9 +64,6 @@ jobs:
           sudo apt-get install -y unzip
           sudo apt-get install jq
           # npm install -g @pnp/cli-microsoft365
-          pwd
-          cd .github/actions/upload-sharepoint
-          npm install
 
       - name: Set up the callback URLs
         run: |
@@ -131,6 +103,11 @@ jobs:
 
       - name: Checkout repo
         uses: actions/checkout@v4
+
+      - name: Setup Sharepoint Upload
+        run: |
+          cd ${{ github.workspace }}/.github/actions/upload-sharepoint
+          npm install
 
       - name: Read fstab file
         id: fstab_data
@@ -189,7 +166,6 @@ jobs:
 
       - name: Report download progress
         run: |
-          echo mp: ${{ toJson(env.mountpoints) }}
           if [ -n "${{ env.progress_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
              -H "Content-Type: application/json" \

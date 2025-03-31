@@ -58,11 +58,17 @@ jobs:
           # Create temp directory to download the zip and extract its contents into.
           temp_dir=$(mktemp -d)
           echo "temp_dir=${temp_dir}" >> $GITHUB_ENV
+          
+          OWNER=${{ fromJSON(github.event.inputs.aemy_context).project.owner }}
+          REPO=${{ fromJSON(github.event.inputs.aemy_context).project.repo }}
+          echo "OWNER=${OWNER}" >> $GITHUB_ENV
+          echo "REPO=${REPO}" >> $GITHUB_ENV
+          echo Org: $org
 
       - name: Install dependencies
         run: |
           sudo apt-get install -y unzip
-          sudo apt-get install jq
+          # sudo apt-get install jq
           # npm install -g @pnp/cli-microsoft365
 
       - name: Set up the callback URLs
@@ -119,7 +125,6 @@ jobs:
         env:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
-          ls -l "{{ github.workspace }}/.github/actions/upload-sharepoint"
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
           mountpoints='{ ';
           folders='{ ';
@@ -151,6 +156,7 @@ jobs:
               fi
             else
               if [ "$mountpoints" == "{ " ]; then
+                echo "FIRST_MP=$mountpoints" >> $GITHUB_ENV
                 mountpoints+="$next"
               else
                 mountpoints+=", $next"
@@ -181,7 +187,7 @@ jobs:
           curl -Lo "${{ env.temp_dir }}/import.zip" "${{ github.event.inputs.zip_url }}" 2>&1 \
            || { echo "Import zip cannot be fetched yet. Please wait a few minutes and try again."; }
 
-      - name: Report extraction progress
+      - name: Report download failure or extraction progress
         run: |
           if [ ! -f "${{ env.temp_dir }}/import.zip" ]; then
             if [ -n "${{ env.error_callback_url }}" ]; then
@@ -193,27 +199,30 @@ jobs:
             fi
             echo " Import zip file not found. Check the output of the previous step. Exiting."
             exit 1
-          else 
-            chmod 755 "${{ env.temp_dir }}/import.zip"
-            ls -hl "${{ env.temp_dir }}/import.zip"
-            if ! file "${{ env.temp_dir }}/import.zip" | grep -q 'Zip archive data'; then
-              if [ -n "${{ env.error_callback_url }}" ]; then
-                curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
-                 -H "Content-Type: application/json" \
-                 -X POST \
-                 -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file. Did the URL expire (i.e. UnauthorizedDownloaded)?\" }}" \
-                 ${{ env.error_callback_url }}
-              fi
-              echo "Downloaded file is not a valid zip file.  Did the URL expire? Exiting."
-              exit 1          
-            fi
-            if [ -n "${{ env.progress_callback_url }}" ]; then
+          fi
+          
+          # Zip exists, check if it is a valid zip file.
+          chmod 755 "${{ env.temp_dir }}/import.zip"
+          ls -hl "${{ env.temp_dir }}/import.zip"
+          if ! file "${{ env.temp_dir }}/import.zip" | grep -q 'Zip archive data'; then
+            if [ -n "${{ env.error_callback_url }}" ]; then
               curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
                -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Extracting zip...\" }}" \
-               ${{ env.progress_callback_url }}
+               -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file. Did the URL expire (i.e. UnauthorizedDownloaded)?\" }}" \
+               ${{ env.error_callback_url }}
             fi
+            echo "Downloaded file is not a valid zip file.  Did the URL expire? Exiting."
+            exit 1          
+          fi
+          
+          # Zip is good.  Report that extraction is starting.
+          if [ -n "${{ env.progress_callback_url }}" ]; then
+            curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+             -H "Content-Type: application/json" \
+             -X POST \
+             -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Extracting zip...\" }}" \
+             ${{ env.progress_callback_url }}
           fi
 
       - name: Extract import zip contents
@@ -236,20 +245,26 @@ jobs:
           echo "access_token=${access_token}" >> $GITHUB_ENV
 
       - name: Upload content to SharePoint
-        run: |
-          for file in ${{ env.temp_dir }}/content/*; do
-            # Report progress
-            if [ -n "${{ env.progress_callback_url }}" ]; then
-              curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
-              -H "Content-Type: application/json" \
-              -X POST \
-              -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Uploading $file...\" }}" \
-              ${{ env.progress_callback_url }}
-            fi
-            curl -i -H "Authorization: Bearer $access_token" -H "Accept: application/json;odata=verbose" -s "<"          
+        uses: ${{ env.OWNER }}/upload-sharepoint@main
+        with:
+          callbacks: ${{ ENV.aemy_callbacks }}
+          aemyContext: ${{ github.event.inputs.aemy_context }}
+          uploadSource: ${{ env.temp_dir }}/content
+          uploadTarget: ${{ env.FIRST_MP }}
 
-            # Preview the file now?  Or wait until all files are uploaded?
-          done
+        # for file in ${{ env.temp_dir }}/content/*; do
+        #  # Report progress
+        #  if [ -n "${{ env.progress_callback_url }}" ]; then
+        #    curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
+        #    -H "Content-Type: application/json" \
+        #    -X POST \
+        #    -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Uploading $file...\" }}" \
+        #    ${{ env.progress_callback_url }}
+        #  fi
+        #  curl -i -H "Authorization: Bearer $access_token" -H "Accept: application/json;odata=verbose" -s "<"
+        #
+        #  # Preview the file now?  Or wait until all files are uploaded?
+        # done
 
       - name: Report upload success
         run: |

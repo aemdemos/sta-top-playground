@@ -157,7 +157,7 @@ jobs:
               fi
             else
               if [ "$mountpoints" == "{ " ]; then
-                echo "FIRST_MP=$mountpoints" >> $GITHUB_ENV
+                echo "FIRST_MP=$next" >> $GITHUB_ENV
                 mountpoints+="$next"
               else
                 mountpoints+=", $next"

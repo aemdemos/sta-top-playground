@@ -23,6 +23,6 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: ./bash upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
+    - run: bash ./upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
         "${{ inputs.upload_target }}" "${{ inputs.aemy_callbacks }}" "${{ inputs.aemy_context }}"
       shell: bash

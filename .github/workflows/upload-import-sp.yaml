@@ -59,11 +59,11 @@ jobs:
           temp_dir=$(mktemp -d)
           echo "temp_dir=${temp_dir}" >> $GITHUB_ENV
           
-          OWNER=${{ fromJSON(github.event.inputs.aemy_context).project.owner }}
-          REPO=${{ fromJSON(github.event.inputs.aemy_context).project.repo }}
-          echo "OWNER=${OWNER}" >> $GITHUB_ENV
-          echo "REPO=${REPO}" >> $GITHUB_ENV
-          echo Org: $org
+          # OWNER=${{ fromJSON(github.event.inputs.aemy_context).project.owner }}
+          # REPO=${{ fromJSON(github.event.inputs.aemy_context).project.repo }}
+          # echo "OWNER=${OWNER}" >> $GITHUB_ENV
+          # echo "REPO=${REPO}" >> $GITHUB_ENV
+          # echo Org: $org
 
       - name: Install dependencies
         run: |
@@ -245,7 +245,7 @@ jobs:
           echo "access_token=${access_token}" >> $GITHUB_ENV
 
       - name: Upload content to SharePoint
-        uses: ${{ env.OWNER }}/upload-sharepoint@main
+        uses: ${{ github.repository_owner }}/upload-sharepoint@main
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           aemyContext: ${{ github.event.inputs.aemy_context }}

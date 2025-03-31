@@ -240,7 +240,7 @@ jobs:
 
       - name: Run SharePoint Upload Action
         id: sharepoint-upload-step
-        uses: ./  # Use local action
+        uses: ./.github/actions/upload-sharepoint
         with:
           aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
           aemy_context: ${{ github.event.inputs.aemy_context }}

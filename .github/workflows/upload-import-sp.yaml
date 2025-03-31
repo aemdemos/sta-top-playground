@@ -108,7 +108,6 @@ jobs:
         run: |
           cd ${{ github.workspace }}/.github/actions/upload-sharepoint
           npm install
-          ls -l
 
       - name: Read fstab file
         id: fstab_data
@@ -120,6 +119,7 @@ jobs:
         env:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
+          ls -l {{ github.workspace }}/.github/actions/upload-sharepoint
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
           mountpoints='{ ';
           folders='{ ';

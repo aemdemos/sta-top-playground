@@ -19,14 +19,14 @@ export async function run() {
     const uploadSource = core.getInput('upload_source');
     const uploadTarget = core.getInput('upload_target');
 
-    core.setOutput('results', `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`);
+    core.setOutput('success_message', `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`);
   } catch (error) {
+    core.setOutput('error_message', `Action failed: ${error.message}`);
     core.setFailed(error.message);
-    throw error;
   }
 }
 
 run().catch((error) => {
-  console.error(error);
+  core.setOutput('error_message', `Action failed unexpectedly: ${error.message}`);
   process.exit(1);
 });

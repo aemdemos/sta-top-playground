@@ -19,14 +19,29 @@ export async function run() {
     const uploadSource = core.getInput('upload_source');
     const uploadTarget = core.getInput('upload_target');
 
-    core.setOutput('success_message', `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`);
+    const response = {
+      status: 'success',
+      success_message: `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`,
+      filesUploaded: 12,
+    };
+
+    core.setOutput('result', JSON.stringify(response));
   } catch (error) {
-    core.setOutput('error_message', `Action failed: ${error.message}`);
-    core.setFailed(error.message);
+    const errorResult = {
+      status: 'failure',
+      message: `Failed to upload files: ${error.message}`,
+    };
+    core.setOutput('result', JSON.stringify(errorResult));
+    core.setFailed(JSON.stringify(errorResult));
   }
 }
 
 run().catch((error) => {
-  core.setOutput('error_message', `Action failed unexpectedly: ${error.message}`);
+  const errorResult = {
+    status: 'failure',
+    message: `Failed to upload files: ${error.message}`,
+  };
+  core.setOutput('result', JSON.stringify(errorResult));
+  core.setFailed(JSON.stringify(errorResult));
   process.exit(1);
 });

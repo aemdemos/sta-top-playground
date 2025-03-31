@@ -108,6 +108,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/.github/actions/upload-sharepoint
           npm install
+          ls -l
 
       - name: Read fstab file
         id: fstab_data

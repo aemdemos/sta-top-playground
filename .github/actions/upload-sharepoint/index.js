@@ -21,7 +21,7 @@ export async function run() {
 
     const response = {
       status: 'success',
-      success_message: `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`,
+      message: `Received callbacks: ${!!callbacks}, context: ${!!aemyContext}, source: ${!!uploadSource}, target: ${!!uploadTarget}`,
       filesUploaded: 12,
     };
 

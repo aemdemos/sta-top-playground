@@ -119,7 +119,7 @@ jobs:
         env:
           FSTAB_CONTEXT: ${{ toJson(steps.fstab_data.outputs) }}
         run: |
-          ls -l {{ github.workspace }}/.github/actions/upload-sharepoint
+          ls -l "{{ github.workspace }}/.github/actions/upload-sharepoint"
           echo "FSTAB_CONTEXT $FSTAB_CONTEXT"
           mountpoints='{ ';
           folders='{ ';

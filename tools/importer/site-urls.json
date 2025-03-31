@@ -1,12 +1,57 @@
 {
-  "originUrl": "https://topcounselling.com/",
+  "originUrl": "https://main--stini--bhellema.aem.live",
+  "lastCrawled": "https://main--stini--bhellema.aem.live/nav.plain.html",
   "urls": [
     {
-      "url": "https://topcounselling.com/",
+      "url": "https://main--stini--bhellema.aem.live/",
       "source": "CRAWL"
     },
     {
-      "url": "https://topcounselling.com/m/login?r=%2Fm%2Faccount",
+      "url": "https://main--stini--bhellema.aem.live/accessories",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/cats",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/contact-us",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/dogs",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/faq",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/gallery",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/lizards",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/nav.plain.html",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/lucky-lizzy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/mac-daddy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/rock-fluffy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/videos",
       "source": "CRAWL"
     }
   ],
@@ -20,46 +65,5 @@
     "strategy": "crawl",
     "logger": {}
   },
-  "extractionErrors": [
-    {
-      "url": "https://topcounselling.com/m/account",
-      "status": "302 Found Redirect: https://topcounselling.com/m/login?r=%2Fm%2Faccount"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:57,h:57,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:60,h:60,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:72,h:72,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:114,h:114,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:120,h:120,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:144,h:144,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:152,h:152,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:180,h:180,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com/manifest.webmanifest",
-      "status": "content type is not text/html"
-    }
-  ]
+  "extractionErrors": []
 }

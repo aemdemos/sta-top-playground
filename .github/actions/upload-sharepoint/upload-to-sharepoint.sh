@@ -22,7 +22,7 @@ fi
 
 # Check if install failed and return.
 if ! command -v m365 &> /dev/null; then
-  echo "Failed to authenticate with SharePoint"
+  echo "Failed to install m365."
   # Create an error result
   JSON_OUTPUT=$(jq -n \
     --arg success "0" \
@@ -44,31 +44,31 @@ m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
 m365 cli config set --key authType --value secret
 echo "m365 is setup up.  Now authenticating..."
 
-m365 status -o json 2>&1
+#m365 status -o json 2>&1
 #m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
 #m365_status=$?
-m365_status=1
+#m365_status=1
 
-echo "m365 status checked.  Status: $m365_status"
-if [ "$m365_status" -gt 0 ]; then
-  echo "Authenticating with SharePoint"
-  if ! m365 login --secret $SHAREPOINT_CLIENT_SECRET; then
-    echo "Failed to authenticate with SharePoint"
-    # Create an error result
-    JSON_OUTPUT=$(jq -n \
-      --arg success "0" \
-      --arg failed "1" \
-      --arg message "Error: Failed to authenticate with SharePoint" \
-      --argjson failed_files "N/A" \
-      '{success_count: 0, failed_count: 1, failed_files: N/A}')
-    echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
-    exit 1
-  else
-    echo "✅ Successfully authenticated"
-  fi
+#echo "m365 status checked.  Status: $m365_status"
+#if [ "$m365_status" -gt 0 ]; then
+echo "Authenticating with SharePoint"
+if ! m365 login --secret $SHAREPOINT_CLIENT_SECRET; then
+  echo "Failed to authenticate with SharePoint"
+  # Create an error result
+  JSON_OUTPUT=$(jq -n \
+    --arg success "0" \
+    --arg failed "1" \
+    --arg message "Error: Failed to authenticate with SharePoint" \
+    --argjson failed_files "N/A" \
+    '{success_count: 0, failed_count: 1, failed_files: N/A}')
+  echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
+  exit 1
 else
-  echo "Already authenticated with SharePoint"
+  echo "✅ Successfully authenticated"
 fi
+#else
+#  echo "Already authenticated with SharePoint"
+#fi
 
 # Track uploads
 SUCCESS_COUNT=0
@@ -84,6 +84,8 @@ upload_files() {
   find "$local_dir" -type f -o -type d | while read -r item; do
     relative_path="${item#"$local_dir"/}"
     sp_item_path="$sp_folder/$relative_path"
+
+    echo "Next found is: $item (local_dir: $local_dir, sp_folder: $sp_folder, relative_path: $relative_path, sp_item_path: $sp_item_path)"
 
     if [ -d "$item" ]; then
       # Create directory in SharePoint

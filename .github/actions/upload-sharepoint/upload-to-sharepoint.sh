@@ -82,7 +82,10 @@ upload_files() {
 
   # Find and loop through all files and directories
   find "$local_dir" -type f -o -type d | while read -r item; do
+    echo "Processing item: $item"
+    echo "Local directory: $local_dir"
     relative_path="${item#"$local_dir"/}"
+    echo "Relative path: $relative_path"
     sp_item_path="$sp_folder/$relative_path"
 
     echo "Next found is: $item (local_dir: $local_dir, sp_folder: $sp_folder, relative_path: $relative_path, sp_item_path: $sp_item_path)"
@@ -109,7 +112,7 @@ upload_files() {
 }
 
 # Start upload process
-upload_files "$SOURCE_DIR" "$TARGET_DIR"
+upload_files "$SOURCE_DIR" "/"
 
 echo "Files that failed to upload: $FAILED_FILES[@]"
 echo "Files that uploaded: $SUCCESS_COUNT"

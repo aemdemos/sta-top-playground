@@ -15,7 +15,6 @@ echo "Uploading to: $SHAREPOINT_SITE_URL"
 sudo apt-get install jq
 
 # Authenticate to SharePoint
-echo "Setting up m365 CLI..."
 if ! command -v m365 &> /dev/null; then
   echo "Installing m365 CLI..."
   npm install -g @pnp/cli-microsoft365
@@ -34,6 +33,8 @@ if ! command -v m365 &> /dev/null; then
   echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
   exit 1
 fi
+
+echo "Setting up m365 CLI..."
 m365 --version 2>&1 | head -n 1
 
 m365 setup --scripting
@@ -41,7 +42,6 @@ m365 cli config set --key helpMode --value "full"
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
 m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
 m365 cli config set --key authType --value secret
-m365 cli config set --key secret  --value $SHAREPOINT_CLIENT_SECRET
 echo "m365 is setup up.  Now authenticating..."
 
 m365 status -o json 2>&1
@@ -52,7 +52,7 @@ m365_status=1
 echo "m365 status checked.  Status: $m365_status"
 if [ "$m365_status" -gt 0 ]; then
   echo "Authenticating with SharePoint"
-  if ! m365 login; then
+  if ! m365 login --secret $SHAREPOINT_CLIENT_SECRET; then
     echo "Failed to authenticate with SharePoint"
     # Create an error result
     JSON_OUTPUT=$(jq -n \

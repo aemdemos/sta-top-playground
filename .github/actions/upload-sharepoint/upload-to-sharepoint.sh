@@ -28,8 +28,7 @@ if ! command -v m365 &> /dev/null; then
     --arg success "0" \
     --arg failed "1" \
     --arg message "Error: M365 was not installed." \
-    --argjson failed_files '["N/A"]' \
-    '{success_count: 0, failed_count: 1, failed_files: N/A}')
+    --argjson failed_files '["N/A"]')
 else
   echo "Setting up m365 CLI..."
   m365 --version 2>&1 | head -n 1
@@ -57,8 +56,7 @@ else
       --arg success "0" \
       --arg failed "1" \
       --arg message "Error: Failed to authenticate with SharePoint" \
-      --argjson failed_files '["N/A"]' \
-      '{success_count: 0, failed_count: 1, failed_files: N/A}')
+      --argjson failed_files '["N/A"]')
   else
     echo "✅ Successfully authenticated"
 
@@ -117,8 +115,7 @@ else
       --arg success "$SUCCESS_COUNT" \
       --arg failed "$FAILED_COUNT" \
       --arg message "Upload ran until completion." \
-      --argjson failed_files "$(printf '%s\n' "$FAILED_FILES[@]" | jq -R . | jq -s .)" \
-      '{success_count: $success, failed_count: $failed, failed_files: $failed_files}')
+      --argjson failed_files "$(printf '%s\n' "$FAILED_FILES[@]" | jq -R . | jq -s .)")
   fi
 fi
 

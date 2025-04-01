@@ -249,10 +249,10 @@ jobs:
 
       - name: Analyze upload results
         run: |
-          result='${{ env.UPLOAD_RESULT }}'
-          success_count=$(echo "$result" | jq -r '.success_count')
-          failed_count=$(echo "$result" | jq -r '.failed_count')
-          failed_files=$(echo "$result" | jq -c '.failed_files')
+          echo ${{ env.UPLOAD_RESULT }}
+          success_count=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.success_count')
+          failed_count=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.failed_count')
+          failed_files=$(echo "{{ env.UPLOAD_RESULT }}" | jq -c '.failed_files')
           
           progress="✅ Success count: $success_count ❌ Failed count: $failed_count 🚨 Failed files: $failed_files"
           echo $progress
@@ -268,9 +268,9 @@ jobs:
       - name: Fail if upload fails
         if: ${{ fromJson(steps.sharepoint-upload-step.outputs.result).failed_count > 0 }}
         run: |
-          failed_count=$(echo "$result" | jq -r '.failed_count')       
-          success_count=$(echo "$result" | jq -r '.success_count')   
-          failed_files=$(echo "$result" | jq -r '.failed_files')   
+          failed_count=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.failed_count')       
+          success_count=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.success_count')   
+          failed_files=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.failed_files')   
           message="Failed to upload $failed_count files. Uploaded $success_count files successfully."
           echo "Upload Failed: $message"
           echo "These files failed to upload: $failed_files"
@@ -285,8 +285,8 @@ jobs:
       - name: Report upload success
         run: |
           echo "Upload attempted.  Analysing results..."
-          success_count=$(echo "$result" | jq -r '.success_count')      
-          message=$(echo "$result" | jq -r '.message')      
+          success_count=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.success_count')      
+          message=$(echo "{{ env.UPLOAD_RESULT }}" | jq -r '.message')      
           message="Upload succeeded. Uploaded $success_count files. ($message)"
           if [ -n "${{ env.ok_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \

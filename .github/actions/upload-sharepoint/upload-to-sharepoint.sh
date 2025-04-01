@@ -33,8 +33,10 @@ fi
 m365 --version
 
 m365 setup --scripting
+echo 0
 m365 cli config set --verbose
 echo 1
+m365 cli config set --key helpMode --value "full"
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
 echo 2
 m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID

@@ -5,7 +5,7 @@ name: site-transfer-agent-coordinator - Download and extract Import zip and uplo
 
 env:
   SHAREPOINT_TENANT_ID: ${{ secrets.SHAREPOINT_TENANT_ID }}
-  AZURE_APP_ID: ${{ env.AZURE_APP_ID }}
+  AZURE_APP_ID: ${{ vars.AZURE_APP_ID }}
   AZURE_CERTIFICATE_BASE64: ${{ secrets.AZURE_CERTIFICATE_BASE64 }}
   AZURE_CERTIFICATE_PASSWORD: ${{ secrets.AZURE_CERTIFICATE_PASSWORD }}
 

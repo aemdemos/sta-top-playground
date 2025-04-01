@@ -8,14 +8,17 @@ inputs:
   aemy_context:
     description: "The AEMY context as a string."
     required: true
+  sharepoint_client_id:
+    description: "The SharePoint client id."
+    required: true
+  sharepoint_tenant_id:
+    description: "The SharePoint tenant id."
+    required: true
   sharepoint_site:
     description: "The SharePoint site URL."
     required: true
   upload_source:
     description: "The folder containing the files to upload."
-    required: true
-  upload_target:
-    description: "The target Sharepoint folder to upload the files to."
     required: true
 outputs:
   result:
@@ -23,6 +26,7 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: bash .github/actions/upload-sharepoint/upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
-        "${{ inputs.upload_target }}" "${{ inputs.aemy_callbacks }}" "${{ inputs.aemy_context }}"
+    - run: bash ./upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
+        "${{ inputs.sharepoint_tenant_id }}" "${{ inputs.sharepoint_client_id }}" \
+        "${{ inputs.aemy_callbacks }}" "${{ inputs.aemy_context }}"
       shell: bash

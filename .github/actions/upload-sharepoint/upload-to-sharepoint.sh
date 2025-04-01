@@ -48,7 +48,7 @@ else
   #echo "m365 status checked.  Status: $m365_status"
   #if [ "$m365_status" -gt 0 ]; then
   echo "Authenticating with SharePoint"
-  echo "${{ secrets.AZURE_CERTIFICATE_BASE64 }}" | base64 -d > azure_cert.pfx
+  echo "${{ AZURE_CERTIFICATE_BASE64 }}" | base64 -d > azure_cert.pfx
   if ! m365 login --authType certificate --certificateFile azure_cert.pfx --password "$AZURE_CERTIFICATE_PASSWORD" --appId "$AZURE_APP_ID" --tenant "$SHAREPOINT_TENANT_ID"; then
     echo "Failed to authenticate with SharePoint"
     # Create an error result

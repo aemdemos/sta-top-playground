@@ -249,7 +249,7 @@ jobs:
 
       - name: Analyze upload results
         run: |
-          echo "Successes: ${{ env.$UPLOAD_SUCCESSES }}"
+          echo "Successes: ${{ env.UPLOAD_SUCCESSES }}"
           echo "Failed Files: ${{ env.UPLOAD_FAILED_FILES }}"
           echo "Message: ${{ env.UPLOAD_MESSAGE }}"
           echo "Failures: ${{ env.UPLOAD_FAILURES }}"

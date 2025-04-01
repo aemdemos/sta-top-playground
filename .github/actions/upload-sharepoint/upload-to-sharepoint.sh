@@ -45,6 +45,7 @@ echo "m365 is setup up.  Now authenticating..."
 m365 status -o json 2>&1
 #m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
 #m365_status=$?
+m365_status=1
 
 echo "m365 status checked.  Status: $m365_status"
 if [ "$m365_status" -gt 0 ]; then
@@ -115,7 +116,6 @@ JSON_OUTPUT=$(jq -n \
   --arg message "Upload ran until completion." \
   --argjson failed_files "$(printf '%s\n' "${FAILED_FILES[@]}" | jq -R . | jq -s .)" \
   '{success_count: $success, failed_count: $failed, failed_files: $failed_files}')
-fi
 
 # Output JSON result for GitHub Actions
 echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"

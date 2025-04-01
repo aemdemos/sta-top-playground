@@ -32,8 +32,10 @@ if ! command -v m365 &> /dev/null; then
 fi
 m365 --version
 
+echo "m365 setup --scripting"
 m365 setup --scripting
-m365 setup errorOutput: 'stdout'
+echo "DONE: m365 setup --scripting"
+m365 cli config set --key errorOutput--value "stdout"
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
 m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
 m365 cli config set --key authType --value browser

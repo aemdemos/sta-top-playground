@@ -249,12 +249,12 @@ jobs:
 
       - name: Analyze upload results
         run: |
-          echo ${{ env.UPLOAD_RESULT }}
-          success_count=$(echo "${{ env.UPLOAD_RESULT }}" | jq -r '.success_count')
-          failed_count=$(echo "${{ env.UPLOAD_RESULT }}" | jq -r '.failed_count')
-          failed_files=$(echo "${{ env.UPLOAD_RESULT }}" | jq -c '.failed_files')
+          echo "Successes: ${{ env.$UPLOAD_SUCCESSES }}"
+          echo "Failed Files: ${{ env.UPLOAD_FAILED_FILES }}"
+          echo "Message: ${{ env.UPLOAD_MESSAGE }}"
+          echo "Failures: ${{ env.UPLOAD_FAILURES }}"
           
-          progress="✅ Success count: $success_count ❌ Failed count: $failed_count 🚨 Failed files: $failed_files"
+          progress="✅ Success count: ${{ env.$UPLOAD_SUCCESSES }} ❌ Failed count: ${{ env.UPLOAD_FAILURES }} 🚨 Failed files: ${{ env.UPLOAD_FAILED_FILES }}"
           echo $progress
           
           if [ -n "${{ env.progress_callback_url }}" ]; then

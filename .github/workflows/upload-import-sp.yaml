@@ -235,6 +235,7 @@ jobs:
             "${{ env.AZURE_CERTIFICATE_BASE64 }}" "${{ env.AZURE_CERTIFICATE_PASSWORD }}" \
             "${{ github.event.inputs.aemy_callbacks }}" "${{ github.event.inputs.aemy_context }}")
           echo "UPLOAD_RESULT is $UPLOAD_RESULT"
+          echo "UPLOAD_RESULT env is ${{ env.result }}"
           echo "UPLOAD_RESULT=$UPLOAD_RESULT" >> $GITHUB_ENV
         shell: bash
 

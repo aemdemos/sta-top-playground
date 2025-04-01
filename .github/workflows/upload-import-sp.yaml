@@ -271,8 +271,10 @@ jobs:
 
       - name: Report upload success
         run: |
+          echo "Upload attempted.  Analysing results..."
           success_count=$(echo "$result" | jq -r '.success_count')      
-          message="Upload succeeded. Uploaded $success_count files."
+          message=$(echo "$result" | jq -r '.message')      
+          message="Upload succeeded. Uploaded $success_count files. ($message)"
           if [ -n "${{ env.ok_callback_url }}" ]; then
             curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
               -X POST \

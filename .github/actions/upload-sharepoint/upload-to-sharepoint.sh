@@ -24,11 +24,10 @@ fi
 if ! command -v m365 &> /dev/null; then
   echo "Failed to install m365."
   # Create an error result
-  JSON_OUTPUT=$(jq -n \
-    --arg success "0" \
-    --arg failed "1" \
-    --arg message "Error: M365 was not installed." \
-    --argjson failed_files '["N/A"]')
+  UPLOAD_SUCCESSES=0
+  UPLOAD_FAILURES=1
+  UPLOAD_MESSAGE="Error: M365 was not installed."
+  UPLOAD_FAILED_FILES=''
 else
   echo "Setting up m365 CLI..."
   m365 --version 2>&1 | head -n 1
@@ -52,18 +51,17 @@ else
   if ! m365 login --authType certificate --certificateFile azure_cert.pfx --password "$AZURE_CERTIFICATE_PASSWORD" --appId "$AZURE_APP_ID" --tenant "$SHAREPOINT_TENANT_ID"; then
     echo "Failed to authenticate with SharePoint"
     # Create an error result
-    JSON_OUTPUT=$(jq -n \
-      --arg success "0" \
-      --arg failed "1" \
-      --arg message "Error: Failed to authenticate with SharePoint" \
-      --argjson failed_files '["N/A"]')
+    UPLOAD_SUCCESSES=0
+    UPLOAD_FAILURES=1
+    UPLOAD_MESSAGE="Error: M365 was not installed."
+    UPLOAD_FAILED_FILES=''
   else
     echo "✅ Successfully authenticated"
 
     # Track uploads
-    SUCCESS_COUNT=0
-    FAILED_COUNT=0
-    FAILED_FILES=()
+    UPLOAD_SUCCESSES=0
+    UPLOAD_FAILURES=0
+    UPLOAD_FAILED_FILES=''
 
     # Function to upload files while preserving structure
     upload_files() {
@@ -95,10 +93,10 @@ else
 
           # Upload file to SharePoint
           if m365 spo file add --webUrl "$SHAREPOINT_SITE_URL" --folder "$sp_folder/$parent_dir" --path "$item" --overwrite; then
-            SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+            UPLOAD_SUCCESSES=$((UPLOAD_SUCCESSES + 1))
           else
-            FAILED_COUNT=$((FAILED_COUNT + 1))
-            FAILED_FILES+=("$relative_path")
+            UPLOAD_FAILURES=$((UPLOAD_FAILURES + 1))
+            UPLOAD_FAILED_FILES+="$relative_path,"
           fi
         fi
       done
@@ -107,17 +105,13 @@ else
     # Start upload process
     upload_files "$SOURCE_DIR" "/"
 
-    echo "Files that failed to upload: $FAILED_FILES[@]"
-    echo "Files that uploaded: $SUCCESS_COUNT"
-
-    # Create JSON output
-    JSON_OUTPUT=$(jq -n \
-      --arg success "$SUCCESS_COUNT" \
-      --arg failed "$FAILED_COUNT" \
-      --arg message "Upload ran until completion." \
-      --argjson failed_files "$(printf '%s\n' "$FAILED_FILES[@]" | jq -R . | jq -s .)")
+    echo "Files that failed to upload: $UPLOAD_FAILED_FILES"
+    echo "Files that uploaded: $UPLOAD_SUCCESSES"
   fi
 fi
 
 # Output JSON result for GitHub Actions
-echo "UPLOAD_RESULT=$JSON_OUTPUT" >> $GITHUB_ENV
+echo "UPLOAD_FAILED_FILES=$UPLOAD_FAILED_FILES" >> $GITHUB_ENV
+echo "UPLOAD_SUCCESSES=$UPLOAD_SUCCESSES" >> $GITHUB_ENV
+echo "UPLOAD_MESSAGE=$UPLOAD_MESSAGE" >> $GITHUB_ENV
+echo "UPLOAD_FAILURES=$UPLOAD_FAILURES" >> $GITHUB_ENV

@@ -11,6 +11,7 @@ CONTEXT="$6"
 
 echo "Uploading from: $SOURCE_DIR"
 echo "Uploading to: $SHAREPOINT_SITE_URL"
+sudo apt-get install jq
 
 # Authenticate to SharePoint
 echo "Setting up m365 CLI..."
@@ -42,8 +43,8 @@ m365 cli config set --key authType --value browser
 echo "m365 is setup up.  Now authenticating..."
 
 m365 status -o json 2>&1
-m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
-m365_status=$?
+#m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
+#m365_status=$?
 
 echo "m365 status checked.  Status: $m365_status"
 if [ "$m365_status" -gt 0 ]; then

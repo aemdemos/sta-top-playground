@@ -13,11 +13,13 @@ echo "Uploading from: $SOURCE_DIR"
 echo "Uploading to: $SHAREPOINT_SITE_URL"
 
 # Authenticate to SharePoint
-echo "Authenticating to SharePoint..."
+echo "Setting up m365 CLI..."
 if ! command -v m365 &> /dev/null; then
   echo "Installing m365 CLI..."
   npm install -g @pnp/cli-microsoft365
 fi
+
+# Check if install failed and return.
 if ! command -v m365 &> /dev/null; then
   echo "Failed to authenticate with SharePoint"
   # Create an error result
@@ -33,17 +35,16 @@ fi
 m365 --version 2>&1 | head -n 1
 
 m365 setup --scripting
-echo 1
 m365 cli config set --key helpMode --value "full"
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
-echo 2
 m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
-echo 3
 m365 cli config set --key authType --value browser
 echo "m365 is setup up.  Now authenticating..."
 
 m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
 m365_status=$?
+
+echo "m365 status checked.  Status: $m365_status"
 if [ "$m365_status" -gt 0 ]; then
   echo "Authenticating with SharePoint"
   if ! m365 login; then

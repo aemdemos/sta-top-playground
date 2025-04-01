@@ -109,14 +109,15 @@ upload_files() {
 # Start upload process
 upload_files "$SOURCE_DIR" "$TARGET_DIR"
 
-echo "Files that failed to upload: ${FAILED_FILES[@]}"
+echo "Files that failed to upload: $FAILED_FILES[@]"
+echo "Files that uploaded: $SUCCESS_COUNT"
 
 # Create JSON output
 JSON_OUTPUT=$(jq -n \
   --arg success "$SUCCESS_COUNT" \
   --arg failed "$FAILED_COUNT" \
   --arg message "Upload ran until completion." \
-  --argjson failed_files "$(printf '%s\n' "${FAILED_FILES[@]}" | jq -R . | jq -s .)" \
+  --argjson failed_files "$(printf '%s\n' "$FAILED_FILES[@]" | jq -R . | jq -s .)" \
   '{success_count: $success, failed_count: $failed, failed_files: $failed_files}')
 
 # Output JSON result for GitHub Actions

@@ -40,12 +40,12 @@ jobs:
             echo "Error: SHAREPOINT_CLIENT_SECRET is not set."
             exit 1
           fi
-          if [ -z "${{ env.SHAREPOINT_TENANT }}" ]; then
-            echo "Error: SHAREPOINT_TENANT is not set."
+          if [ -z "${{ env.SHAREPOINT_TENANT_ID }}" ]; then
+            echo "Error: SHAREPOINT_TENANT_ID is not set in the GitHub secrets."
             exit 1
           fi
           if [ -z "${{ env.SHAREPOINT_CLIENT_ID }}" ]; then
-            echo "Error: SHAREPOINT_CLIENT_ID is not set."
+            echo "Error: SHAREPOINT_CLIENT_ID is not set in the GitHub secrets."
             exit 1
           fi
           if [ -z "${{ github.event.inputs.zip_url }}" ]; then

@@ -96,12 +96,12 @@ upload_files() {
     if [ -d "$item" ]; then
       # Create directory in SharePoint
       echo "Creating directory: $relative_path in $sp_folder"
-      m365 spo folder add --webUrl "$SHAREPOINT_SITE_URL" --parentFolder "$sp_folder" --name "$relative_path"
+      m365 spo folder add --webUrl "$SHAREPOINT_SITE_URL" --parentFolderUrl "$sp_folder" --name "$relative_path"
     else
       echo "Uploading file: $item in $parent_dir of $sp_folder"
       # Ensure the parent directory exists in SharePoint
       parent_dir=$(dirname "$relative_path")
-      m365 spo folder add --webUrl "$SHAREPOINT_SITE_URL" --parentFolder "$sp_folder" --name "$parent_dir"
+      m365 spo folder add --webUrl "$SHAREPOINT_SITE_URL" --parentFolderUrl "$sp_folder" --name "$parent_dir"
 
       # Upload file to SharePoint
       if m365 spo file add --webUrl "$SHAREPOINT_SITE_URL" --folder "$sp_folder/$parent_dir" --path "$item" --overwrite; then

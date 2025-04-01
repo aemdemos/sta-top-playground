@@ -82,6 +82,9 @@ upload_files() {
 
   # Find and loop through all files and directories
   find "$local_dir" -type f -o -type d | while read -r item; do
+    if [ "$item" == "$local_dir" ]; then
+      continue
+    fi
     echo "Processing item: $item"
     echo "Local directory: $local_dir"
     relative_path="${item#"$local_dir"/}"

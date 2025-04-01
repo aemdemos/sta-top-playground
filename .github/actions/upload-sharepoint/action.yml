@@ -29,7 +29,7 @@ runs:
     - name: "Upload the files"
       run: |
         pwd
-        bash ./upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
+        bash .github/actions/upload-to-sharepoint/upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.sharepoint_site }}" \
           "${{ inputs.sharepoint_tenant_id }}" "${{ inputs.sharepoint_client_id }}" \
           "${{ inputs.aemy_callbacks }}" "${{ inputs.aemy_context }}"
       shell: bash

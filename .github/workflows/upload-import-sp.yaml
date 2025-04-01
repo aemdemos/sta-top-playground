@@ -5,8 +5,8 @@ name: site-transfer-agent-coordinator - Download and extract Import zip and uplo
 
 env:
   SHAREPOINT_CLIENT_SECRET: ${{ secrets.SHAREPOINT_CLIENT_SECRET }}
-  SHAREPOINT_TENANT: ${{ vars.SHAREPOINT_TENANT }}
-  SHAREPOINT_CLIENT_ID: ${{ vars.SHAREPOINT_CLIENT_ID }}
+  SHAREPOINT_TENANT_ID: ${{ secrets.SHAREPOINT_TENANT_ID }}
+  SHAREPOINT_CLIENT_ID: ${{ secrets.SHAREPOINT_CLIENT_ID }}
 
 on:
   workflow_dispatch:
@@ -246,6 +246,8 @@ jobs:
           aemy_context: ${{ github.event.inputs.aemy_context }}
           upload_source: ${{ env.temp_dir }}/content
           upload_target: ${{ env.FIRST_MP }}
+          sharepoint_client_id: ${{ env.SHAREPOINT_CLIENT_ID }}
+          sharepoint_tenant_id: ${{ env.SHAREPOINT_TENANT_ID }}
 
       - name: Analyze upload results
         run: |

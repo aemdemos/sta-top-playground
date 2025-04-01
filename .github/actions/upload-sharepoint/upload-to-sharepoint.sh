@@ -1,12 +1,11 @@
 #!/bin/bash
-set -e  # Exit on error
 
 # Read inputs - validation is in the main workflow
 SOURCE_DIR="$1"
 SHAREPOINT_SITE_URL="$2"
 SHAREPOINT_TENANT_ID="$3"
 AZURE_APP_ID="$4"
-AZURE_CERTIFICATE_PATH="$5"
+AZURE_CERTIFICATE_BASE64="$5"
 AZURE_CERTIFICATE_PASSWORD="$6"
 CALLBACKS="$6"
 CONTEXT="$7"

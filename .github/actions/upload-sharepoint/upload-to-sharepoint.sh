@@ -30,11 +30,9 @@ if ! command -v m365 &> /dev/null; then
   echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
   exit 1
 fi
-m365 --version
+m365 --version 2>&1 | head -n 1
 
 m365 setup --scripting
-echo 0
-m365 cli config set --verbose
 echo 1
 m365 cli config set --key helpMode --value "full"
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID

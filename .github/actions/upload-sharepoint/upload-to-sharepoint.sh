@@ -41,6 +41,7 @@ m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
 m365 cli config set --key authType --value browser
 echo "m365 is setup up.  Now authenticating..."
 
+m365 status -o json 2>&1
 m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
 m365_status=$?
 

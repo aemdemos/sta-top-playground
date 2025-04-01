@@ -235,7 +235,11 @@ jobs:
             "${{ env.AZURE_CERTIFICATE_BASE64 }}" "${{ env.AZURE_CERTIFICATE_PASSWORD }}" \
             "${{ github.event.inputs.aemy_callbacks }}" "${{ github.event.inputs.aemy_context }}"
         shell: bash
-        #        uses: ./.github/actions/upload-sharepoint
+        outputs:
+          result:
+            description: "The results of the upload as a JSON string with status and message properties."
+      
+      #        uses: ./.github/actions/upload-sharepoint
         #        with:
         #          aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
         #          aemy_context: ${{ github.event.inputs.aemy_context }}

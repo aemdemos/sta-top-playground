@@ -6,8 +6,9 @@ SOURCE_DIR="$1"
 SHAREPOINT_SITE_URL="$2"
 SHAREPOINT_TENANT_ID="$3"
 SHAREPOINT_CLIENT_ID="$4"
-CALLBACKS="$5"
-CONTEXT="$6"
+SHAREPOINT_CLIENT_SECRET="$5"
+CALLBACKS="$6"
+CONTEXT="$7"
 
 echo "Uploading from: $SOURCE_DIR"
 echo "Uploading to: $SHAREPOINT_SITE_URL"
@@ -39,7 +40,8 @@ m365 setup --scripting
 m365 cli config set --key helpMode --value "full"
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
 m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
-m365 cli config set --key authType --value browser
+m365 cli config set --key authType --value secret
+m365 cli config set --key secret  --value $SHAREPOINT_CLIENT_SECRET
 echo "m365 is setup up.  Now authenticating..."
 
 m365 status -o json 2>&1

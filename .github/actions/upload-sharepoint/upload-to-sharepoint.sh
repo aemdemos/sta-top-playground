@@ -14,6 +14,23 @@ echo "Uploading to: $SHAREPOINT_SITE_URL"
 
 # Authenticate to SharePoint
 echo "::debug::Authenticating to SharePoint..."
+if ! command -v m365 &> /dev/null; then
+  echo "::debug::Installing m365 CLI..."
+  npm install -g @pnp/cli-microsoft365
+fi
+if ! command -v m365 &> /dev/null; then
+  echo "::error::Failed to authenticate with SharePoint"
+  # Create an error result
+  JSON_OUTPUT=$(jq -n \
+    --arg success "0" \
+    --arg failed "1" \
+    --arg message "Error: M365 was not installed." \
+    --argjson failed_files "N/A" \
+    '{success_count: 0, failed_count: 1, failed_files: N/A}')
+  echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
+  exit 1
+fi
+
 m365 cli config set --key output --value json
 m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
 m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID

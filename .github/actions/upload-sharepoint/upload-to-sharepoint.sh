@@ -13,13 +13,13 @@ echo "Uploading from: $SOURCE_DIR"
 echo "Uploading to: $SHAREPOINT_SITE_URL"
 
 # Authenticate to SharePoint
-echo "::debug::Authenticating to SharePoint..."
+echo "Authenticating to SharePoint..."
 if ! command -v m365 &> /dev/null; then
-  echo "::debug::Installing m365 CLI..."
+  echo "Installing m365 CLI..."
   npm install -g @pnp/cli-microsoft365
 fi
 if ! command -v m365 &> /dev/null; then
-  echo "::error::Failed to authenticate with SharePoint"
+  echo "Failed to authenticate with SharePoint"
   # Create an error result
   JSON_OUTPUT=$(jq -n \
     --arg success "0" \
@@ -39,9 +39,9 @@ m365 cli config set --key authType --value browser
 m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
 m365_status=$?
 if [ "$m365_status" -gt 0 ]; then
-  echo "::debug::Authenticating with SharePoint"
+  echo "Authenticating with SharePoint"
   if ! m365 login; then
-    echo "::error::Failed to authenticate with SharePoint"
+    echo "Failed to authenticate with SharePoint"
     # Create an error result
     JSON_OUTPUT=$(jq -n \
       --arg success "0" \
@@ -55,7 +55,7 @@ if [ "$m365_status" -gt 0 ]; then
     echo "✅ Successfully authenticated"
   fi
 else
-  echo "::debug::Already authenticated with SharePoint"
+  echo "Already authenticated with SharePoint"
 fi
 
 # Track uploads

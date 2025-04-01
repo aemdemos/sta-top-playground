@@ -18,6 +18,8 @@ if ! command -v m365 &> /dev/null; then
   echo "Installing m365 CLI..."
   npm install -g @pnp/cli-microsoft365
 fi
+echo m365 CLI is installed
+m365 --version
 if ! command -v m365 &> /dev/null; then
   echo "Failed to authenticate with SharePoint"
   # Create an error result

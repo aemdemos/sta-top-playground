@@ -18,8 +18,6 @@ if ! command -v m365 &> /dev/null; then
   echo "Installing m365 CLI..."
   npm install -g @pnp/cli-microsoft365
 fi
-echo m365 CLI is installed
-m365 --version
 if ! command -v m365 &> /dev/null; then
   echo "Failed to authenticate with SharePoint"
   # Create an error result
@@ -32,11 +30,14 @@ if ! command -v m365 &> /dev/null; then
   echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
   exit 1
 fi
+m365 --version
 
-m365 cli config set --key output --value json
-m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
-m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
-m365 cli config set --key authType --value browser
+m365 setup --scripting
+m365 setup errorOutput: 'stdout'
+m365 config set --key clientId --value $SHAREPOINT_CLIENT_ID
+m365 config set --key tenantId --value $SHAREPOINT_TENANT_ID
+m365 config set --key authType --value browser
+echo "m365 is setup up.  Now authenticating...""
 
 m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
 m365_status=$?

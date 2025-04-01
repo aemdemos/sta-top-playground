@@ -11,11 +11,11 @@ env:
 on:
   workflow_dispatch:
     inputs:
-      # Zip is only valid for 60 minutes.
+      # Zip URL is only valid for 60 minutes.
       zip_url:
         description: 'The URL of the zip file to download'
         required: true
-        default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/e8e5961a-3de0-479d-b477-25339ae3ae0d/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4GOJA2ZVH%2F20250401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250401T135913Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFYaCXVzLWVhc3QtMSJHMEUCIHc7Dix%2B2DDxsFqW%2FLQe%2FLBnf%2BcEPchVI00%2FqCbdHAFpAiEAjRZheQEfyNvYi0g8IyQXTR9%2FALw0hsbMi1jBWcQSZ9gqmgMIv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgwyODI4OTg5NzU2NzIiDENOflkC4Ov5c1sqZyruAkm2YROrGgRBmb4uaW%2Bj9AHWecuNDFNgJWDEzi0Sjs8Y2QsYDFWY%2F8cUTH8hhBXzLyYE4OPtnevlIh9a%2FxflaXY3bVo1JBHn%2FgwamYI5mhOV1QUy6kJL0Oms9Cr0LhBJe3ZcQei4c0GQuZBaonmEnVAUEf7EDqNeSC9Am%2FgjsKxLP5tqYwbX3moRttfL%2Fy69M35zTk78M95AjHuwcxcVCKazU5ZLu1%2F70AeJ%2BeWOZii5WWTev7Eh0wp1DTpKBg7k%2BRoxBhf3Lba5iI4mg9aGnZmtaBwZ9Um3%2FbJYBhV%2Bn4AC86qB5tj%2FQRKc%2BVFcB5xNZ%2B8ALTkMkp7F%2Fr2QWwhmn%2FZNJyyh%2BXNcARZ4PcOl7mZ3V839PysPcHfOCKPDqFJCTR7CyWiUacADMQs90ZLq57rmx8yaUNt8npz9%2BIxZ8TGt97YKn75EwU3U3qrNvolA5jiwHmpoVzJM12b9BvpkYWJTAj%2Ft919G9Y%2BC7ggzIzCm1a%2B%2FBjqdAXcYvft6AonbD%2FRmVta6MHZJljJ3kxu3za4l6ZR%2FKW7trQbGzy8xdz%2Bf2gXELe0Qxhn%2FVjB9YVXhCid3Ib2CgyLTu3KIzbdekq8IGtA1VSIiuwy0QNWPinA30auRkNQycandoga%2FIUJKkjrfFY4UsTJVDewrQ3TlsckVq7JHR1sxLA8JmZWyh7o6vYdw3SwyiHRf%2B4AnOQfzEXIZSns%3D&X-Amz-Signature=2702d7bc18aa974a55aa90b5b2d990317d38adad29261d18c0e43fe756aa1ded&X-Amz-SignedHeaders=host&x-id=GetObject'
+        default: 'https://spacecat-scraper.s3.us-east-1.amazonaws.com/imports/eb54e3e4-2515-496f-b091-43dd44c0ce6c/import-result.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAUDXQXZO4C5NGDVPT%2F20250401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250401T160941Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFcaCXVzLWVhc3QtMSJGMEQCH3uYzkRcxfwOeryjRG5SJD3wj1OWnC0%2BTVJJIH9GrLMCIQCkZnmh4svYeRyNW0zhLyYT1PpZ0HGtqKFBt0Frv%2FZFmiqaAwi%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDI4Mjg5ODk3NTY3MiIMyx0eI6SX1SXxA4mpKu4C28D23p3nO%2FFej4yRgaivGG0%2BcSLRiaj811%2Bg1LodDFoevzbazlDWiWNi1%2FVxuTH20FV13pnPz7G0APfy0HC5bxs8sQtMUFKEkVr%2BdtgwU3kT7o2ywRDQV4PR2ku%2Brya4VICg5PLQcdxgJ42OMuiCYz%2BRLRfRgr%2F9msbTROSomcKEuDfQEKdzwRzQMjLFfwg5j6%2BkvoQC7jgKb%2FVrnfnj4y%2BGgaxmaLxZmlQmJ9xGPAmMdGVLGvZ4L6ClInE9n5%2FZg6pWp434SfBrM2SjmfyDhM12AhKMLszx2WL3O%2BZ%2FWfuN3bWHjB1O%2BxIYDFvTK5b1qOgSVa1GjqIYee7oZ7%2Bn4Ovya3DtiSD7DWEkFCMGltkcuMsWIY5EltzGOHC04UEmj36s5RM%2B2GwuHY7%2B6TnIvyaddl6y4beMmGIrgtr9x5Q0iNZC9hcOgDNqKBbFgO1UU7XxGDxqfpON%2BvKAXDAiKhejA3zSkAQAXLADdvhCMK3sr78GOp4BjAqDpzU%2BzJCxOxcWVb1nIpWT72wOH%2BMC8wRzBmefdbGLDajGbVQqVKO6Y4cRW6Ldf1SDljD7N9TTP5mbhV1LfUWcqsMFTL9Z0%2FebI43a4aaZVrB8c%2F4WGZpGun8sfdGePvpnZWBA1R6FbANzBmuu0Ov2rmdDcV%2FbT6qBjH4Cm%2F%2Bnp7gOx5qfxvvi4qQmcpUkvggOHF0PzBIeisDiyvA%3D&X-Amz-Signature=ef62f2e9c75da565db938da75b97dc1c2f55911b76443c7fee30084a165a4699&X-Amz-SignedHeaders=host&x-id=GetObject'
       aemy_callbacks:
         description: 'The AEMY context as a string.'
         required: true
@@ -205,7 +205,7 @@ jobs:
                ${{ env.error_callback_url }}
             fi
             echo "Downloaded file is not a valid zip file.  Did the URL expire? Exiting."
-            # exit 1          
+            exit 1        
           fi
           
           # Zip is good.  Report that extraction is starting.
@@ -217,10 +217,10 @@ jobs:
              ${{ env.progress_callback_url }}
           fi
 
-      #      - name: Extract import zip contents
-      #        run: |
-      #          unzip ${{ env.temp_dir }}/import.zip -d "${{ env.temp_dir }}/content" \
-      #          || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
+      - name: Extract import zip contents
+        run: |
+          unzip ${{ env.temp_dir }}/import.zip -d "${{ env.temp_dir }}/content" \
+          || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 
       - name: Run SharePoint Upload Action
         id: sharepoint-upload-step
@@ -228,7 +228,7 @@ jobs:
         with:
           aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
           aemy_context: ${{ github.event.inputs.aemy_context }}
-          upload_source: ${{ env.temp_dir }}/content
+          upload_source: ${{ env.temp_dir }}/content/docx
           upload_target: ${{ env.FIRST_MP }}
           sharepoint_client_id: ${{ env.SHAREPOINT_CLIENT_ID }}
           sharepoint_tenant_id: ${{ env.SHAREPOINT_TENANT_ID }}

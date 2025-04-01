@@ -14,6 +14,9 @@ inputs:
   sharepoint_tenant_id:
     description: "The SharePoint tenant id."
     required: true
+  sharepoint_client_secret:
+    description: "The SharePoint client secret."
+    required: true
   upload_target:
     description: "The SharePoint site URL."
     required: true
@@ -30,6 +33,6 @@ runs:
       run: |
         pwd
         bash .github/actions/upload-sharepoint/upload-to-sharepoint.sh "${{ inputs.upload_source }}" "${{ inputs.upload_target }}" \
-          "${{ inputs.sharepoint_tenant_id }}" "${{ inputs.sharepoint_client_id }}" \
+          "${{ inputs.sharepoint_tenant_id }}" "${{ inputs.sharepoint_client_id }}" "${{ inputs.sharepoint_client_secret }} \
           "${{ inputs.aemy_callbacks }}" "${{ inputs.aemy_context }}"
       shell: bash

@@ -60,7 +60,6 @@ jobs:
         run: |
           sudo apt-get install -y unzip
           sudo apt-get install jq
-          npm install -g @pnp/cli-microsoft365
 
       - name: Set up the callback URLs
         run: |
@@ -202,11 +201,11 @@ jobs:
               curl -H "x-api-key: ${{ github.event.inputs.callback_api_key }}" \
                -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \"Downloaded file is not a valid zip file. Did the URL expire (i.e. UnauthorizedDownloaded)?\" }}" \
+               -d "{\"context\": \"${{ github.event.inputs.aemy_context }}\", \"response\": { \"message\": \" Downloaded file is not a valid zip file. Did the URL expire (i.e. UnauthorizedDownloaded)?\" }}" \
                ${{ env.error_callback_url }}
             fi
             echo "Downloaded file is not a valid zip file.  Did the URL expire? Exiting."
-            exit 1          
+            # exit 1          
           fi
           
           # Zip is good.  Report that extraction is starting.
@@ -218,25 +217,10 @@ jobs:
              ${{ env.progress_callback_url }}
           fi
 
-      - name: Extract import zip contents
-        run: |
-          unzip ${{ env.temp_dir }}/import.zip -d "${{ env.temp_dir }}/content" \
-          || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
-
-      # - name: Get Sharepoint access token
-        # run: |
-          #  wwwauthenticate=$(curl -i -H "Authorization: Bearer" -s "https://${{ env.SHAREPOINT_TENANT }}.sharepoint.com/_vti_bin/client.svc/" | grep -i "www-authenticate")
-          #  bearer_realm=$(echo ${wwwauthenticate} | awk -F"," '{print $1}' | awk -F"=" '{print $2}' | tr -d '"')
-          #  app_id=$(echo ${wwwauthenticate} | awk -F"," '{print $2}' | awk -F"=" '{print $2}'  | tr -d '"')
-          #
-          #  access_token=$(curl -X POST -H "Content-Type: application/x-www-form-urlencoded" \
-          #    --data-urlencode "grant_type=client_credentials" \
-          #    --data-urlencode "client_id=${{ env.SHAREPOINT_CLIENT_ID }}@$bearer_realm" \
-          #    --data-urlencode "client_secret=${{ env.SHAREPOINT_CLIENT_SECRET }}" \
-          #    --data-urlencode "resource=$app_id/${{ env.SHAREPOINT_TENANT }}.sharepoint.com@$bearer_realm" \
-          #    -s "https://accounts.accesscontrol.windows.net/$bearer_realm/tokens/OAuth/2" | awk -F":" '{print $NF}' | tr -d '"}')
-          #  echo "access_token=${access_token}" >> $GITHUB_ENV
-
+      #      - name: Extract import zip contents
+      #        run: |
+      #          unzip ${{ env.temp_dir }}/import.zip -d "${{ env.temp_dir }}/content" \
+      #          || { echo "Extraction of the Import zip failed. Please wait a few minutes and try again."; exit 1; }
 
       - name: Run SharePoint Upload Action
         id: sharepoint-upload-step

@@ -10,19 +10,19 @@ AZURE_CERTIFICATE_PASSWORD="$6"
 CALLBACKS="$6"
 CONTEXT="$7"
 
-echo "Uploading from: $SOURCE_DIR"
-echo "Uploading to: $SHAREPOINT_SITE_URL"
+#echo "Uploading from: $SOURCE_DIR"
+#echo "Uploading to: $SHAREPOINT_SITE_URL"
 sudo apt-get install jq
 
 # Authenticate to SharePoint
 if ! command -v m365 &> /dev/null; then
-  echo "Installing m365 CLI..."
+#  echo "Installing m365 CLI..."
   npm install -g @pnp/cli-microsoft365
 fi
 
 # Check if install failed and return.
 if ! command -v m365 &> /dev/null; then
-  echo "Failed to install m365."
+#  echo "Failed to install m365."
   # Create an error result
   JSON_OUTPUT=$(jq -n \
     --arg success "0" \
@@ -30,7 +30,7 @@ if ! command -v m365 &> /dev/null; then
     --arg message "Error: M365 was not installed." \
     --argjson failed_files '["N/A"]')
 else
-  echo "Setting up m365 CLI..."
+#  echo "Setting up m365 CLI..."
   m365 --version 2>&1 | head -n 1
 
   m365 setup --scripting
@@ -38,7 +38,7 @@ else
   #m365 cli config set --key clientId --value $SHAREPOINT_CLIENT_ID
   #m365 cli config set --key tenantId --value $SHAREPOINT_TENANT_ID
   #m365 cli config set --key authType --value secret
-  echo "m365 is setup up.  Now authenticating..."
+#  echo "m365 is setup up.  Now authenticating..."
 
   #m365 status -o json 2>&1
   #m365 status -o json 2>&1 | jq -e '.connectionName' > /dev/null 2>&1
@@ -47,10 +47,10 @@ else
 
   #echo "m365 status checked.  Status: $m365_status"
   #if [ "$m365_status" -gt 0 ]; then
-  echo "Authenticating with SharePoint"
+#  echo "Authenticating with SharePoint"
   echo "${{ secrets.AZURE_CERTIFICATE_BASE64 }}" | base64 -d > azure_cert.pfx
   if ! m365 login --authType certificate --certificateFile azure_cert.pfx --password "$AZURE_CERTIFICATE_PASSWORD" --appId "$AZURE_APP_ID" --tenant "$SHAREPOINT_TENANT_ID"; then
-    echo "Failed to authenticate with SharePoint"
+#    echo "Failed to authenticate with SharePoint"
     # Create an error result
     JSON_OUTPUT=$(jq -n \
       --arg success "0" \
@@ -58,7 +58,7 @@ else
       --arg message "Error: Failed to authenticate with SharePoint" \
       --argjson failed_files '["N/A"]')
   else
-    echo "✅ Successfully authenticated"
+#    echo "✅ Successfully authenticated"
 
     # Track uploads
     SUCCESS_COUNT=0
@@ -75,20 +75,20 @@ else
         if [ "$item" == "$local_dir" ]; then
           continue
         fi
-        echo "Processing item: $item"
-        echo "Local directory: $local_dir"
+#        echo "Processing item: $item"
+#        echo "Local directory: $local_dir"
         relative_path="${item#"$local_dir"/}"
-        echo "Relative path: $relative_path"
+#        echo "Relative path: $relative_path"
         sp_item_path="$sp_folder$relative_path"
 
-        echo "Next found is: $item (local_dir: $local_dir, sp_folder: $sp_folder, relative_path: $relative_path, sp_item_path: $sp_item_path)"
+#        echo "Next found is: $item (local_dir: $local_dir, sp_folder: $sp_folder, relative_path: $relative_path, sp_item_path: $sp_item_path)"
 
         if [ -d "$item" ]; then
           # Create directory in SharePoint
-          echo "Creating directory: $relative_path in $sp_folder"
+#          echo "Creating directory: $relative_path in $sp_folder"
           m365 spo folder add --webUrl "$SHAREPOINT_SITE_URL" --parentFolderUrl "$sp_folder" --name "$relative_path"
         else
-          echo "Uploading file: $item in $parent_dir of $sp_folder, ensuring the parent directory exists"
+#          echo "Uploading file: $item in $parent_dir of $sp_folder, ensuring the parent directory exists"
           # Ensure the parent directory exists in SharePoint
           parent_dir=$(dirname "$relative_path")
           m365 spo folder add --webUrl "$SHAREPOINT_SITE_URL" --parentFolderUrl "$sp_folder" --name "$parent_dir"
@@ -107,8 +107,8 @@ else
     # Start upload process
     upload_files "$SOURCE_DIR" "/"
 
-    echo "Files that failed to upload: $FAILED_FILES[@]"
-    echo "Files that uploaded: $SUCCESS_COUNT"
+#    echo "Files that failed to upload: $FAILED_FILES[@]"
+#    echo "Files that uploaded: $SUCCESS_COUNT"
 
     # Create JSON output
     JSON_OUTPUT=$(jq -n \
@@ -121,3 +121,4 @@ fi
 
 # Output JSON result for GitHub Actions
 echo "result=$JSON_OUTPUT" >> "$GITHUB_OUTPUT"
+echo "$JSON_OUTPUT"

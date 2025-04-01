@@ -224,15 +224,20 @@ jobs:
 
       - name: Run SharePoint Upload Action
         id: sharepoint-upload-step
-        uses: ./.github/actions/upload-sharepoint
-        with:
-          aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
-          aemy_context: ${{ github.event.inputs.aemy_context }}
-          upload_source: ${{ env.temp_dir }}/content/docx
-          upload_target: ${{ env.FIRST_MP }}
-          sharepoint_client_id: ${{ env.SHAREPOINT_CLIENT_ID }}
-          sharepoint_tenant_id: ${{ env.SHAREPOINT_TENANT_ID }}
-          sharepoint_client_secret: ${{ env.SHAREPOINT_CLIENT_SECRET }}
+        run: |
+          bash .github/actions/upload-sharepoint/upload-to-sharepoint.sh "${{ env.temp_dir }}/content/docx" "${{ env.FIRST_MP }}" \
+            "${{ env.SHAREPOINT_CLIENT_ID }}" "${{ env.SHAREPOINT_TENANT_ID }}" "${{ env.SHAREPOINT_CLIENT_SECRET }}" \
+            "${{ github.event.inputs.aemy_callbacks }}" "${{ github.event.inputs.aemy_context }}"
+        shell: bash
+        #        uses: ./.github/actions/upload-sharepoint
+        #        with:
+        #          aemy_callbacks: ${{ github.event.inputs.aemy_callbacks }}
+        #          aemy_context: ${{ github.event.inputs.aemy_context }}
+        #          upload_source: ${{ env.temp_dir }}/content/docx
+        #          upload_target: ${{ env.FIRST_MP }}
+        #          sharepoint_client_id: ${{ env.SHAREPOINT_CLIENT_ID }}
+        #          sharepoint_tenant_id: ${{ env.SHAREPOINT_TENANT_ID }}
+        #          sharepoint_client_secret: ${{ env.SHAREPOINT_CLIENT_SECRET }}
 
       - name: Analyze upload results
         run: |

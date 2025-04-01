@@ -28,7 +28,7 @@ if ! command -v m365 &> /dev/null; then
     --arg success "0" \
     --arg failed "1" \
     --arg message "Error: M365 was not installed." \
-    --argjson failed_files "N/A" \
+    --argjson failed_files ("N/A") \
     '{success_count: 0, failed_count: 1, failed_files: N/A}')
 else
   echo "Setting up m365 CLI..."
@@ -57,7 +57,7 @@ else
       --arg success "0" \
       --arg failed "1" \
       --arg message "Error: Failed to authenticate with SharePoint" \
-      --argjson failed_files "N/A" \
+      --argjson failed_files ("N/A") \
       '{success_count: 0, failed_count: 1, failed_files: N/A}')
   else
     echo "✅ Successfully authenticated"

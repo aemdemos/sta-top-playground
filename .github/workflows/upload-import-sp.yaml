@@ -100,7 +100,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Sharepoint Upload
+      - name: Setup Sharepoint Upload environment
         run: |
           cd ${{ github.workspace }}/.github/actions/upload-sharepoint
           npm install
@@ -232,6 +232,7 @@ jobs:
           upload_target: ${{ env.FIRST_MP }}
           sharepoint_client_id: ${{ env.SHAREPOINT_CLIENT_ID }}
           sharepoint_tenant_id: ${{ env.SHAREPOINT_TENANT_ID }}
+          sharepoint_client_secret: ${{ env.SHAREPOINT_CLIENT_SECRET }}
 
       - name: Analyze upload results
         run: |

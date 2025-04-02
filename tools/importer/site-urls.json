@@ -1,12 +1,65 @@
 {
-  "originUrl": "https://topcounselling.com/",
+  "originUrl": "https://box.com",
+  "lastCrawled": "https://box.com",
   "urls": [
     {
-      "url": "https://topcounselling.com/",
+      "url": "https://www.box.com/",
       "source": "CRAWL"
     },
     {
-      "url": "https://topcounselling.com/m/login?r=%2Fm%2Faccount",
+      "url": "https://www.box.com/de-de/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/en-au/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/en-ca/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/en-gb/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/en-in/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/en-nl/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/en-se/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/es-419/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/integrations",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/it-it/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/home",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/home",
       "source": "CRAWL"
     }
   ],
@@ -22,44 +75,3364 @@
   },
   "extractionErrors": [
     {
-      "url": "https://topcounselling.com/m/account",
-      "status": "302 Found Redirect: https://topcounselling.com/m/login?r=%2Fm%2Faccount"
+      "url": "https://box.com",
+      "status": "301 Moved Permanently Redirect: https://www.box.com/"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:57,h:57,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/en-us/home",
+      "status": "301 Moved Permanently Redirect: https://www.box.com/home"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:60,h:60,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/events",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:72,h:72,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:114,h:114,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/overview",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:120,h:120,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/security-compliance",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:144,h:144,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/collaboration",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:152,h:152,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/workflow",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:180,h:180,m",
-      "status": "404 Not Found"
+      "url": "https://www.box.com/apps",
+      "status": "403 Forbidden"
     },
     {
-      "url": "https://topcounselling.com/manifest.webmanifest",
-      "status": "content type is not text/html"
+      "url": "https://www.box.com/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/customer-success/migration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/content-management/enterprise",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/legal/regionalnotice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/industries/construction",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/customer-success/migration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-gb/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/customer-success/migration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/content-management/enterprise",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/legal/regionalnotice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-ca/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/customer-success/migration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/content-management/enterprise",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/legal/regionalnotice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-au/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners/microsoft",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners/apple",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners/google",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners/salesforce",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners/ibm",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/node/1091",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-in/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/customer-success/migration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/content-management/enterprise",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/legal/regionalnotice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-nl/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/customer-success/migration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources/gartner-mq-doc-mgt-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources/idc-mktscape-ics-2024",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/about-us/esg",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/content-management/enterprise",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/ai/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/legal/regionalnotice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/en-se/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/resources/2024-2025-market-leadership-analyst-reports",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/industries/construction",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customer-success/transform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/shuttle",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customers/eurostar",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customers/dubai-airport",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/collaboration/project-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/events",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/fr-fr/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/real-estate",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/government",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customer-success/transform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/events/webinars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customers/deka-immobilien",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customers/med-el",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/node/1091",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/partners/programs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/node/906",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/legal/impressum",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/de-de/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/it-it/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/legal/boxaiacceptableusepolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/financial-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/government-federal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/small-business",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/education",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/professional-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/life-sciences-biotech",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/non-profit",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/retail",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/media-and-entertainment",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/industries/construction",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/departments/finance-accounting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/departments/sales",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/departments/human-resources",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/departments/marketing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/departments/engineering",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/departments/legal",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/customer-success/box-consulting",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/shuttle",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/customer-success/transform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/resources/downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/resources/knowledge-center",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/events",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/resources/asset-downloads",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/trust",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/partners/channel-program",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/partners/channel-seminars",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/about-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/about-us/leadership",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/about-us/press",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/partners",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/cloud-storage",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/mobility",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/content-management/enterprise",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/send-large-files-fast",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/cloud-content-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/collaboration/virtual-data-room",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/file-sharing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/collaboration/document-management",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/project-management-software",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/cloud-storage/ftp-alternative",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/file-transfer",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/cloud-backup",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/customer-success/support-services",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/gdpr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/gxp",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/events/live-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ja-jp/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/notes",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/ko-kr/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/overview",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/security-compliance",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/collaboration",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/collaboration/relay-workflow",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/apps",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/hubs",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/products-and-features",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/ai",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/esignature",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/integrations",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/platform",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/security/it-admin-controls",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/pricing",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/about-us/contact-us",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/quote",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/customers",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/shield",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/customers/astrazeneca",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/customers/broadcom",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/smartercontent",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/resources/sitemap",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/legal/termsofservice",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/legal/privacypolicy",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/es-419/legal/cookie-notification",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/partners/salesforce",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/partners/netsuite",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/quick-demos",
+      "status": "403 Forbidden"
+    },
+    {
+      "url": "https://www.box.com/resources/PC-future-proof-your-tech-stack",
+      "status": "403 Forbidden"
     }
   ]
 }

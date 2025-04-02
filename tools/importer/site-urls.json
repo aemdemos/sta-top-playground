@@ -1,70 +1,38 @@
 {
-  "originUrl": "https://main--stini--bhellema.aem.live",
-  "lastCrawled": "https://main--stini--bhellema.aem.live/nav.plain.html",
-  "urls": [
-    {
-      "url": "https://main--stini--bhellema.aem.live/",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/accessories",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/cats",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/contact-us",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/dogs",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/faq",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/gallery",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/lizards",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/nav.plain.html",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/products/lucky-lizzy",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/products/mac-daddy",
-      "source": "CRAWL",
-      "status": "ignore"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/products/rock-fluffy",
-      "source": "CRAWL"
-    },
-    {
-      "url": "https://main--stini--bhellema.aem.live/videos",
-      "source": "CRAWL"
-    }
-  ],
-  "crawlOptions": {
-    "timeout": 64800000,
-    "inclusionPatterns": [],
-    "exclusionPatterns": [],
-    "limit": -1,
-    "sameDomain": true,
-    "keepHash": false,
-    "strategy": "crawl",
-    "logger": {}
-  },
-  "extractionErrors": []
+"originUrl": "https://main--stini--bhellema.aem.live",
+"lastCrawled": "https://main--stini--bhellema.aem.live",
+"urls": [
+{
+"url": "https://main--stini--bhellema.aem.live/",
+"source": "CRAWL"
+},
+{
+"url": "https://main--stini--bhellema.aem.live/products/lucky-lizzy",
+"source": "CRAWL"
+},
+{
+"url": "https://main--stini--bhellema.aem.live/products/mac-daddy",
+"source": "CRAWL",
+"status": "ignore"
+},
+{
+"url": "https://main--stini--bhellema.aem.live/products/mac-andrew",
+"source": "CRAWL"
+},
+{
+"url": "https://main--stini--bhellema.aem.live/products/rock-fluffy",
+"source": "CRAWL"
+}
+],
+"crawlOptions": {
+"timeout": 64800000,
+"inclusionPatterns": [],
+"exclusionPatterns": [],
+"limit": -1,
+"sameDomain": true,
+"keepHash": false,
+"strategy": "crawl",
+"logger": {}
+},
+"extractionErrors": []
 }

@@ -12,6 +12,11 @@
     },
     {
       "url": "https://main--stini--bhellema.aem.live/products/mac-daddy",
+      "source": "CRAWL",
+      "status": "ignore"
+    },
+    {
+      "url": "https://main--stini--bhellema.aem.live/products/mac-andrew",
       "source": "CRAWL"
     },
     {

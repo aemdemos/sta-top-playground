@@ -1,4 +1,4 @@
-name: site-transfer-agent-coordinator - Download and extract Import zip and upload contents to SharePoint
+name: STA-AEMY -Upload to SharePoint
 
 # TODO
 # Use the issue context to determine import zip (and still allow it as an optional parameter)

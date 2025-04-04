@@ -3,384 +3,1332 @@
   "lastCrawled": "https://unifyrare.com/",
   "urls": [
     {
-      "url": "",
-      "source": "SITEMAPS"
-    },
-    {
       "url": "https://unifyrare.com/",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
-      "url": "https://unifyrare.com/404",
-      "source": "SITEMAPS"
+      "url": "https://unifyrare.com/de-at",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/ahus/uber-ahus",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/dosierung",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/prasentation-von-ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/ressourcen",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/sicherheit",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/wirsamkeit",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/dosierung-anwendung",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/patienten-fallbeispiele",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/wirkmechanismus",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/wirksamkeit-vertraglichkeit",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/zulassungsstudie",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/pnh/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/gmg/betroffene-berichten",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/gmg/leben-mit-gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/gmg/mehr-entdecken",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/gmg/uber-gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/kontaktieren-sie-uns",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/nf1-pn/diagnose-und-behandlung",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/nf1-pn/krankheitslast",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/nf1-pn/nf1-pn-verstehen",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/pnh/uber-pnh",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/uber-alexion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/ahus/uber-ahus",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/dosierung",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/prasentation-von-ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/ressourcen",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/sicherheit",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/wirsamkeit",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/dosierung-anwendung",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/wirkmechanismus",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/wirksamkeit-vertraglichkeit",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/zulassungsstudie",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/pnh/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/gmg/betroffene-berichten",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/gmg/leben-mit-gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/gmg/mehr-entdecken",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/gmg/uber-gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/kontaktieren-sie-uns",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/nf1-pn/diagnose-und-behandlung",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/nf1-pn/krankheitslast",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/nf1-pn/nf1-pn-verstehen",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/pnh/uber-pnh",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/de-ch/uber-alexion",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/contact-us",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/hpp/about-hpp-and-low-alp",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/hpp/alp-hpp-calculator",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/hpp/burden-of-disease",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/hpp/signs-and-symptoms",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/hpp/what-is-hpp",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ahus-connect",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/in-practice",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/resources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/soliris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/getting-a-patient-started",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/mechanism-of-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/tma-protection",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/in-practice",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/onesource",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/resources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/getting-a-patient-started",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/mechanism-of-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/medical",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/onesource",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/in-practice",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/pnh-connect",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/resources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/soliris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/getting-a-patient-started",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/mechanism-of-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/medical/disclaimer",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/nf1/diagnosis-and-management",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/nf1/impact-of-nf1-pn",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/nf1/understanding-nf1",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/404",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ahus/about-ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ahus/diagnosing-ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ahus/living-with-ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ean-2024",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ean-2024/satellite-session1",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ean-2024/satellite-session2",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/ean-2024/satellite-session3",
-      "source": "SITEMAPS"
-    },
-    {
-      "url": "https://unifyrare.com/en/gmg-exercise-videos",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/gmg/diagnosing-gmg",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/gmg/living-gmg",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/gmg/managing-gmg",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/gmg/understanding-gmg",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp",
-      "source": "SITEMAPS"
-    },
-    {
-      "url": "https://unifyrare.com/en/hcp/ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/diagnosing-ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/living-with-ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/symptoms",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/about-ultomiris",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/dosing-and-administration",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/dosing-calculator",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/efficacy",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/moa",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/resources",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/safety",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/study-design",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/ultomiris/treatment-goals",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/ahus/what-is-ahus",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/events/ean-2024/satellite-session1",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/events/ean-2024/satellite-session2",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/events/ean-2024/satellite-session3",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/events/ean-masterclass-2025",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/events/myology-2024",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/events/wms-2024",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/diagnosis",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/guidelines-and-recommendations",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/incidence-and-risk-factors",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/living-with-gmg",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/mechanism-of-disease",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/patient-stories",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/prognosis",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/about-soliris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/soliris-dosing-administration",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/soliris-efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/soliris-mechanism-of-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/soliris-safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/steroid-use",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/soliris/study-design",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/symptoms",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/treatment-types",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/about-ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/dosing-and-administration",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/dosing-calculator",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/efficacy-and-safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/mechanism-of-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/resources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/gmg/ultomiris/steroid-use",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/gmg/what-is-gmg",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/hpp/about-hpp-and-low-alp",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/hpp/alp-hpp-calculator",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/hpp/burden-of-disease",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/hpp/what-is-hpp",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nf1/diagnosis-and-management",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nf1/impact-of-nf1-pn",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/dosing",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/safety",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nf1/understanding-nf1",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/burden-of-disease",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/clinical-characteristics",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/diagnosis",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/disease-progression",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/incidence-and-prevalence",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/living-with-nmosd",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/management",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/mechanism-of-disease",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/patient-stories",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/risk-factors",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/soliris/about-soliris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/soliris/efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/soliris/moa",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/soliris/resources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/soliris/safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/about-ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/dosing-and-administration",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/dosing-calculator",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/efficacy",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/mechanism-of-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/patient-profiles",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/safety",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/nmosd/ultomiris/study-design",
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/hcp/nmosd/what-is-nmosd",
-      "source": "SITEMAPS"
-    },
-    {
-      "url": "https://unifyrare.com/en/hcp/sample-form",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/a-simple-guide-to-macronutrients",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/alcohol-and-drug-misuse",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/complications-associated-with-lal-d",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/dealing-with-diagnosis",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/food-related-anxiety",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/healthy-eating-when-dining-out",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/infants-paediatrics-and-adults-with-lal-d",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/lal-d-cookbook",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/managing-lal-d",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/pregnancy-and-diet",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/sport-and-exercise",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/the-lal-d-friendly-diet-for-adults",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/the-lal-d-friendly-diet-for-children-and-adolescents",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/tips-for-maintaining-your-lal-d-diet",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/what-are-the-signs-and-symptoms",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/what-is-a-low-lipid-diet",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/lal-d/what-is-lal-d",
-      "source": "SITEMAPS"
-    },
-    {
-      "url": "https://unifyrare.com/en/myology-2024",
-      "source": "SITEMAPS"
-    },
-    {
-      "url": "https://unifyrare.com/en/nadir-baglantilar",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nf1/caring-for-a-loved-one",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nf1/living-with-nf1",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nf1/managing-nf1",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nf1/nf1-resources",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nf1/understanding-nf1",
-      "source": "SITEMAPS"
-    },
-    {
-      "url": "https://unifyrare.com/en/nmosd-mg-scientific-exchange",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nmosd/diagnosing-nmosd",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nmosd/living-nmosd",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nmosd/managing-nmosd",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
       "url": "https://unifyrare.com/en/nmosd/understanding-nmosd",
-      "source": "SITEMAPS"
+      "source": "CRAWL"
     },
     {
-      "url": "https://unifyrare.com/en/uzman-bakis",
-      "source": "SITEMAPS"
+      "url": "https://unifyrare.com/es-es",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/contacta-con-tu-equipo-alexion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/conoce-la-hpn/abordaje-terapeutico",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/conoce-la-hpn/manifestaciones-clinicas",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/conoce-la-hpn/mecanismos-hpn-y-trombosis",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/ultomiris/calculadora-dosificacion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/ultomiris/dosificacion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/ultomiris/eficacia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/hpn/ultomiris/seguridad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/kanuma/eficacia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/kanuma/mecanismo-de-accion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/kanuma/posologia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/kanuma/seguridad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/lal-d/abordaje-terapeutico",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/lal-d/claves-en-el-diagnostico",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/lal-d/que-es-lal-d",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/incidencia-y-prevalencia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/mecanismo-de-la-enfermedad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/que-es-la-mgg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/ruta-al-diagnostico",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/sintomas",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/tratamiento",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/ultomiris/calculadora-dosificacion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/ultomiris/dosificacion-y-administracion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/ultomiris/eficacia-y-seguridad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/ultomiris/mecanismo-de-accion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/ultomiris/sobre-ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/mgg/vivir-con-mgg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1/abordaje-terapeutico",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1/carga-de-la-enfermedad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1/koselugo/eficacia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1/koselugo/posologia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1/koselugo/seguridad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/nf1/koselugo/sobre-koselugo",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/campanas/vishualiza",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/conoce-el-shua/abordaje-terapeutico",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/conoce-el-shua/manifestaciones-clinicas",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/conoce-el-shua/mecanismo-shua-y-microangiopatia-trombotica",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/calculadora-dosificacion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/diseno-del-estudio",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/dosificacion-y-administracion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/eficacia",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/mecanismo-de-accion",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/objetivos-del-tratamiento",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/seguridad",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/shua/ultomiris/sobre-ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/sobre-nosotros",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/contactez-nous",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/onesource",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/ultomiris/innocuite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpp/calculateur",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpp/fardeau-maladie",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpp/propos-hpp",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpp/quest-ce-que-hpp",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpp/quest-ce-que-HPP",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpp/signes-symptomes",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/dans-la-pratique",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ressources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris/efficacite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris/instaurer-le-traitement-chez-un-patient",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris/mode-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/dans-la-pratique",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/hpn-connect",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ressources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/soliris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/efficacite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/innocuite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/instaurer-le-traitement-chez-un-patient",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/mode-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/medical",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/onesource",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/dans-la-pratique",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ressources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/shua-connect",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/soliris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/efficacite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/innocuite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/instaurer-le-traitement-chez-un-patient",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/mode-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/protection-contre-la-mat",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/medical/disclaimer",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/nf1/comprendre-la-nf1",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/nf1/diagnostic-et-prise-en-charge",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/nf1/impact-des-np-lies-a-la-nf1",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/a-propos-de-nous",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/hpn/hpn",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/a-propos",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/centres-traitments",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/patients-temoignent",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/vivre-avec",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/nf1/charge",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/nf1/diagnostic-traitment",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/nf1/nf1",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/nous-contacter",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/hpn/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/efficacite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/etude-pivot",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/mechanisme-action",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/posologie",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/efficacite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/innocuite",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/posologie",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/resources",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/ultomiris",
+      "source": "CRAWL"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/shua/shua",
+      "source": "CRAWL"
     }
   ],
   "crawlOptions": {
@@ -390,237 +1338,497 @@
     "limit": -1,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "sitemaps",
+    "strategy": "crawl",
     "logger": {}
   },
   "extractionErrors": [
     {
-      "url": "http://unifyrare.com",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/"
+      "url": "https://unifyrare.com/de-at/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/de-at"
     },
     {
-      "url": "http://unifyrare.com/404",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/404"
+      "url": "https://unifyrare.com/en/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en"
     },
     {
-      "url": "http://unifyrare.com/en",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en"
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en/hcp/nf1/koselugo/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/404",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/404"
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en/hcp/nf1/koselugo/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/ahus/about-ahus",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/ahus/about-ahus"
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en/hcp/nf1/koselugo/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/ahus/diagnosing-ahus",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/ahus/diagnosing-ahus"
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en/hcp/nf1/koselugo/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/ahus/living-with-ahus",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/ahus/living-with-ahus"
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en/hcp/nf1/koselugo/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/gmg-exercise-videos",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/gmg-exercise-videos"
+      "url": "https://unifyrare.com/en/hcp/nf1/koselugo/efficacy/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/en/hcp/nf1/koselugo/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/diagnosing-gmg",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/gmg/diagnosing-gmg"
+      "url": "https://unifyrare.com/es-es/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/es-es"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/living-gmg",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/gmg/living-gmg"
+      "url": "https://unifyrare.com/fr-ca/",
+      "status": "301 Moved Permanently Redirect: http://unifyrare.com/fr-ca"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/managing-gmg",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/gmg/managing-gmg"
+      "url": "https://unifyrare.com/de-at/ahus/ultomiris/dosierung",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/dosierung"
     },
     {
-      "url": "http://unifyrare.com/en/gmg/understanding-gmg",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/gmg/understanding-gmg"
+      "url": "https://unifyrare.com/de-at/ahus/ultomiris/prasentation-von-ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/prasentation-von-ultomiris"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus"
+      "url": "https://unifyrare.com/de-at/ahus/ultomiris/ressourcen",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/ressourcen"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/about-ultomiris",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/about-ultomiris"
+      "url": "https://unifyrare.com/de-at/ahus/ultomiris/sicherheit",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/sicherheit"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/dosing-and-administration",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/dosing-and-administration"
+      "url": "https://unifyrare.com/de-at/ahus/ultomiris/wirsamkeit",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/ahus/ultomiris/wirsamkeit"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/dosing-calculator",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/dosing-calculator"
+      "url": "https://unifyrare.com/de-at/gmg/ultomiris/dosierung-anwendung",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/dosierung-anwendung"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/efficacy",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/efficacy"
+      "url": "https://unifyrare.com/de-at/gmg/ultomiris/patienten-fallbeispiele",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/patienten-fallbeispiele"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/moa",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/moa"
+      "url": "https://unifyrare.com/de-at/gmg/ultomiris/wirkmechanismus",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/wirkmechanismus"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/resources",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/resources"
+      "url": "https://unifyrare.com/de-at/gmg/ultomiris/wirksamkeit-vertraglichkeit",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/wirksamkeit-vertraglichkeit"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/safety",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/safety"
+      "url": "https://unifyrare.com/de-at/gmg/ultomiris/zulassungsstudie",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/gmg/ultomiris/zulassungsstudie"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/study-design",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/study-design"
+      "url": "https://unifyrare.com/de-at/pnh/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/de-at/anmelden?CustomReferrer=/de-at/pnh/ultomiris"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/ahus/ultomiris/treatment-goals",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/ahus/ultomiris/treatment-goals"
+      "url": "https://unifyrare.com/de-ch/ahus/ultomiris/dosierung",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/dosierung"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/events/ean-masterclass-2025",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/events/ean-masterclass-2025"
+      "url": "https://unifyrare.com/de-ch/ahus/ultomiris/prasentation-von-ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/prasentation-von-ultomiris"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/events/myology-2024",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/events/myology-2024"
+      "url": "https://unifyrare.com/de-ch/ahus/ultomiris/ressourcen",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/ressourcen"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/events/wms-2024",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/events/wms-2024"
+      "url": "https://unifyrare.com/de-ch/ahus/ultomiris/sicherheit",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/sicherheit"
     },
     {
-      "url": "http://unifyrare.com/en/hcp/sample-form",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/hcp/sample-form"
+      "url": "https://unifyrare.com/de-ch/ahus/ultomiris/wirsamkeit",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/ahus/ultomiris/wirsamkeit"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d"
+      "url": "https://unifyrare.com/de-ch/gmg/ultomiris/dosierung-anwendung",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/dosierung-anwendung"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/a-simple-guide-to-macronutrients",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/a-simple-guide-to-macronutrients"
+      "url": "https://unifyrare.com/de-ch/gmg/ultomiris/wirkmechanismus",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/wirkmechanismus"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/alcohol-and-drug-misuse",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/alcohol-and-drug-misuse"
+      "url": "https://unifyrare.com/de-ch/gmg/ultomiris/wirksamkeit-vertraglichkeit",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/wirksamkeit-vertraglichkeit"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/complications-associated-with-lal-d",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/complications-associated-with-lal-d"
+      "url": "https://unifyrare.com/de-ch/gmg/ultomiris/zulassungsstudie",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/gmg/ultomiris/zulassungsstudie"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/dealing-with-diagnosis",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/dealing-with-diagnosis"
+      "url": "https://unifyrare.com/de-ch/pnh/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/de-ch/anmelden?CustomReferrer=/de-ch/pnh/ultomiris"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/food-related-anxiety",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/food-related-anxiety"
+      "url": "https://unifyrare.com/en-ca/ahus",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/healthy-eating-when-dining-out",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/healthy-eating-when-dining-out"
+      "url": "https://unifyrare.com/en-ca/ahus/ahus-connect",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ahus-connect"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/infants-paediatrics-and-adults-with-lal-d",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/infants-paediatrics-and-adults-with-lal-d"
+      "url": "https://unifyrare.com/en-ca/ahus/in-practice",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/in-practice"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/lal-d-cookbook",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/lal-d-cookbook"
+      "url": "https://unifyrare.com/en-ca/ahus/resources",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/resources"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/managing-lal-d",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/managing-lal-d"
+      "url": "https://unifyrare.com/en-ca/ahus/soliris",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/soliris"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/pregnancy-and-diet",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/pregnancy-and-diet"
+      "url": "https://unifyrare.com/en-ca/ahus/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/sport-and-exercise",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/sport-and-exercise"
+      "url": "https://unifyrare.com/en-ca/ahus/ultomiris/efficacy",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/the-lal-d-friendly-diet-for-adults",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/the-lal-d-friendly-diet-for-adults"
+      "url": "https://unifyrare.com/en-ca/ahus/ultomiris/getting-a-patient-started",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/getting-a-patient-started"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/the-lal-d-friendly-diet-for-children-and-adolescents",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/the-lal-d-friendly-diet-for-children-and-adolescents"
+      "url": "https://unifyrare.com/en-ca/ahus/ultomiris/mechanism-of-action",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/mechanism-of-action"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/tips-for-maintaining-your-lal-d-diet",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/tips-for-maintaining-your-lal-d-diet"
+      "url": "https://unifyrare.com/en-ca/ahus/ultomiris/safety",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/safety"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/what-are-the-signs-and-symptoms",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/what-are-the-signs-and-symptoms"
+      "url": "https://unifyrare.com/en-ca/ahus/ultomiris/tma-protection",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/ahus/ultomiris/tma-protection"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/what-is-a-low-lipid-diet",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/what-is-a-low-lipid-diet"
+      "url": "https://unifyrare.com/en-ca/gmg",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg"
     },
     {
-      "url": "http://unifyrare.com/en/lal-d/what-is-lal-d",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/lal-d/what-is-lal-d"
+      "url": "https://unifyrare.com/en-ca/gmg/in-practice",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/in-practice"
     },
     {
-      "url": "http://unifyrare.com/en/myology-2024",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/myology-2024"
+      "url": "https://unifyrare.com/en-ca/gmg/onesource",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/onesource"
     },
     {
-      "url": "http://unifyrare.com/en/nadir-baglantilar",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nadir-baglantilar"
+      "url": "https://unifyrare.com/en-ca/gmg/resources",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/resources"
     },
     {
-      "url": "http://unifyrare.com/en/nf1/caring-for-a-loved-one",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nf1/caring-for-a-loved-one"
+      "url": "https://unifyrare.com/en-ca/gmg/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris"
     },
     {
-      "url": "http://unifyrare.com/en/nf1/living-with-nf1",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nf1/living-with-nf1"
+      "url": "https://unifyrare.com/en-ca/gmg/ultomiris/efficacy",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/efficacy"
     },
     {
-      "url": "http://unifyrare.com/en/nf1/managing-nf1",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nf1/managing-nf1"
+      "url": "https://unifyrare.com/en-ca/gmg/ultomiris/getting-a-patient-started",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/getting-a-patient-started"
     },
     {
-      "url": "http://unifyrare.com/en/nf1/nf1-resources",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nf1/nf1-resources"
+      "url": "https://unifyrare.com/en-ca/gmg/ultomiris/mechanism-of-action",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/mechanism-of-action"
     },
     {
-      "url": "http://unifyrare.com/en/nf1/understanding-nf1",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nf1/understanding-nf1"
+      "url": "https://unifyrare.com/en-ca/gmg/ultomiris/safety",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/gmg/ultomiris/safety"
     },
     {
-      "url": "http://unifyrare.com/en/nmosd-mg-scientific-exchange",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nmosd-mg-scientific-exchange"
+      "url": "https://unifyrare.com/en-ca/medical",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/medical"
     },
     {
-      "url": "http://unifyrare.com/en/nmosd/diagnosing-nmosd",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nmosd/diagnosing-nmosd"
+      "url": "https://unifyrare.com/en-ca/onesource",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/onesource"
     },
     {
-      "url": "http://unifyrare.com/en/nmosd/living-nmosd",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nmosd/living-nmosd"
+      "url": "https://unifyrare.com/en-ca/pnh",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh"
     },
     {
-      "url": "http://unifyrare.com/en/nmosd/managing-nmosd",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nmosd/managing-nmosd"
+      "url": "https://unifyrare.com/en-ca/pnh/in-practice",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/in-practice"
     },
     {
-      "url": "http://unifyrare.com/en/nmosd/understanding-nmosd",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/nmosd/understanding-nmosd"
+      "url": "https://unifyrare.com/en-ca/pnh/pnh-connect",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/pnh-connect"
     },
     {
-      "url": "http://unifyrare.com/en/uzman-bakis",
-      "status": "301 Moved Permanently Redirect: https://unifyrare.com/en/uzman-bakis"
+      "url": "https://unifyrare.com/en-ca/pnh/resources",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/resources"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/pnh/soliris",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/soliris"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/pnh/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/pnh/ultomiris/efficacy",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/efficacy"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/pnh/ultomiris/getting-a-patient-started",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/getting-a-patient-started"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/pnh/ultomiris/mechanism-of-action",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/mechanism-of-action"
+    },
+    {
+      "url": "https://unifyrare.com/en-ca/pnh/ultomiris/safety",
+      "status": "302 Found Redirect: https://unifyrare.com/en-ca/login?CustomReferrer=/en-ca/pnh/ultomiris/safety"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/dans-la-pratique",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/dans-la-pratique"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/ressources",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ressources"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/ultomiris/efficacite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris/efficacite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/ultomiris/instaurer-le-traitement-chez-un-patient",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris/instaurer-le-traitement-chez-un-patient"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/gmg/ultomiris/mode-action",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/gmg/ultomiris/mode-action"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/dans-la-pratique",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/dans-la-pratique"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/hpn-connect",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/hpn-connect"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/ressources",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ressources"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/soliris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/soliris"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/ultomiris/efficacite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/efficacite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/ultomiris/innocuite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/innocuite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/ultomiris/instaurer-le-traitement-chez-un-patient",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/instaurer-le-traitement-chez-un-patient"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hpn/ultomiris/mode-action",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/hpn/ultomiris/mode-action"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/medical",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/medical"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/onesource",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/onesource"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/dans-la-pratique",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/dans-la-pratique"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ressources",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ressources"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/shua-connect",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/shua-connect"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/soliris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/soliris"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ultomiris/efficacite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/efficacite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ultomiris/innocuite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/innocuite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ultomiris/instaurer-le-traitement-chez-un-patient",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/instaurer-le-traitement-chez-un-patient"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ultomiris/mode-action",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/mode-action"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/shua/ultomiris/protection-contre-la-mat",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ca/login?CustomReferrer=/fr-ca/shua/ultomiris/protection-contre-la-mat"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/hpn/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/hpn/ultomiris"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/ultomiris/efficacite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/efficacite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/ultomiris/etude-pivot",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/etude-pivot"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/ultomiris/mechanisme-action",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/mechanisme-action"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/mgg/ultomiris/posologie",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/mgg/ultomiris/posologie"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/shua/ultomiris/efficacite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/efficacite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/shua/ultomiris/innocuite",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/innocuite"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/shua/ultomiris/posologie",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/posologie"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/shua/ultomiris/resources",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/resources"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/shua/ultomiris/ultomiris",
+      "status": "302 Found Redirect: https://unifyrare.com/fr-ch/se-connecter?CustomReferrer=/fr-ch/shua/ultomiris/ultomiris"
+    },
+    {
+      "url": "https://unifyrare.com//policy.cookiereports.com/795d0390-en-gb.html",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/hpp/signs-and-symptoms",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/en/hcp/hpp/propos-hpp",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hcp/nf1/comprendre-la-nf1",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hcp/nf1/diagnostic-et-prise-en-charge",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ca/hcp/nf1/impact-des-np-lies-a-la-nf1",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/de",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/it",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/pt",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/es",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/fr",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/jp",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/lal-d/kanuma/mecanismo-de-accion",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/kanuma/efficacia",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/lal-d/kanuma/seguridad",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/lal-d/kanuma/posologia",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/de-at/uber-ahus",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/fr-ch/np-nf1/charge",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://unifyrare.com/es-es/-/media/awtsites/unifyrare/spain/mgg/ultomiris/dosing_and_administration_image1.jfif?rev=-1",
+      "status": "content type is not text/html"
     }
   ]
 }

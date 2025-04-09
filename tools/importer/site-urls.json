@@ -3431,6 +3431,10 @@
       "status": "403 Forbidden"
     },
     {
+      "url": "https://www.box.com/eadvanced",
+      "status": "403 Forbidden"
+    },
+    {
       "url": "https://www.box.com/resources/PC-future-proof-your-tech-stack",
       "status": "403 Forbidden"
     }

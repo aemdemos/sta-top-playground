@@ -4,4 +4,4 @@ Fix #<gh-issue-id>
 
 Test URLs:
 - Before: https://main--sta-top-playground--aemdemos.aem.live/
-- After: https://main--sta-top-playground--aemdemos.aem.live/
+- After: https://<branch>--sta-top-playground--aemdemos.aem.live/

@@ -13,7 +13,8 @@
 import core from '@actions/core';
 
 async function graphFetch(token, endpoint) {
-  const res = await fetch(`https://graph.microsoft.com/v1.0${endpoint}`, {
+  core.info(`Fetching Graph API endpoint: https://graph.microsoft.com/v1.0${endpoint}/`);
+  const res = await fetch(`https://graph.microsoft.com/v1.0${endpoint}/`, {
     headers: {
       Authorization: `Bearer ${token}`,
       Accept: 'application/json',
@@ -36,22 +37,30 @@ export async function run() {
   const token = core.getInput('token');
   const spHost = core.getInput('sp_host'); // i.e. adobe.sharepoint.com
   const spSitePath = core.getInput('sp_site_path'); // i.e. /sites/AEMDemos
-  const spFolderPath = core.getInput('sp_folder_path'); // i.e. /Shared%20Documents/sites/my-site
+  const spFolderPath = core.getInput('sp_folder_path'); // i.e. /Shared%20Documents/sites/my-site/...
 
   core.info(`Getting data for "${spHost} : ${spSitePath} : ${spFolderPath}".`);
 
+  let siteId;
   try {
     // Step 1: Get Site ID
-    const site = await graphFetch(token, `/sites/${spHost}:${spSitePath}`);
-    core.info(`✅ Site ID: ${site.id}`);
+    const site = await graphFetch(token, `/sites/${spHost}/sites/${spSitePath}`);
+    siteId = site.id;
+    core.info(`✅ Site ID: ${siteId}`);
+  } catch (error1) {
+    core.warning(`Failed get Site Id: ${error1.message}`);
+  }
 
-    // Step 2: Get the folder path
-    const folder = await graphFetch(token, `/sites/${site.id}/drive/root:${spFolderPath}`);
-    core.info(`✅ Drive ID: ${folder.parentReference.driveId}`);
-    core.info(`✅ Folder ID: ${folder.id}`);
-    core.setOutput('drive_id', folder.parentReference.driveId);
-  } catch (error) {
-    core.warning(`Failed to send status: ${error.message}`);
+  if (siteId) {
+    try {
+      // Step 2: Get the folder path
+      const folder = await graphFetch(token, `/sites/${siteId}/drive/root:${spFolderPath}`);
+      core.info(`✅ Drive ID: ${folder.parentReference.driveId}`);
+      core.info(`✅ Folder ID: ${folder.id}`);
+      core.setOutput('drive_id', folder.parentReference.driveId);
+    } catch (error2) {
+      core.warning(`Failed get folder info for ${siteId}: ${error2.message}`);
+    }
   }
 }
 

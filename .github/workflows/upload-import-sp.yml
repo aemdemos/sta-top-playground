@@ -178,6 +178,17 @@ jobs:
           status_type: progress
           agent_name: upload-import-sp
 
+      - name: Calculate duration
+        id: calculate-duration
+        shell: bash
+        run: |
+          file_count=${{ steps.download-zip.outputs.file_count }}
+          if [[ -z "$file_count" || ! "$file_count" =~ ^[0-9]+$ ]]; then
+            file_count=0
+          fi
+          duration=$((file_count * 2 + 20))
+          echo "UPLOAD_DURATION=$duration" >> $GITHUB_ENV
+
       - name: Create Azure Access Token
         uses: ./.github/actions/sta-azure-helper
         id: azure-auth
@@ -187,6 +198,7 @@ jobs:
           key: ${{ env.AZURE_PRIVATE_KEY_BASE64 }}
           password: ${{ env.AZURE_PFX_PASSWORD }}
           thumbprint: ${{ env.AZURE_THUMBPRINT }}
+          # The duration is estimated as 2 seconds per file, plus 20 seconds for the initial setup (min will be 3600).
           duration: ${{ env.UPLOAD_DURATION }}
 
       - name: Report if access token failed

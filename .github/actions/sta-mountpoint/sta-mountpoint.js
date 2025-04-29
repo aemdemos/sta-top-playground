@@ -21,7 +21,7 @@ import core from '@actions/core';
 function getMountpointData(rootMountpoint, type) {
   const url = new URL(rootMountpoint);
   const mountpointData = {
-    host: `${url.protocol}//${url.host}`,
+    host: `${url.host}`,
   };
 
   if (type === 'sharepoint') {

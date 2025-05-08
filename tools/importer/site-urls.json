@@ -1,13 +1,258 @@
 {
-  "originUrl": "https://topcounselling.com/",
+  "originUrl": "https://ottawagranite.com",
+  "lastCrawled": "https://ottawagranite.com",
   "urls": [
     {
-      "url": "https://topcounselling.com/",
-      "source": "CRAWL"
+      "url": "https://ottawagranite.com/",
+      "source": "CRAWL",
+      "targetPath": "/index",
+      "id": "7d075fa5583e0d0405c7fc3d35c00368accc7961"
     },
     {
-      "url": "https://topcounselling.com/m/login?r=%2Fm%2Faccount",
-      "source": "CRAWL"
+      "url": "https://ottawagranite.com/index.php",
+      "source": "CRAWL",
+      "targetPath": "/index-php",
+      "id": "0794d6aaff4f5103c3d1ecb04e01790390b41cd4"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/13-club-info/479-refund-policy",
+      "id": "ba6a20f962c30e0fb95eb27c1df592ddc238ad53"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/2-uncategorised/687-granite-icebreaker-bonspiel",
+      "source": "CRAWL",
+      "targetPath": "/index-php/2-uncategorised/687-granite-icebreaker-bonspiel",
+      "id": "606bc5a9c8073c1dfdf4bc0597fba3ee93195d1c"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/cb-forgot-login",
+      "source": "CRAWL",
+      "targetPath": "/index-php/cb-forgot-login",
+      "id": "3414088c398736c4766b4f9d80b71fe46ccaab92"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/adult-learn-to-curl",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/adult-learn-to-curl",
+      "id": "c6481d068b36d8cb2f56cae5cdfc84bb75309825"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/adult-learn-to-curl/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/adult-learn-to-curl/13-club-info/479-refund-policy",
+      "id": "b788658cce2c029fec634baf58ac93980d03a504"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/adult-learn-to-curl/354-rookies-rock",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/adult-learn-to-curl/354-rookies-rock",
+      "id": "1f41b002e9b4a5c17746e81f36c489faa51a21c9"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/description-of-leagues",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/description-of-leagues",
+      "id": "1751fdba01516427db7f2acbb1f79de57fcfdda4"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/membership-information",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/membership-information",
+      "id": "0e8dd05c64023b86bf65dbbd7ca21c954c51bbc0"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/youth",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/youth",
+      "id": "41c37b164b0e42711e03e4016a147e65537255f6"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/curling/youth/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/curling/youth/13-club-info/479-refund-policy",
+      "id": "8f231f4eefeb1cff9b37e5fc44ee2613103fcede"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/events/event-listings",
+      "source": "CRAWL",
+      "targetPath": "/index-php/events/event-listings",
+      "id": "14c3bcdd38f25af275aa159efd7c5253ef0b169c"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/events/facility-calendar",
+      "source": "CRAWL",
+      "targetPath": "/index-php/events/facility-calendar",
+      "id": "990c946a41084e187008f47d814e3b011ced12d2"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/links",
+      "source": "CRAWL",
+      "targetPath": "/index-php/links",
+      "id": "c3a19e85e11282f81ad668a9236b3b77557233e2"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/links/72-curling-associations",
+      "source": "CRAWL",
+      "targetPath": "/index-php/links/72-curling-associations",
+      "id": "9bddda04230a3663352065c1cd58fedd53a9a215"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/15-minute-last-end-rule",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/15-minute-last-end-rule",
+      "id": "cf793f6e396124741325e20a4123246cbf3a3199"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/15-minute-last-end-rule/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/15-minute-last-end-rule/13-club-info/479-refund-policy",
+      "id": "5ffd31514851fbcb79db0e344d2f5062da441704"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/about-us",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/about-us",
+      "id": "2d4ff622e467af7b517ce96bbf65d97f3b69e4ea"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/about-us/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/about-us/13-club-info/479-refund-policy",
+      "id": "6ba5da47ebac58fa0feed1c6c325ff2363282af8"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/club-contacts",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/club-contacts",
+      "id": "372c8cc82dd68c20537bf866f3d7a3462131ab4f"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/club-contacts/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/club-contacts/13-club-info/479-refund-policy",
+      "id": "4a38d77f9eca4d1a90e20ad53de07a4759aa5912"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/code-of-conduct",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/code-of-conduct",
+      "id": "14a1c84347df9f29d3af1ab13fd4f519e4b9416d"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/code-of-conduct/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/code-of-conduct/13-club-info/479-refund-policy",
+      "id": "eefe0aaef3f7b3baa169f2583ae8db7138714c1a"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/concussion-code-of-conduct",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/concussion-code-of-conduct",
+      "id": "5d0e8d8da940c9f6cc0d04eba42cc3a5ad88639d"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/concussion-code-of-conduct/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/concussion-code-of-conduct/13-club-info/479-refund-policy",
+      "id": "ca0a44241466908f94b8397c01184ea0aacc02ae"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/disciplinary-action",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/disciplinary-action",
+      "id": "df968ff3c39aa2645a29e880806e08d26b479ba8"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/disciplinary-action/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/disciplinary-action/13-club-info/479-refund-policy",
+      "id": "d4e6c691ab675a716d9dc2a6a5af9ebc14100fd5"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/emergency-action-plan",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/emergency-action-plan",
+      "id": "c1020b7327d789686650533a79dc737bf7acb595"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/emergency-action-plan/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/emergency-action-plan/13-club-info/479-refund-policy",
+      "id": "eb520b9eba0fc66a3343fcbb01958ead0bcf0140"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/ice-a-club-rental-information",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/ice-a-club-rental-information",
+      "id": "15cef3a303b5455eded09e178db1a8fb2ba05df2"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/ice-a-club-rental-information/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/ice-a-club-rental-information/13-club-info/479-refund-policy",
+      "id": "510f12a4faa8b46ff4d81b4f02334f84ceddcb16"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/location",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/location",
+      "id": "01455b5d09baafce001dba55bc47d8b9e6e756d6"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/location/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/location/13-club-info/479-refund-policy",
+      "id": "851e61e4ce1680865e99a601a1fcc6ac34dc8d4a"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/making-financial-donations-to-the-granite",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/making-financial-donations-to-the-granite",
+      "id": "699fcc18a43d2518cf8532580c3bf3104d8912f2"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/making-financial-donations-to-the-granite/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/making-financial-donations-to-the-granite/13-club-info/479-refund-policy",
+      "id": "ca55ff6396c0f58dd3d4609ee81c27e3a815bc3f"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/privacy-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/privacy-policy",
+      "id": "cc75cd8414b119663e3b66fc3ba5ba21198f1aea"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/privacy-policy/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/privacy-policy/13-club-info/479-refund-policy",
+      "id": "3929bc49dc33d153a195029e4a21f663d99efde6"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/sparing-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/sparing-policy",
+      "id": "bb9b67aac0b3bf9ab669254111e646b7cd7fb782"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/sparing-policy/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/sparing-policy/13-club-info/479-refund-policy",
+      "id": "325743de0c556a509c81cb69d673256f3d1d171b"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/team-registration-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/team-registration-policy",
+      "id": "48db2bbd5f3ecf8ace9edee4c8809bae6b9857d4"
+    },
+    {
+      "url": "https://ottawagranite.com/index.php/our-club/team-registration-policy/13-club-info/479-refund-policy",
+      "source": "CRAWL",
+      "targetPath": "/index-php/our-club/team-registration-policy/13-club-info/479-refund-policy",
+      "id": "699fd4d6420d347897c67cd11b86a9f80598f937"
     }
   ],
   "crawlOptions": {
@@ -22,44 +267,12 @@
   },
   "extractionErrors": [
     {
-      "url": "https://topcounselling.com/m/account",
-      "status": "302 Found Redirect: https://topcounselling.com/m/login?r=%2Fm%2Faccount"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:57,h:57,m",
+      "url": "https://ottawagranite.com//fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic-ext",
       "status": "404 Not Found"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:60,h:60,m",
+      "url": "https://ottawagranite.com//fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin",
       "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:72,h:72,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:114,h:114,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:120,h:120,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:144,h:144,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:152,h:152,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:180,h:180,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com/manifest.webmanifest",
-      "status": "content type is not text/html"
     }
   ]
 }

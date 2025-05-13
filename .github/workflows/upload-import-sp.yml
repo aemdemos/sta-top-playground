@@ -36,8 +36,8 @@ on:
       action_url:
         description: 'The URL that shows state of the workflow as an aid for the user.'
         required: false
-      skip_assets:
-        description: 'Ignored parameter'
+      preview:
+        description: 'Indicate whether the uploaded content should be previewed.'
         required: false
 
 permissions:
@@ -87,6 +87,12 @@ jobs:
             errorMessage+="❌ The following variables in your GitHub repo are in the wrong format: $bad_format"
             echo "errorMessage=$errorMessage" >> $GITHUB_ENV
           fi
+          
+          total_steps=5
+          if ${{ github.event.inputs.preview == 'true' }}; then
+            total_steps=6
+          fi
+          echo "total_steps=$total_steps" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -105,6 +111,8 @@ jobs:
           npm install
           cd ../sta-upload-sharepoint
           npm install
+          cd ../sta-sp-preview
+          npm install
 
       - name: Report if inputs are invalid
         if: ${{ env.errorMessage != '' }}
@@ -121,7 +129,7 @@ jobs:
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           context: ${{ github.event.inputs.aemy_context }}
-          message: Inputs look good. Now setting up the upload. (Step 1 of 5).
+          message: Inputs look good. Now setting up the upload. (Step 1 of ${{ env.total_steps }})
           status_type: progress
           agent_name: upload-import-sp
 
@@ -151,7 +159,7 @@ jobs:
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           context: ${{ github.event.inputs.aemy_context }}
-          message: Downloading and extracting content from the Import zip... (Step 2 of 5).
+          message: Downloading and extracting content from the Import zip... (Step 2 of ${{ env.total_steps }})
           status_type: progress
           agent_name: upload-import-sp
 
@@ -176,7 +184,7 @@ jobs:
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           context: ${{ github.event.inputs.aemy_context }}
-          message: Zip extracted with ${{ steps.download-zip.outputs.file_count }} files. Getting upload authorization... (Step 3 of 5).
+          message: Zip extracted with ${{ steps.download-zip.outputs.file_count }} files. Getting upload authorization... (Step 3 of ${{ env.total_steps }})
           status_type: progress
           agent_name: upload-import-sp
 
@@ -218,7 +226,7 @@ jobs:
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           context: ${{ github.event.inputs.aemy_context }}
-          message: SharePoint access granted. Now fetching drive id... (Step 4 of 5).
+          message: SharePoint access granted. Now fetching drive id... (Step 4 of ${{ env.total_steps }})
           status_type: progress
           agent_name: upload-import-sp
 
@@ -246,7 +254,7 @@ jobs:
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}
           context: ${{ github.event.inputs.aemy_context }}
-          message: Drive ID acquired. Now starting upload... (Step 5 of 5).
+          message: Drive ID acquired. Now starting upload... (Step 5 of ${{ env.total_steps }})
           status_type: progress
           agent_name: upload-import-sp
 
@@ -291,7 +299,57 @@ jobs:
           status_type: error
           agent_name: upload-import-sp
 
+      - name: Progress 7 - Preview
+        if: ${{ github.event.inputs.preview == 'true' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callbacks: ${{ github.event.inputs.aemy_callbacks }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Upload succeeded. Now previewing the content. (Step 6 of ${{ env.total_steps }})
+          status_type: progress
+          agent_name: upload-import-sp
+
+      - name: Preview uploaded content
+        id: preview-content
+        if: ${{ github.event.inputs.preview == 'true' }}
+        uses: ./.github/actions/sta-sp-preview
+        with:
+          context: ${{ github.event.inputs.aemy_context }}
+          urls: ${{ steps.upload-sharepoint.outputs.upload_list }}
+          operation: 'preview'
+
+      - name: Report if preview failed
+        if: ${{ steps.preview-content.output.error_message != '' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callbacks: ${{ github.event.inputs.aemy_callbacks }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Upload succeeded but the preview (partially) failed. ${{ steps.preview-content.output.error_message }} ${{ env.ACTION_URL }}
+          status_type: error
+          agent_name: upload-import-sp
+
+      - name: Progress 8 - Preview report
+        if: ${{ github.event.inputs.preview == 'true' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callbacks: ${{ github.event.inputs.aemy_callbacks }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: Previewed ${{ steps.preview-content.outputs.successes }} files. ${{ env.ACTION_URL }}
+          status_type: progress
+          agent_name: upload-import-sp
+
+      - name: Report upload and preview success
+        if: ${{ github.event.inputs.preview == 'true' }}
+        uses: ./.github/actions/sta-status
+        with:
+          callbacks: ${{ github.event.inputs.aemy_callbacks }}
+          context: ${{ github.event.inputs.aemy_context }}
+          message: SharePoint upload succeeded. Uploaded ${{ steps.upload-sharepoint.outputs.upload_successes }} files and previewed ${{ steps.preview-content.outputs.successes }} files.
+          status_type: ok
+          agent_name: upload-import-sp
+
       - name: Report upload success
+        if: ${{ github.event.inputs.preview != 'true' }}
         uses: ./.github/actions/sta-status
         with:
           callbacks: ${{ github.event.inputs.aemy_callbacks }}

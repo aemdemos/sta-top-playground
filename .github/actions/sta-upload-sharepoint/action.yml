@@ -19,12 +19,14 @@ inputs:
     required: false
     default: "2000"
 outputs:
-  upload_failed_list:
-    description: "The list of files that failed to upload."
   upload_successes:
     description: "The number of upload successes."
+  upload_list:
+    description: "The relative paths of the files that succeeded to be uploaded."
   upload_failures:
     description: "The number of upload failures."
+  upload_failed_list:
+    description: "The list of files that failed to upload."
   error_message:
     description: "Error message if the operation could not be completed"
 runs:

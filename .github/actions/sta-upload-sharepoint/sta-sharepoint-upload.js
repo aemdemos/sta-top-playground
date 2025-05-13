@@ -21,6 +21,7 @@ const GRAPH_API = 'https://graph.microsoft.com/v1.0';
 // Upload report for this invocation.  Global to simplify recursion.
 const uploadReport = {
   uploads: 0,
+  uploadList: [],
   failures: 0,
   failedList: [],
   failedFolderCreations: 0,
@@ -236,6 +237,7 @@ async function uploadFiles(accessToken, driveId, folderId, sourceFiles, delay) {
     const success = await uploadFile(accessToken, driveId, folderId, item);
     if (success) {
       uploadReport.uploads += 1;
+      uploadReport.uploadList.push(item.relative);
     } else {
       uploadReport.failures += 1;
       uploadReport.failedList.push(item.path);
@@ -293,6 +295,7 @@ export async function run() {
 
     core.info(`Upload report: ${JSON.stringify(uploadReport)}`);
     core.setOutput('upload_successes', String(uploadReport.uploads));
+    core.setOutput('upload_list', String(uploadReport.uploadList.join(', ')));
     core.setOutput('upload_failures', String(uploadReport.failures));
     core.setOutput('upload_failed_list', uploadReport.failedList.join(', '));
     if (uploadReport.failures > 0 || uploadReport.failedList.length > 0) {

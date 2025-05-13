@@ -1,21 +1,17 @@
 {
-  "name": "sta-extract-mountpoint",
+  "name": "sta-sharepoint-preview",
   "version": "1.0.0",
   "type": "module",
-  "main": "sta-mountpoint.js",
+  "main": "sta-sp-preview.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
-  "keywords": [
-    "STA",
-    "Experience Catalyst",
-    "Mountpoint"
-  ],
+  "keywords": ["STA", "Experience Catalyst", "SharePoint"],
   "author": "Experience Catalyst",
   "license": "ISC",
-  "description": "Parse the mountpoint and type and validate it.",
+  "description": "Get data from SharePoint",
   "dependencies": {
     "@actions/core": "^1.11.1"
   }

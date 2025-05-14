@@ -9,16 +9,14 @@ inputs:
     description: "A comma-separated list of relative URLs to preview - relative from 'ref'"
     required: true
   operation:
-    description: "The operation to perform - preview or publish"
+    description: "The operation to perform - 'preview' or 'both' (preview and publish)"
     required: false
     default: 'preview'
 outputs:
   successes:
-    description: "The number of preview successes."
+    description: "The number of successes."
   failures:
-    description: "The number of preview failures."
-  failure_list:
-    description: "The list of paths that failed to preview."
+    description: "The number of failures."
   error_message:
     description: "Error message if the operation could not be completed"
 runs:

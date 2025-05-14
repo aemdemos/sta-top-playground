@@ -16,6 +16,8 @@ const HLX_ADM_API = 'https://admin.hlx.page';
 const OP_LABEL = {
   preview: 'preview',
   live: 'publish',
+  publish: 'publish',
+  both: 'preview and/or publish',
 };
 
 /**
@@ -33,8 +35,8 @@ function removeExtension(path) {
 }
 
 /**
- * Operate (preview, publish (live), ...) on one path, relative to the endpoint:
- * (${HLX_ADM_API}/${operation}/${owner}/${repo}/${branch}/)
+ * Operate (preview or live) on one path, relative to the
+ * endpoint (i.e. ${HLX_ADM_API}/${operation}/${owner}/${repo}/${branch}/)
  * @param {string} endpoint
  * @param {string} path
  * @param {string} operation 'preview' or 'live'
@@ -51,28 +53,31 @@ async function operateOnPath(endpoint, path, operation = 'preview') {
       },
     });
     if (!resp.ok) {
-      // Check for unsupported media type, and try without an extension
-      if (resp.status === 415) {
+      const xError = resp.headers.get('x-error');
+      core.debug(`.${operation} operation failed on ${path}: ${resp.status} : ${resp.statusText} : ${xError}`);
+
+      // Check for unsupported media type or 404, and try without an extension
+      if (resp.status === 415 || (operation === 'live' && resp.status === 404)) {
         const noExtPath = removeExtension(path);
         // Avoid infinite loop by ensuring the path changed.
         if (noExtPath !== path) {
-          core.info(`> Failed with an "Unsupported Media" error. Retrying operation without an extension: ${noExtPath}`);
+          core.info(`❓ Failed with an "Unsupported Media" or 404 error. Retrying operation without an extension: ${noExtPath}`);
           return operateOnPath(endpoint, noExtPath, operation);
         }
-        core.warning(`Operation failed on ${path}: ${resp.headers.get('x-error')}`);
+        core.warning(`❌ Operation failed on extensionless ${path}: ${xError}`);
       } else if (resp.status === 423) {
-        core.warning(`Operation failed on ${path}. The file appears locked. Is it being edited? (${resp.headers.get('x-error')})`);
+        core.warning(`❌ Operation failed on ${path}. The file appears locked. Is it being edited? (${xError})`);
       } else {
-        core.warning(`Operation failed on ${path}: ${resp.headers.get('x-error')}`);
+        core.warning(`❌ Operation failed on ${path}: ${xError}`);
       }
       return false;
     }
 
     const data = await resp.json();
-    core.info(`Operation successful on ${path}: ${data[operation].url}`);
+    core.info(`✓ Operation successful on ${path}: ${data[operation].url}`);
     return true;
   } catch (error) {
-    core.warning(`Operation call failed on ${path}: ${error.message}`);
+    core.warning(`❌ Operation call failed on ${path}: ${error.message}`);
   }
 
   return false;
@@ -87,11 +92,17 @@ export async function run() {
   const urlsInput = core.getInput('urls');
   const operationInput = core.getInput('operation') || 'preview';
   const paths = urlsInput.split(',').map((url) => url.trim());
-  const operation = operationInput === 'publish' ? 'live' : operationInput;
+  const operations = [];
 
-  const operationLabel = OP_LABEL[operation];
-  if (!operationLabel) {
-    core.setOutput('error_message', `Invalid operation: ${operationInput}. Supported operations are 'preview' and 'publish'.`);
+  // Set up the operations, as found in the operation url (i.e. preview and/or live).
+  if (operationInput === 'preview' || operationInput === 'both') {
+    operations.push('preview');
+  }
+  if (operationInput === 'publish' || operationInput === 'live' || operationInput === 'both') {
+    operations.push('live');
+  }
+  if (operations.length === 0) {
+    core.setOutput('error_message', `Invalid operation: ${operationInput}. Supported operations are 'preview', 'publish' or 'both'.`);
     return;
   }
 
@@ -105,33 +116,45 @@ export async function run() {
   const operationReport = {
     successes: 0,
     failures: 0,
-    failureList: [],
+    failureList: {
+      preview: [],
+      publish: [],
+    },
   };
-  core.info(`Performing ${operationLabel} for ${paths.length} urls using ${owner} : ${repo} : ${branch}.`);
+
   core.debug(`URLs: ${urlsInput}`);
 
   try {
-    const endpoint = `${HLX_ADM_API}/${operation}/${owner}/${repo}/${branch}`;
+    for (const operation of operations) {
+      const operationLabel = OP_LABEL[operation];
+      core.info(`Performing ${operationLabel} for ${paths.length} urls using ${owner} : ${repo} : ${branch}.`);
 
-    for (const path of paths) {
-      core.debug(`Performing operationLabel operation on path: ${HLX_ADM_API}/${operation}/${owner}/${repo}/${branch}${path}`);
-      if (await operateOnPath(endpoint, path, operation)) {
-        operationReport.successes += 1;
-      } else {
-        operationReport.failures += 1;
-        operationReport.failureList.push(path);
+      const endpoint = `${HLX_ADM_API}/${operation}/${owner}/${repo}/${branch}`;
+
+      for (const path of paths) {
+        core.debug(`.Performing ${operationLabel} operation on path: ${HLX_ADM_API}/${operation}/${owner}/${repo}/${branch}${path}`);
+        const successfullyUploaded = await operateOnPath(endpoint, path, operation);
+        if (successfullyUploaded) {
+          operationReport.successes += 1;
+        } else {
+          operationReport.failures += 1;
+          operationReport.failureList[operationLabel].push(path);
+        }
       }
     }
 
     core.setOutput('successes', operationReport.successes);
     core.setOutput('failures', operationReport.failures);
-    core.setOutput('failure_list', operationReport.failureList.join(','));
     if (operationReport.failures > 0) {
-      core.setOutput('error_message', `❌ Error: Failed to ${operationLabel} ${operationReport.failures} of ${paths.length} paths.`);
+      core.warning(`❌ The paths that failed are: ${JSON.stringify(operationReport.failureList, undefined, 2)}`);
+      core.setOutput('error_message', `❌ Error: Failed to ${OP_LABEL[operationInput]} ${operationReport.failures} of ${paths.length} paths.`);
+    } else if (operations.length * paths.length !== operationReport.successes) {
+      core.warning(`❌ The paths that failed are: ${JSON.stringify(operationReport.failureList, undefined, 2)}`);
+      core.setOutput('error_message', `❌ Error: Failed to ${OP_LABEL[operationInput]} all the paths.`);
     }
   } catch (error) {
     core.warning(`❌ Error: ${error.message}`);
-    core.setOutput('error_message', `❌ Error: Failed to ${operationLabel} all of paths.`);
+    core.setOutput('error_message', `❌ Error: Failed to ${OP_LABEL[operationInput]} all of the paths.`);
   }
 }
 

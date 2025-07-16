@@ -73,6 +73,7 @@ export async function run() {
 
   try {
     const coordinatorCallbacks = JSON.parse(callbacks);
+    coordinatorCallbacks.apiKey = process.env.AEMY_APIKEY;
     if (!context || !callbacks || !message || !statusType || !coordinatorCallbacks?.apiKey) {
       core.info(`Missing or misconfigured parameters in ${name} call. Skipping status call: "${message}".`);
       return;

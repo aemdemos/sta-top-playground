@@ -148,16 +148,19 @@ jobs:
           echo "::add-mask::$apikey"
           
           # Extract only the URLs (progress, error, ok)
-          callbacks=$(jq '{progress, error, ok}' tmp_callbacks.json)
+          okApi=$(jq '{ok}' tmp_callbacks.json)
+          errorApi=$(jq '{error}' tmp_callbacks.json)
+          progressApi=$(jq '{error}' tmp_callbacks.json)
           
           echo "AEMY_APIKEY=$apikey" >> $GITHUB_ENV
-          echo "AEMY_CALLBACKS_MASKED=$masked" >> $GITHUB_ENV
+          echo "OK_API=$okApi" >> $GITHUB_ENV
+          echo "PROGRESS_API=$progressApi" >> $GITHUB_ENV
+          echo "ERROR_API=$errorApi" >> $GITHUB_ENV
 
       - name: Report if inputs are invalid
         if: ${{ env.errorMessage != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: ${{ env.errorMessage }}
           status_type: error
@@ -166,7 +169,6 @@ jobs:
       - name: Progress 1 - Setup
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Inputs look good. Now setting up the upload. (Step 1 of ${{ env.total_steps }})
           status_type: progress
@@ -187,7 +189,6 @@ jobs:
         if: ${{ steps.mountpoint_data.outputs.error_message != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: ${{ steps.mountpoint_data.outputs.error_message }} ${{ env.ACTION_URL }}
           status_type: error
@@ -196,7 +197,6 @@ jobs:
       - name: Progress 2 - Extracting zip
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Downloading and extracting content from the Import zip... (Step 2 of ${{ env.total_steps }})
           status_type: progress
@@ -212,7 +212,6 @@ jobs:
         if: ${{ steps.download-zip.outputs.error_message != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: ${{ steps.download-zip.outputs.error_message }} ${{ env.ACTION_URL }}
           status_type: error
@@ -221,7 +220,6 @@ jobs:
       - name: Progress 3 - Getting upload authorization
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Zip extracted with ${{ steps.download-zip.outputs.file_count }} files. Getting upload authorization... (Step 3 of ${{ env.total_steps }})
           status_type: progress
@@ -254,7 +252,6 @@ jobs:
         if: ${{ steps.azure-auth.outputs.access_token == '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Failed to get access token. See the output of the previous workflow step. ${{ env.ACTION_URL }}
           status_type: error
@@ -263,7 +260,6 @@ jobs:
       - name: Progress 4 - Getting drive information
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: SharePoint access granted. Now fetching drive id... (Step 4 of ${{ env.total_steps }})
           status_type: progress
@@ -282,7 +278,6 @@ jobs:
         if: ${{ steps.get-drive-info.outputs.folder_id == '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Could not extract the folder id from the SharePoint site. Check the output of the associated workflow step. ${{ env.ACTION_URL }}
           status_type: error
@@ -291,7 +286,6 @@ jobs:
       - name: Progress 5 - Uploading to SharePoint
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Drive ID acquired. Now starting upload... (Step 5 of ${{ env.total_steps }})
           status_type: progress
@@ -322,7 +316,6 @@ jobs:
       - name: Progress 6 - Done upload so show full results
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: "✅ Success count: ${{ steps.upload-sharepoint.outputs.upload_successes }}JS_LF❌ Failed count: ${{ steps.upload-sharepoint.outputs.upload_failures }}JS_LF🚨 Failed files: ${{ steps.upload-sharepoint.outputs.upload_failed_list }}"
           status_type: progress
@@ -332,7 +325,6 @@ jobs:
         if: ${{ env.errorMessage != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: ${{ env.errorMessage }}
           status_type: error
@@ -342,7 +334,6 @@ jobs:
         if: ${{ env.preview_operation != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Upload succeeded. Now performing ${{ env.preview_operation }} on the uploaded content... (Step 6 of ${{ env.total_steps }})
           status_type: progress
@@ -361,7 +352,6 @@ jobs:
         if: ${{ steps.preview-publish-content.outputs.error_message != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: Upload succeeded but the ${{ env.preview_operation }} had failures. ${{ steps.preview-publish-content.outputs.error_message }} ${{ env.ACTION_URL }}
           status_type: error
@@ -371,7 +361,6 @@ jobs:
         if: ${{ env.preview_operation != '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: SharePoint upload of ${{ steps.upload-sharepoint.outputs.upload_successes }} files succeeded and ${{ env.preview_operation }} succeeded ${{ steps.preview-publish-content.outputs.successes }} times in total.
           status_type: ok
@@ -381,7 +370,6 @@ jobs:
         if: ${{ env.preview_operation == '' }}
         uses: ./.github/actions/sta-status
         with:
-          callbacks: ${{ env.AEMY_CALLBACKS_MASKED }}
           context: ${{ github.event.inputs.aemy_context }}
           message: SharePoint upload of ${{ steps.upload-sharepoint.outputs.upload_successes }} files succeeded.
           status_type: ok

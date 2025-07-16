@@ -131,9 +131,9 @@ jobs:
           npm install
 
       - name: Mask sensitive info
-        id: extract-apikey
         run: |
-          raw_callbacks='${{ github.event.inputs.aemy_callbacks }}'
+          set +x
+          raw_callbacks="${{ toJson(github.event.inputs.aemy_callbacks) }}"
           apikey=$(echo "$raw_callbacks" | jq -r '.apiKey')
           masked=$(echo "$raw_callbacks" | jq '.apiKey="__APIKEY__"')
           

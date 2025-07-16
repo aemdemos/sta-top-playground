@@ -134,11 +134,19 @@ jobs:
         shell: bash
         run: |
           set +x  # Disable command echo
-          raw_callbacks=${{ toJson(github.event.inputs.aemy_callbacks) }}
-          raw_callbacks=$(echo $raw_callbacks | jq -r '.')
-          apikey=$(echo "$raw_callbacks" | jq -r '.apiKey')
-          masked=$(echo "$raw_callbacks" | jq -c '.apiKey="__APIKEY__"')
+    
+          # Save the raw input to a temporary file (no printing and logging!)
+          echo '${{ github.event.inputs.aemy_callbacks }}' > tmp_callbacks.json
+    
+          # Extract the API key without logging
+          apikey=$(jq -r '.apiKey' callbacks.json)
+          
+          # Mask the API key in logs
           echo "::add-mask::$apikey"
+          
+          # Extract only the URLs (progress, error, ok)
+          callbacks=$(jq '{progress, error, ok}' callbacks.json)
+          
           echo "AEMY_APIKEY=$apikey" >> $GITHUB_ENV
           echo "AEMY_CALLBACKS_MASKED=$masked" >> $GITHUB_ENV
 

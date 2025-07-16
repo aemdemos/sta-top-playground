@@ -57,9 +57,6 @@ function getStatusCallParameters(
  */
 export async function run() {
   const context = core.getInput('context');
-  const okApi = core.getInput('ok');
-  const errorApi = core.getInput('error');
-  const progressApi = core.getInput('progress');
   const message = core.getInput('message');
   const statusType = core.getInput('status_type');
   const agentName = core.getInput('agent_name');
@@ -74,6 +71,9 @@ export async function run() {
   }
 
   const apiKey = process.env.AEMY_APIKEY;
+  const okApi = process.env.OK_API;
+  const errorApi = process.env.ERROR_API;
+  const progressApi = process.env.PROGRESS_API;
 
   try {
     if (!context || !okApi || !errorApi || !progressApi || !message || !statusType || !apiKey) {

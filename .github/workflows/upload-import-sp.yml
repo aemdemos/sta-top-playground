@@ -137,7 +137,7 @@ jobs:
           raw_callbacks=${{ toJson(github.event.inputs.aemy_callbacks) }}
           raw_callbacks=$(echo $raw_callbacks | jq -r '.')
           apikey=$(echo "$raw_callbacks" | jq -r '.apiKey')
-          masked=$(echo "$raw_callbacks" | jq '.apiKey="__APIKEY__"')
+          masked=$(echo "$raw_callbacks" | jq -c '.apiKey="__APIKEY__"')
           echo "::add-mask::$apikey"
           echo "AEMY_APIKEY=$apikey" >> $GITHUB_ENV
           echo "AEMY_CALLBACKS_MASKED=$masked" >> $GITHUB_ENV

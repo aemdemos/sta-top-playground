@@ -79,8 +79,7 @@ async function replicateToPreview(accessToken, aemUrl, contentPaths) {
  * @returns {Promise<Object>}
  */
 async function replicateToPublish(accessToken, aemUrl, contentPaths) {
-  const host = new URL(aemUrl);
-  const replicateUrl = `${host.origin}/bin/replicate`;
+  const replicateUrl = `${aemUrl}/bin/replicate`;
   core.info(`🔗 Using AEM replicate endpoint: ${replicateUrl}`);
 
   // Create form data for the replicate endpoint

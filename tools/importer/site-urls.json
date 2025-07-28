@@ -1,13 +1,18 @@
 {
-  "originUrl": "https://topcounselling.com/",
+  "originUrl": "https://www.topcounselling.com",
+  "lastCrawled": "https://www.topcounselling.com/",
   "urls": [
     {
       "url": "https://topcounselling.com/",
-      "source": "CRAWL"
+      "source": "CRAWL",
+      "targetPath": "/",
+      "id": "8c87b388e5863183ac12173a50555b06f532ea76"
     },
     {
       "url": "https://topcounselling.com/m/login?r=%2Fm%2Faccount",
-      "source": "CRAWL"
+      "source": "CRAWL",
+      "targetPath": "/m/login",
+      "id": "4fd9c1670387bbfb9554f767c0ffde2ece9b08a5"
     }
   ],
   "crawlOptions": {
@@ -18,9 +23,16 @@
     "sameDomain": true,
     "keepHash": false,
     "strategy": "crawl",
-    "logger": {}
+    "logger": {},
+    "strategiesAttempted": [
+      "CRAWL"
+    ]
   },
   "extractionErrors": [
+    {
+      "url": "https://www.topcounselling.com/",
+      "status": "301 Moved Permanently Redirect: https://topcounselling.com/"
+    },
     {
       "url": "https://topcounselling.com/m/account",
       "status": "302 Found Redirect: https://topcounselling.com/m/login?r=%2Fm%2Faccount"

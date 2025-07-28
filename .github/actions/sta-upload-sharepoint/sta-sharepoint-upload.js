@@ -258,10 +258,10 @@ export async function run() {
   const accessToken = core.getInput('access_token');
   const driveId = core.getInput('drive_id'); // Shared Documents
   const folderId = core.getInput('folder_id'); // sites/esaas-demos/andrew-top
-  const zipContentsPath = core.getInput('zip_contents_path');
+  const zipDir = core.getInput('zip_dir');
   const delayInput = core.getInput('delay');
   const delay = parseInt(delayInput, 10);
-  const docsDir = `${zipContentsPath}/docx`;
+  const docsDir = `${zipDir}/contents/docx`;
 
   core.info(`Upload files from ${docsDir} with a delay of ${delay} milliseconds between uploads.`);
 

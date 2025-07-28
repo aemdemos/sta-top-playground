@@ -1,30 +1,18 @@
 {
   "originUrl": "https://www.topcounselling.com",
-  "lastCrawled": "https://www.topcounselling.com",
+  "lastCrawled": "https://www.topcounselling.com/",
   "urls": [
     {
       "url": "https://topcounselling.com/",
-      "source": "SITEMAPS",
+      "source": "CRAWL",
       "targetPath": "/",
       "id": "8c87b388e5863183ac12173a50555b06f532ea76"
     },
     {
-      "url": "https://topcounselling.com/m/create",
-      "source": "SITEMAPS",
-      "targetPath": "/m/create",
-      "id": "e1a97c07398a75ab33a56269359fc45c1cc9fa0f"
-    },
-    {
-      "url": "https://topcounselling.com/m/login",
-      "source": "SITEMAPS",
+      "url": "https://topcounselling.com/m/login?r=%2Fm%2Faccount",
+      "source": "CRAWL",
       "targetPath": "/m/login",
-      "id": "1d6675442784a47e9df433b89105832d3b443e32"
-    },
-    {
-      "url": "https://topcounselling.com/m/reset",
-      "source": "SITEMAPS",
-      "targetPath": "/m/reset",
-      "id": "e0c7ccd687e59aa9ceeb2ed0881d9d2afeba37b6"
+      "id": "4fd9c1670387bbfb9554f767c0ffde2ece9b08a5"
     }
   ],
   "crawlOptions": {
@@ -34,11 +22,56 @@
     "limit": -1,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "sitemaps",
+    "strategy": "crawl",
     "logger": {},
     "strategiesAttempted": [
-      "SITEMAPS"
+      "CRAWL"
     ]
   },
-  "extractionErrors": []
+  "extractionErrors": [
+    {
+      "url": "https://www.topcounselling.com/",
+      "status": "301 Moved Permanently Redirect: https://topcounselling.com/"
+    },
+    {
+      "url": "https://topcounselling.com/m/account",
+      "status": "302 Found Redirect: https://topcounselling.com/m/login?r=%2Fm%2Faccount"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:57,h:57,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:60,h:60,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:72,h:72,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:114,h:114,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:120,h:120,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:144,h:144,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:152,h:152,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:180,h:180,m",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://topcounselling.com/manifest.webmanifest",
+      "status": "content type is not text/html"
+    }
+  ]
 }

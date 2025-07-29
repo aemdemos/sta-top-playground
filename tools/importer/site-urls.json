@@ -1,18 +1,108 @@
 {
-  "originUrl": "https://www.topcounselling.com",
-  "lastCrawled": "https://www.topcounselling.com/",
+  "originUrl": "https://fondationsaudemarspiguet.org",
+  "lastCrawled": "https://fondationsaudemarspiguet.org/",
   "urls": [
     {
-      "url": "https://topcounselling.com/",
+      "url": "https://fondationsaudemarspiguet.org/",
       "source": "CRAWL",
       "targetPath": "/",
-      "id": "8c87b388e5863183ac12173a50555b06f532ea76"
+      "id": "8dd95a42213c6b1329699383c67b617fcdf612f0"
     },
     {
-      "url": "https://topcounselling.com/m/login?r=%2Fm%2Faccount",
+      "url": "https://fondationsaudemarspiguet.org/en",
       "source": "CRAWL",
-      "targetPath": "/m/login",
-      "id": "4fd9c1670387bbfb9554f767c0ffde2ece9b08a5"
+      "targetPath": "/en",
+      "id": "7d2033e6e4ec0329a408ed24999aef9832a18930"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/audemars-piguet-foundations-6",
+      "source": "CRAWL",
+      "targetPath": "/en/audemars-piguet-foundations-6",
+      "id": "a941b4334b5a49dd98b1c5657dfc43ce2811bd2e"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/contact",
+      "source": "CRAWL",
+      "targetPath": "/en/contact",
+      "id": "b40ddb8de0538ddb97a67f405fc9a4ee4ecbc59e"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/cookie-policy",
+      "source": "CRAWL",
+      "targetPath": "/en/cookie-policy",
+      "id": "90ca235a59cf6842fc74025924d45d0aed243bf6"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/credits-photographiques",
+      "source": "CRAWL",
+      "targetPath": "/en/credits-photographiques",
+      "id": "ddc4904bae40a8beaa05e28525c8d88a02b7f3c3"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/media-newsroom",
+      "source": "CRAWL",
+      "targetPath": "/en/media-newsroom",
+      "id": "8ad1c50781fc8336b688fa1a7293896cdade030d"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/privacy-notice",
+      "source": "CRAWL",
+      "targetPath": "/en/privacy-notice",
+      "id": "1f5bd206ee8443c50f84f1edcee1d5b3c3073254"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/en/terms-of-use",
+      "source": "CRAWL",
+      "targetPath": "/en/terms-of-use",
+      "id": "9a8151b01b0dcedb56266d0369be5b088fd7f0f5"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr",
+      "source": "CRAWL",
+      "targetPath": "/fr",
+      "id": "ca14720637ba9fec9382c91842cfa27f14e81d75"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/conditions-dutilisation",
+      "source": "CRAWL",
+      "targetPath": "/fr/conditions-dutilisation",
+      "id": "af919b8735244067ee1b19720b9e5bf070aac418"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/contact",
+      "source": "CRAWL",
+      "targetPath": "/fr/contact",
+      "id": "8faeae33850a1cfb4635a30a80ba55f9b09e4dce"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/credits-photographiques",
+      "source": "CRAWL",
+      "targetPath": "/fr/credits-photographiques",
+      "id": "986d882cc4f39fc6db115d164aa52b8994273439"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/declaration-de-confidentialite",
+      "source": "CRAWL",
+      "targetPath": "/fr/declaration-de-confidentialite",
+      "id": "9df92675d58dc852ee1bb066266d97b2eda56f0e"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/espace-medias",
+      "source": "CRAWL",
+      "targetPath": "/fr/espace-medias",
+      "id": "19122a8849b6114ad9dbc87a2fd25075a59cccdf"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/page-fondations-audemars-piguet",
+      "source": "CRAWL",
+      "targetPath": "/fr/page-fondations-audemars-piguet",
+      "id": "48159fbc4cd30fd65b473e4b679c08adaa326039"
+    },
+    {
+      "url": "https://fondationsaudemarspiguet.org/fr/politique-de-cookie",
+      "source": "CRAWL",
+      "targetPath": "/fr/politique-de-cookie",
+      "id": "bc67e9e2fe8db143c0221443e6b0c54e7556b451"
     }
   ],
   "crawlOptions": {
@@ -30,47 +120,23 @@
   },
   "extractionErrors": [
     {
-      "url": "https://www.topcounselling.com/",
-      "status": "301 Moved Permanently Redirect: https://topcounselling.com/"
+      "url": "https://fondationsaudemarspiguet.org/en/home-page",
+      "status": "302 Found Redirect: https://arbres.fondationsaudemarspiguet.org/en/home-page"
     },
     {
-      "url": "https://topcounselling.com/m/account",
-      "status": "302 Found Redirect: https://topcounselling.com/m/login?r=%2Fm%2Faccount"
+      "url": "https://fondationsaudemarspiguet.org/fr/fondation-pour-les-arbres-home-page",
+      "status": "302 Found Redirect: https://arbres.fondationsaudemarspiguet.org/fr/fondation-pour-les-arbres-home-page"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:57,h:57,m",
-      "status": "404 Not Found"
+      "url": "https://fondationsaudemarspiguet.org/en/home-page-27",
+      "status": "302 Found Redirect: https://biencommun.fondationsaudemarspiguet.org/en/home-page-27"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:60,h:60,m",
-      "status": "404 Not Found"
+      "url": "https://fondationsaudemarspiguet.org/fr/home-bien-commun",
+      "status": "302 Found Redirect: https://biencommun.fondationsaudemarspiguet.org/fr/home-bien-commun"
     },
     {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:72,h:72,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:114,h:114,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:120,h:120,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:144,h:144,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:152,h:152,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com//img1.wsimg.com/isteam/ip/f2244b28-8317-488d-845c-92a8869ae88b/Mum%20logo%20(background%20w%20text).png/:/rs=w:180,h:180,m",
-      "status": "404 Not Found"
-    },
-    {
-      "url": "https://topcounselling.com/manifest.webmanifest",
+      "url": "https://fondationsaudemarspiguet.org/img/favicon/site.webmanifest",
       "status": "content type is not text/html"
     }
   ]

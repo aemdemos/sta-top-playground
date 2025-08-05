@@ -1,0 +1,17 @@
+{
+  "originUrl": "https://lifelock.norton.com",
+  "urls": [
+    {
+      "url": "https://lifelock.norton.com/learn",
+      "source": "MANUAL",
+      "targetPath": "/learn",
+      "id": "ae1827e80e2ee63a26bd621cc5855fe0449ad616"
+    }
+  ],
+  "crawlOptions": {
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
+  }
+}

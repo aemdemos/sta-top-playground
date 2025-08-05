@@ -6,67 +6,77 @@
       "url": "https://lifelock.norton.com/",
       "source": "CRAWL",
       "targetPath": "/",
-      "id": "b8470ae9a8a832bec7b36b91ef021603961de103"
+      "id": "b8470ae9a8a832bec7b36b91ef021603961de103",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/affiliates",
       "source": "CRAWL",
       "targetPath": "/affiliates",
-      "id": "4a55803a61cd421a455a6f99b0822bd94d9cf911"
+      "id": "4a55803a61cd421a455a6f99b0822bd94d9cf911",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/family-plans",
       "source": "CRAWL",
       "targetPath": "/family-plans",
-      "id": "9db4cca2dcac1e1634280d3b91bf2d941e902131"
+      "id": "9db4cca2dcac1e1634280d3b91bf2d941e902131",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/family-plans?inid=lifelock-home_ribbon_family-plans",
       "source": "CRAWL",
       "targetPath": "/family-plans",
-      "id": "3ca2014120660a299c2f8abe1dbdf2d823f6d5d1"
+      "id": "3ca2014120660a299c2f8abe1dbdf2d823f6d5d1",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/free-trials/free-identity-theft-protection",
       "source": "CRAWL",
       "targetPath": "/free-trials/free-identity-theft-protection",
-      "id": "6639b68b480cd5f97d69c3df4715e9262ebde2fd"
+      "id": "6639b68b480cd5f97d69c3df4715e9262ebde2fd",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/free-trials/free-identity-theft-protection?promocode=all30df&inid=lifelock-home_hero_free-identity-theft-protection",
       "source": "CRAWL",
       "targetPath": "/free-trials/free-identity-theft-protection",
-      "id": "784b57bdc7b68c5dbb50ac19a60986a9f0eac857"
+      "id": "784b57bdc7b68c5dbb50ac19a60986a9f0eac857",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/guarantee",
       "source": "CRAWL",
       "targetPath": "/guarantee",
-      "id": "9896483dc3d999577d2ec5401bd153d29a7ed878"
+      "id": "9896483dc3d999577d2ec5401bd153d29a7ed878",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/home-title-protect",
       "source": "CRAWL",
       "targetPath": "/home-title-protect",
-      "id": "a7b2999492d5dcdd25001de05cf4843ec9ea18fd"
+      "id": "a7b2999492d5dcdd25001de05cf4843ec9ea18fd",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/how-it-works/lifelock-mobile-app",
       "source": "CRAWL",
       "targetPath": "/how-it-works/lifelock-mobile-app",
-      "id": "44e58094331bd255877e9fa5984c43f028731cc8"
+      "id": "44e58094331bd255877e9fa5984c43f028731cc8",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/how-it-works/what-is-identity-theft",
       "source": "CRAWL",
       "targetPath": "/how-it-works/what-is-identity-theft",
-      "id": "04534619a5af7a6f8e3dec0bd6ad16ed08c074ca"
+      "id": "04534619a5af7a6f8e3dec0bd6ad16ed08c074ca",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/learn",
       "source": "CRAWL",
       "targetPath": "/learn",
-      "id": "ae1827e80e2ee63a26bd621cc5855fe0449ad616"
+      "id": "ae1827e80e2ee63a26bd621cc5855fe0449ad616",
     },
     {
       "url": "https://lifelock.norton.com/learn/authors/crissy-joshua",
@@ -1782,121 +1792,141 @@
       "url": "https://lifelock.norton.com/legal/refundpolicy",
       "source": "CRAWL",
       "targetPath": "/legal/refundpolicy",
-      "id": "97bf1ab5176989516d6ce2ed6e53ba514e8498a0"
+      "id": "97bf1ab5176989516d6ce2ed6e53ba514e8498a0",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/offers",
       "source": "CRAWL",
       "targetPath": "/offers",
-      "id": "2d5daa2f5dc41685fc2b619a3f406d6372e254be"
+      "id": "2d5daa2f5dc41685fc2b619a3f406d6372e254be",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products",
       "source": "CRAWL",
       "targetPath": "/products",
-      "id": "81e7ac036ad2bcaf153111e8d476376dc533fad7"
+      "id": "81e7ac036ad2bcaf153111e8d476376dc533fad7",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/best-protection",
       "source": "CRAWL",
       "targetPath": "/products/best-protection",
-      "id": "9a8e2d02035d4b14939854cfc7702eeb1554f9d2"
+      "id": "9a8e2d02035d4b14939854cfc7702eeb1554f9d2",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/best-protection?inid=lifelock-home_hero_best-protection",
       "source": "CRAWL",
       "targetPath": "/products/best-protection",
-      "id": "22e1fdde3be3b89e5051f4e5dfeaaa5386ab5783"
+      "id": "22e1fdde3be3b89e5051f4e5dfeaaa5386ab5783",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/best-protection?inid=lifelock-home_ribbon_best-protection",
       "source": "CRAWL",
       "targetPath": "/products/best-protection",
-      "id": "6b42fd85a7f54828d065c066ec5a0e710ef84508"
+      "id": "6b42fd85a7f54828d065c066ec5a0e710ef84508",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/budget-friendly",
       "source": "CRAWL",
       "targetPath": "/products/budget-friendly",
-      "id": "4ce8962f203b541620414c9edbba534adffb226d"
+      "id": "4ce8962f203b541620414c9edbba534adffb226d",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/budget-friendly?inid=lifelock-home_ribbon_budget-friendly-plans",
       "source": "CRAWL",
       "targetPath": "/products/budget-friendly",
-      "id": "3b9f1de56422e523fb9b4837a1f68f86f541d466"
+      "id": "3b9f1de56422e523fb9b4837a1f68f86f541d466",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/cyber-safety-plans",
       "source": "CRAWL",
       "targetPath": "/products/cyber-safety-plans",
-      "id": "8329aa93282dca399c1c74d198ce37776917190a"
+      "id": "8329aa93282dca399c1c74d198ce37776917190a",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/cyber-safety-plans?inid=lifelock-home_ribbon_cyber-safety-plans",
       "source": "CRAWL",
       "targetPath": "/products/cyber-safety-plans",
-      "id": "d9663522c9ae65a8cac3a2ef31b450d170445c44"
+      "id": "d9663522c9ae65a8cac3a2ef31b450d170445c44",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/lifelock-advantage",
       "source": "CRAWL",
       "targetPath": "/products/lifelock-advantage",
-      "id": "d42e7dde94e13fc35bad2ff965c970fcb313396c"
+      "id": "d42e7dde94e13fc35bad2ff965c970fcb313396c",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/lifelock-identity-advisor",
       "source": "CRAWL",
       "targetPath": "/products/lifelock-identity-advisor",
-      "id": "844b4a57d9c4c9dc3b6dacb9b93767b4864e63ea"
+      "id": "844b4a57d9c4c9dc3b6dacb9b93767b4864e63ea",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/lifelock-junior",
       "source": "CRAWL",
       "targetPath": "/products/lifelock-junior",
-      "id": "d6f6e5848f8e922f761357e582785a56b61c27d6"
+      "id": "d6f6e5848f8e922f761357e582785a56b61c27d6",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/lifelock-standard",
       "source": "CRAWL",
       "targetPath": "/products/lifelock-standard",
-      "id": "6824617a80ff714d476f85e512fa0e6dbba30f67"
+      "id": "6824617a80ff714d476f85e512fa0e6dbba30f67",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/products/lifelock-ultimate-plus",
       "source": "CRAWL",
       "targetPath": "/products/lifelock-ultimate-plus",
-      "id": "894c51014c0b6ec491f88cc74d4935f98f3f5d6d"
+      "id": "894c51014c0b6ec491f88cc74d4935f98f3f5d6d",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/reviews",
       "source": "CRAWL",
       "targetPath": "/reviews",
-      "id": "5c175672eac979f5991b2538a203894fe90c41ab"
+      "id": "5c175672eac979f5991b2538a203894fe90c41ab",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/reviews/lifelock-advantage",
       "source": "CRAWL",
       "targetPath": "/reviews/lifelock-advantage",
-      "id": "9aa84569bc71e128d01b9814fff3bb1303cc8bdf"
+      "id": "9aa84569bc71e128d01b9814fff3bb1303cc8bdf",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/reviews/lifelock-standard",
       "source": "CRAWL",
       "targetPath": "/reviews/lifelock-standard",
-      "id": "3bd1739fa84f5257e1dd9ec6396d17ffd0f838b0"
+      "id": "3bd1739fa84f5257e1dd9ec6396d17ffd0f838b0",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/reviews/lifelock-ultimate-plus",
       "source": "CRAWL",
       "targetPath": "/reviews/lifelock-ultimate-plus",
-      "id": "25578877a254f6a6fa337b1e1c92fedbb6f1e21f"
+      "id": "25578877a254f6a6fa337b1e1c92fedbb6f1e21f",
+      "status": "EXCLUDED"
     },
     {
       "url": "https://lifelock.norton.com/site-map",
       "source": "CRAWL",
       "targetPath": "/site-map",
-      "id": "6b3bc61d3c4c1debf648a0c274e0e2934f6ae772"
+      "id": "6b3bc61d3c4c1debf648a0c274e0e2934f6ae772",
+      "status": "EXCLUDED"
     }
   ],
   "crawlOptions": {

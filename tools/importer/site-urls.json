@@ -1,17 +1,29 @@
 {
   "originUrl": "https://lifelock.norton.com",
+  "lastCrawled": "https://lifelock.norton.com/learn",
   "urls": [
     {
       "url": "https://lifelock.norton.com/learn",
-      "source": "MANUAL",
+      "source": "CRAWL",
       "targetPath": "/learn",
       "id": "ae1827e80e2ee63a26bd621cc5855fe0449ad616"
     }
   ],
   "crawlOptions": {
-    "strategy": "manual",
+    "timeout": 64800000,
+    "inclusionPatterns": [
+      "/learn",
+      "/learn/**"
+    ],
+    "exclusionPatterns": [],
+    "limit": -1,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "crawl",
+    "logger": {},
     "strategiesAttempted": [
-      "MANUAL"
+      "CRAWL"
     ]
-  }
+  },
+  "extractionErrors": []
 }

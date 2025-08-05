@@ -1,20 +1,1907 @@
 {
   "originUrl": "https://lifelock.norton.com",
-  "lastCrawled": "https://lifelock.norton.com/learn",
+  "lastCrawled": "https://lifelock.norton.com/learn/",
   "urls": [
+    {
+      "url": "https://lifelock.norton.com/",
+      "source": "CRAWL",
+      "targetPath": "/",
+      "id": "b8470ae9a8a832bec7b36b91ef021603961de103"
+    },
+    {
+      "url": "https://lifelock.norton.com/affiliates",
+      "source": "CRAWL",
+      "targetPath": "/affiliates",
+      "id": "4a55803a61cd421a455a6f99b0822bd94d9cf911"
+    },
+    {
+      "url": "https://lifelock.norton.com/family-plans",
+      "source": "CRAWL",
+      "targetPath": "/family-plans",
+      "id": "9db4cca2dcac1e1634280d3b91bf2d941e902131"
+    },
+    {
+      "url": "https://lifelock.norton.com/family-plans?inid=lifelock-home_ribbon_family-plans",
+      "source": "CRAWL",
+      "targetPath": "/family-plans",
+      "id": "3ca2014120660a299c2f8abe1dbdf2d823f6d5d1"
+    },
+    {
+      "url": "https://lifelock.norton.com/free-trials/free-identity-theft-protection",
+      "source": "CRAWL",
+      "targetPath": "/free-trials/free-identity-theft-protection",
+      "id": "6639b68b480cd5f97d69c3df4715e9262ebde2fd"
+    },
+    {
+      "url": "https://lifelock.norton.com/free-trials/free-identity-theft-protection?promocode=all30df&inid=lifelock-home_hero_free-identity-theft-protection",
+      "source": "CRAWL",
+      "targetPath": "/free-trials/free-identity-theft-protection",
+      "id": "784b57bdc7b68c5dbb50ac19a60986a9f0eac857"
+    },
+    {
+      "url": "https://lifelock.norton.com/guarantee",
+      "source": "CRAWL",
+      "targetPath": "/guarantee",
+      "id": "9896483dc3d999577d2ec5401bd153d29a7ed878"
+    },
+    {
+      "url": "https://lifelock.norton.com/home-title-protect",
+      "source": "CRAWL",
+      "targetPath": "/home-title-protect",
+      "id": "a7b2999492d5dcdd25001de05cf4843ec9ea18fd"
+    },
+    {
+      "url": "https://lifelock.norton.com/how-it-works/lifelock-mobile-app",
+      "source": "CRAWL",
+      "targetPath": "/how-it-works/lifelock-mobile-app",
+      "id": "44e58094331bd255877e9fa5984c43f028731cc8"
+    },
+    {
+      "url": "https://lifelock.norton.com/how-it-works/what-is-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/how-it-works/what-is-identity-theft",
+      "id": "04534619a5af7a6f8e3dec0bd6ad16ed08c074ca"
+    },
     {
       "url": "https://lifelock.norton.com/learn",
       "source": "CRAWL",
       "targetPath": "/learn",
       "id": "ae1827e80e2ee63a26bd621cc5855fe0449ad616"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/authors/crissy-joshua",
+      "source": "CRAWL",
+      "targetPath": "/learn/authors/crissy-joshua",
+      "id": "cf4cbd9b51a1bb0496106e3481da632649dbb3f5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/authors/ellie-farrier",
+      "source": "CRAWL",
+      "targetPath": "/learn/authors/ellie-farrier",
+      "id": "fb6a73723545b96ebc2dd29c37b75f54c10f70ab"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/authors/jeremy-coppock",
+      "source": "CRAWL",
+      "targetPath": "/learn/authors/jeremy-coppock",
+      "id": "a860c3d9f0994790a23e668a0638149608040206"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/authors/mark-birchall",
+      "source": "CRAWL",
+      "targetPath": "/learn/authors/mark-birchall",
+      "id": "bd06dc0ab5111ff1752d9d2f253ecea46a4f2a75"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/authors/oliver-buxton",
+      "source": "CRAWL",
+      "targetPath": "/learn/authors/oliver-buxton",
+      "id": "fc3a18d21f756fd44db06d4726f4784f632b1deb"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance",
+      "id": "a22d8af251845ee8a985824fd453380358074dfc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/auto-loan-credit-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/auto-loan-credit-score",
+      "id": "a0a480f93341291e7a5c3e226789db698ceab23e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-card-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-card-topics",
+      "id": "e7450461c99ba1ff9c11e8afcee6632e963ff2f7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-check-for-employment",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-check-for-employment",
+      "id": "1edb7b32adeed7f16af12c64765eca50154f2a6a"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-freeze",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-freeze",
+      "id": "8f3c87224e6079f62ad5e93909e3762ed75614ef"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-freezes-vs-credit-locks",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-freezes-vs-credit-locks",
+      "id": "0ed6b5319418282a83152feac3fc67fa65370f41"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-monitoring",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-monitoring",
+      "id": "a8b4beba5bfc6265e965aa6f43a2bbcf04955688"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-reports-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-reports-topics",
+      "id": "de625c71fdd98a4133b3388007848476e45e12e8"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-score-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-score-topics",
+      "id": "652e4147d3a3ab11a4307c7a9cb6f698d8b56e89"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-score-update",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-score-update",
+      "id": "fe94a649e3faa5db9e023153800aeaaa9ffb0fa2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-score-vs-credit-report",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-score-vs-credit-report",
+      "id": "54324e33b965ffe5a9a860c53237512d766fdc23"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/credit-scores",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/credit-scores",
+      "id": "1206ceed0eabfb069c95dd1249d7ff09bfbdba33"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/debit-cards-dangerous",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/debit-cards-dangerous",
+      "id": "6089b3a086a8f19aa8110821de00d7e5377e78f5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/dispute-credit-report",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/dispute-credit-report",
+      "id": "a37fdbae7fd8c464052e1057cb153e4c301c7e57"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/does-checking-your-credit-score-lower-it",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/does-checking-your-credit-score-lower-it",
+      "id": "79be3af7897756292f867f62f097fa7d89b901a1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/does-closing-a-credit-card-hurt-your-credit",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/does-closing-a-credit-card-hurt-your-credit",
+      "id": "7818297c5d1bad8e754b56b4c37c36737b151089"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/does-requesting-a-credit-increase-hurt",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/does-requesting-a-credit-increase-hurt",
+      "id": "6e5b1536429658e00081327a7a59c9780281ec35"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/fico-score-vs-credit-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/fico-score-vs-credit-score",
+      "id": "1af1fb769f1540c66c11ef8c61b37e7868ef484e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/financial-scammer-new-tech",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/financial-scammer-new-tech",
+      "id": "a0b82e76101dd0f9c1decd21720c1929c57313a4"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/fix-your-credit-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/fix-your-credit-score",
+      "id": "f161d975823a1b5c988b6f8c0507eef4a311bf59"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/fraud-alert-vs-credit-freeze",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/fraud-alert-vs-credit-freeze",
+      "id": "87f24b44dd52ccf718f373d758880348ef98d531"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/free-credit-report-score-check",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/free-credit-report-score-check",
+      "id": "939cd72868255488abe21643789558b2c96d22b0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/home-equity-loan",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/home-equity-loan",
+      "id": "9553bdc6f6a4f40732d999f968b82f8788667874"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-do-credit-scores-work",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-do-credit-scores-work",
+      "id": "00c54752842d091cc12b5b44cda266361f8367a6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-long-does-it-take-to-rebuild-credit",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-long-does-it-take-to-rebuild-credit",
+      "id": "ad68d0b7b1b7f5137920012a5fc4865c0e8a009e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-many-credit-cards-should-you-have",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-many-credit-cards-should-you-have",
+      "id": "a2b3579d6857b1509ca21a00cbfab12164dc15fd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-often-should-you-check-your-credit-report",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-often-should-you-check-your-credit-report",
+      "id": "0ab7277af695a17d27d57a2d2905def216294d8e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-buy-a-house-with-bad-credit",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-buy-a-house-with-bad-credit",
+      "id": "55bfbd19bb007ebfbb54017d4767ca5184b43d5c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-check-your-fico-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-check-your-fico-score",
+      "id": "7709efb590ea44bd3f5d4b12b253c3618c3ed0a1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-dispute-a-credit-report",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-dispute-a-credit-report",
+      "id": "d3e09a7b595cf0b6e3157d0100549c34dbf549dc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-dispute-credit-card-charge",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-dispute-credit-card-charge",
+      "id": "c98e8af5c3cda2eaadda50b31c7326df643da278"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-get-an-apartment-with-bad-credit",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-get-an-apartment-with-bad-credit",
+      "id": "54eca55ba21b3b9662cc4e5b576b0d570c9ae286"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-get-bankruptcies-removed-from-credit-report",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-get-bankruptcies-removed-from-credit-report",
+      "id": "1ef161e8b366e59588e7c94110cf8dcc2f5f3f51"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-improve-credit-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-improve-credit-score",
+      "id": "aae1ce829ed739a2482db10664cfbd588434d0bd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-lock-credit",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-lock-credit",
+      "id": "bbc99de14b815ca679de5d81468c579bc39bc73b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-pass-a-rental-credit-check",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-pass-a-rental-credit-check",
+      "id": "31befdef22a61181259c19ac7243298ac343d264"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-place-a-fraud-alert",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-place-a-fraud-alert",
+      "id": "07f123a7f84076e70627fe8c67cbb1062e52d3b7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-rebuild-your-credit-after-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-rebuild-your-credit-after-identity-theft",
+      "id": "37b2e12eb3bdd60b60dfb50fc975d6ef06c5b80f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-remove-hard-inquiries",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-remove-hard-inquiries",
+      "id": "6544b1b953d6fc517353bbbcd13b122eb7a8c0df"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-unfreeze-credit",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/how-to-unfreeze-credit",
+      "id": "cd850d575766f30d57be3f5291da8cd9da034682"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/multiple-credit-cards",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/multiple-credit-cards",
+      "id": "c4a394c5024a4670b745a30477ba4a0d21d4becb"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/protect-your-credit-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/protect-your-credit-card",
+      "id": "3b767e2e89fd47f38b0abcaea05f42cc144932e0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/soft-vs-hard-credit-check",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/soft-vs-hard-credit-check",
+      "id": "7a7df69a5e453dd2420dc3e1ec6c73ae2d79f844"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/tips-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/tips-topics",
+      "id": "f5ab0054f3a7637f19039174358788609f01982b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-affects-your-credit-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-affects-your-credit-score",
+      "id": "0771042c089f1577a25ba98c84a975372d657960"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-are-the-3-credit-bureaus",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-are-the-3-credit-bureaus",
+      "id": "f4ff522adbbbbd0090b3b0acd94888e307a92413"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-credit-score-do-you-start-with",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-credit-score-do-you-start-with",
+      "id": "acca3d6ec6fa766db0165faedf9fbfef149b52be"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-is-a-pre-approved-credit-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-is-a-pre-approved-credit-card",
+      "id": "157eb1e266c5ba9870147793f05c582012ecdbdd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-is-credit-report",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-is-credit-report",
+      "id": "9ffac123e2f32d1178d8888feb4dd702ac6c14a0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-is-cvv-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-is-cvv-number",
+      "id": "5841492a2d83dba265d2775c36d18da93eefc6bf"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/what-to-do-if-you-lose-a-credit-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/what-to-do-if-you-lose-a-credit-card",
+      "id": "a3e1dce687d12e0bc5f5ffa80205334033f5644a"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/when-to-pay-credit-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/when-to-pay-credit-card",
+      "id": "4f4b63ae9e80e64b6bd77a32900506515cdd539c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/why-did-my-credit-score-drop",
+      "source": "CRAWL",
+      "targetPath": "/learn/credit-finance/why-did-my-credit-score-drop",
+      "id": "3f2da98d1072507390e9ff4927cedda1f218d3cf"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches",
+      "id": "3618ae533daf909c43776036b206f32575c87ce7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/att-data-breach-2024",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/att-data-breach-2024",
+      "id": "5f768c145f3658e6cfc4cd8cdc7903c79a0a293a"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/beware-of-equifax-breach-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/beware-of-equifax-breach-scams",
+      "id": "fd92fc5c8283d8a450c864324d78e18911d09a72"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/breach-detection",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/breach-detection",
+      "id": "4b6be7962b160b08009380b7d74d9676ee5741dd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/chipotle-data-breach-what-you-need-to-know",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/chipotle-data-breach-what-you-need-to-know",
+      "id": "44dac029a7f38a5c05d2e0c348f48b91fb86485b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/company-data-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/company-data-breach",
+      "id": "8e9c60f4215d4277de3d9485b807b81761eccfdf"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/data-leak-exposes-millions-of-bank-loan-and-mortgage-documents",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/data-leak-exposes-millions-of-bank-loan-and-mortgage-documents",
+      "id": "c8f82a58e631579f0bb5140cbf243c6af2f4f721"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/dropbox-hacked-account-may-compromised",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/dropbox-hacked-account-may-compromised",
+      "id": "7cdcad48b0492a386a27e8d428dc327a4f72e9ab"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/equifax-data-breach-2017",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/equifax-data-breach-2017",
+      "id": "4f5f0c66edf05b2a806701fb6d5749ec9fed4be7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/history-of-data-breaches",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/history-of-data-breaches",
+      "id": "0a4dec35c103de2e3531217d7ab0dd6e88efe41a"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/how-to-check-if-youre-affected-by-the-equifax-data-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/how-to-check-if-youre-affected-by-the-equifax-data-breach",
+      "id": "e8a5789f897af055597a2b98a0d44ab3840f1ed2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/microsoft-exposed-250-million-customer-records",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/microsoft-exposed-250-million-customer-records",
+      "id": "8eb1519b5f3d859bda54d7537b1dd2b206bf55ff"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/national-public-data-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/national-public-data-breach",
+      "id": "5a480397afa7757911441aecff6ea8577c31791e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/steps-to-take-right-after-a-data-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/steps-to-take-right-after-a-data-breach",
+      "id": "82d37c5caa8a820c72a471a43958619a06fb9f6a"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/uber-data-breach-affects-57-million-rider-and-driver-accounts",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/uber-data-breach-affects-57-million-rider-and-driver-accounts",
+      "id": "d64e683fda6c53dbb628853c697cb320fbe07fe1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/unitedhealth-group-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/unitedhealth-group-breach",
+      "id": "94fa369882b3a58d3bf2b1ba348b274d28696593"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/data-breaches/what-is-a-data-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/data-breaches/what-is-a-data-breach",
+      "id": "d1568efad8a43c14939366a1e1006531c7ab4793"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud",
+      "id": "3dddb0ff6592c6a58315df5d88f8047641876fb7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/account-services-scam-call",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/account-services-scam-call",
+      "id": "caa4123ca0faa7314914be3341ec865706c40c09"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/airbnb-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/airbnb-scams",
+      "id": "a91f084af190f3b9de81a6d23fd8925e5691e8b1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/amazon-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/amazon-scams",
+      "id": "4d5f65055a3e7035346693dd9bd334490b64fa02"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/apple-pay-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/apple-pay-scams",
+      "id": "73551c3f5ba5ef3842b87ab0a39ca143f8052217"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/back-to-school-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/back-to-school-scams",
+      "id": "1cd0ce4c0106f6f7a6e1e0513f22277da7694393"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/bank-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/bank-scams",
+      "id": "0a706504543b704191af61f53527a69606b15794"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/black-friday-cyber-monday-scams-2023",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/black-friday-cyber-monday-scams-2023",
+      "id": "5b64a8d7951fc8b1bbc5bd33601a3702cbaae4f5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/brushing-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/brushing-scam",
+      "id": "b5a35fbcc5af0fb3be943cf3715e7ba0fc18aeba"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/cash-app-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/cash-app-scams",
+      "id": "39fcf6048a7bd2005e9b232a402bab3813ffc621"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/chase-check-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/chase-check-fraud",
+      "id": "0184921019d9547856311e301f5ae517f64170ca"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/credit-card-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/credit-card-topics",
+      "id": "a15b74e22e1f1efd4fca8577b414112d6c965277"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/do-banks-refund-scammed-money",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/do-banks-refund-scammed-money",
+      "id": "b00e2091e0850d0eef291948bb07c431af1a63b7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/elder-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/elder-scams",
+      "id": "52bbd0d30b5a29de5cb18b68c42cb5eae23595b3"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/employment-related-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/employment-related-fraud",
+      "id": "bc1afb1b29b55cf44d3f9d819c485a930bd746ad"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/etsy-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/etsy-scams",
+      "id": "ca7b6d42f4b1e3205e61aebddaf32ce3a31e66ec"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/facebook-marketplace-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/facebook-marketplace-scams",
+      "id": "949a0e7a52878116b340a8a00733f4df88bce728"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/facebook-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/facebook-scams",
+      "id": "7527f858f17635e85a8dc74d03fd2e5c54d03fb5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/fake-bank-text-messages",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/fake-bank-text-messages",
+      "id": "5674a51f4ed40e6d7d94577ad6a2fee6ec3fa2fa"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/geek-squad-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/geek-squad-scam",
+      "id": "143d45bb162028233980d992504821af62a110ec"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/government-benefits",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/government-benefits",
+      "id": "5134b173cdeeb179007dd7a3c74a0a7dcb2043fc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/hinge-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/hinge-scams",
+      "id": "1e287b79f009411a1abfc6bc5cd204b1e9850c32"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/home-title-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/home-title-theft",
+      "id": "17ac6124c27d396d765a84aa8d5d415259bb3eed"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-do-people-steal-credit-card-numbers",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-do-people-steal-credit-card-numbers",
+      "id": "a63d7575b72e510edfc065e55aaba69647a50425"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-to-avoid-credit-card-skimming",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-to-avoid-credit-card-skimming",
+      "id": "875211c304736c96eb5ff9ca68a6016fbb57a667"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-to-identify-a-scammer",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-to-identify-a-scammer",
+      "id": "ecbb02641d4e74ba49c5209bac3261cd44673f3b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-to-report-credit-card-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-to-report-credit-card-fraud",
+      "id": "0904b560279ac00c37c9994089fbf32d838faf21"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-to-spot-an-atm-skimmer",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-to-spot-an-atm-skimmer",
+      "id": "0c2d480b35f2ac128db3ab2f3062355ebe413f4c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-to-stop-phone-number-spoofing",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-to-stop-phone-number-spoofing",
+      "id": "3a32cdc695318b37929a9d34778cc92d7f0977ba"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/how-to-tell-if-a-check-is-fake",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/how-to-tell-if-a-check-is-fake",
+      "id": "706a58a8f29801fe3c13edc6669b27688783bb85"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/identity-predictions-2024",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/identity-predictions-2024",
+      "id": "335e05e4524522b70a2449c00b683e9151a97e51"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/instagram-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/instagram-scams",
+      "id": "74a74b8457092c0a572b1f5e3ea2a6ca62c1db92"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/is-depop-safe",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/is-depop-safe",
+      "id": "4c0ecb1dfcece6101c85d2888eb804ca1c1e3bf5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/loan-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/loan-fraud",
+      "id": "f4aedde975eeb05962fe2178e6f81a1044a6dcdc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/medicare-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/medicare-scams",
+      "id": "ac36ebd3d22abb6db2eca93969ff0b53a1e983f0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/offerup-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/offerup-scams",
+      "id": "c3ed491b0124da86ef23c25a2a98108cf3e3b0a2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/open-enrollment-healthcare-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/open-enrollment-healthcare-scams",
+      "id": "fed894f5437a05cf8cd13f8ef11cf8bcd8246eb4"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/post-season-tax-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/post-season-tax-scams",
+      "id": "222eac4d5ed9c9b6da4dff769083c149bcbb92a0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/publishers-clearing-house-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/publishers-clearing-house-scam",
+      "id": "d01b21fae46c3ec79d6f928760d6b5f36cdaf05d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/qr-code-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/qr-code-scam",
+      "id": "11ac0a34d494936511c73b9b37bc7f0de471ec60"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/real-estate-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/real-estate-scams",
+      "id": "0dc9ddba6d2bec813723e271a3000d5e7313efd5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/rental-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/rental-scams",
+      "id": "aa448ffd1bdff43eb3497e7997632f27ece68327"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/scam-call-numbers",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/scam-call-numbers",
+      "id": "623ad0a3f2859c7a38ceb0fed8f3b267612f8a76"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/scams-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/scams-topics",
+      "id": "992b7569daa02a84479d69aca82a350d73c36401"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/snapchat-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/snapchat-scams",
+      "id": "f80221ca2ffb8b7868b7e484deabb58e59955f7b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/social-security-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/social-security-fraud",
+      "id": "29037d56ee715bfb18fa8db4aae06476ae588956"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/social-security-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/social-security-topics",
+      "id": "20a18f3ffe3466a56c665a5b658804a45dd66b7b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/spam-texts",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/spam-texts",
+      "id": "f085ea6c3cac4de343faa5672801e3e4044f8c3d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/spot-fake-email",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/spot-fake-email",
+      "id": "00bc69b239d24d6d7575a4b190dc17bbe7bc14d6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/stolen-tax-refunds",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/stolen-tax-refunds",
+      "id": "bd711387e43b6f8e083888ec97ff6ed068bb8845"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/student-loan-forgiveness-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/student-loan-forgiveness-scams",
+      "id": "d0e1c90f3e3bd2bbbe68265e95ca397768b40d71"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/tax-impersonation-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/tax-impersonation-scams",
+      "id": "026de0bf9065f3c29ef63b98cb3f04a879a828ba"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/tax-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/tax-topics",
+      "id": "db22e8aea99aae2d4af2469f98682b23268245dd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/tips-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/tips-topics",
+      "id": "dd97ad263690d15cb0c4d7ed727701c032017265"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/ups-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/ups-scam",
+      "id": "65c2a5c0039928f57c8377585971b67a723f107d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/usps-text-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/usps-text-scam",
+      "id": "f44cae5490cf6b5f5b245eb3b28f42d061e007a2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/venmo-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/venmo-scams",
+      "id": "837bd690f58e43a7e2040792e445fc6e61e05ff9"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/walmart-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/walmart-scams",
+      "id": "2e3b02062f3aecb2f930a0a2407796f1bbb0acad"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/what-can-scammers-do-with-your-address",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/what-can-scammers-do-with-your-address",
+      "id": "a41b0762d49463a13dc93a7f5a364569b87c1b55"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/what-google-knows-from-your-name",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/what-google-knows-from-your-name",
+      "id": "4fadc20167853fe61451b3c0fb5e7f430941d5fb"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/what-is-a-fraud-alert-and-what-are-the-different-types",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/what-is-a-fraud-alert-and-what-are-the-different-types",
+      "id": "2045f225ea103ee5e81b9a5287a0176103187395"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/what-is-check-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/what-is-check-fraud",
+      "id": "843c6d70fdb1792440bb24bee661eb3d8782f055"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/what-is-credit-card-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/what-is-credit-card-fraud",
+      "id": "b8119c6c8e0ee33b7a5fa54a18886af0fd76dff6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/what-is-welfare-fraud",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/what-is-welfare-fraud",
+      "id": "3388d130823ff4b582667467b9f398d738cb11e9"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/wire-transfer-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/wire-transfer-scams",
+      "id": "fcc5ed53f4c88023e55a18a4326ecae116a36a77"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/zelle-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/fraud/zelle-scams",
+      "id": "b950c6ad84164673b21d20a82feb345c0f76c288"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources",
+      "id": "30198016e90e4b7b21307f8a2b13ca219b083238"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/account-takeover",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/account-takeover",
+      "id": "43e9606b4b4bf0dee5e4ecc40f6b2ef664e4ee16"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/aura-vs-lifelock",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/aura-vs-lifelock",
+      "id": "5aaf564b7b00855597354d30f0281c923c37e2f1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/carders-and-cashers",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/carders-and-cashers",
+      "id": "991d7946f6f8ef1c9f287f7ffadaf4b679da04cc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/change-name-safely",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/change-name-safely",
+      "id": "e0688c449f315c862ed8a126afc166af5f4d42f1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/college-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/college-identity-theft",
+      "id": "968c725eae5e3acb50385137bcfd46edc7b86ce2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/college-students-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/college-students-identity-theft",
+      "id": "d27b18f75fdcf5629ec2c291a8633b1c64c4066d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/data-privacy",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/data-privacy",
+      "id": "64e8174bccc36c5a513d9020d1f374d67e89d91b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/debit-vs-credit-card-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/debit-vs-credit-card-theft",
+      "id": "9ada7c8ed175a8689265f37cb1d53354a1381568"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/dumpster-diving",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/dumpster-diving",
+      "id": "efb427ead929ce6aeffbe1690c887d62c4c35389"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/fake-tax-preparers",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/fake-tax-preparers",
+      "id": "39153eb7a55323423698bb9cc525e2a80326da0b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/family-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/family-identity-theft",
+      "id": "a59cdfa4c0e107bf7b5e8ad037dabf8accda2399"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/fantasy-sports-data-breach",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/fantasy-sports-data-breach",
+      "id": "d74c50aef717ad90452d6351d63059091fee58be"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/financial-hardship-loan-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/financial-hardship-loan-scams",
+      "id": "b20eea57e54ceb94cc91dc44492a4bc09741f152"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/gaming-profile",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/gaming-profile",
+      "id": "0ec05b29606b618a793ab9d5a88c7dd47cf1013d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/hidden-trails-of-your-personal-information",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/hidden-trails-of-your-personal-information",
+      "id": "daea93579b4d29a24cca8bdf39928568bec68119"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-a-silent-phone-call-could-lead-to-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-a-silent-phone-call-could-lead-to-identity-theft",
+      "id": "9de35ef9354f04dc885fab746c8e0a0b11de3961"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-common-is-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-common-is-identity-theft",
+      "id": "9e418994122d22a089eb6907940b4a838ab8180e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-should-you-respond-to-the-theft-of-your-identity",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-should-you-respond-to-the-theft-of-your-identity",
+      "id": "e5f671b1dfb0852e8463e74ebd9fac018071a23c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-check-if-someone-is-using-my-identity",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-check-if-someone-is-using-my-identity",
+      "id": "8ebbdbfef3a199d90f2416ee9057e249a09af75c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-check-my-childs-credit-score",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-check-my-childs-credit-score",
+      "id": "06143ab32c46b25260c5898b2ebcfb532bdfb697"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-prevent-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-prevent-identity-theft",
+      "id": "0dce7f866c4c2b0db7703fa2779a14580cc1f511"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-recover-from-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-recover-from-identity-theft",
+      "id": "8b32135fd49216c2ef58a1bfe609b86514391de3"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-replace-a-social-security-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-replace-a-social-security-card",
+      "id": "8f2e56055cb143a417bf6e6647c09fce36d75e2d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-report-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-report-identity-theft",
+      "id": "a564194b9d0f5d9f135ebd681430b8a6058454e6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-to-report-identity-theft-to-the-credit-bureaus",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/how-to-report-identity-theft-to-the-credit-bureaus",
+      "id": "7ae3f3e782cf0bab0f23cc11f916aed034f3e1a2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-restoration-advice",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-restoration-advice",
+      "id": "56b2e87555ef4b6d9f32a4eb70c095306912e746"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-credit-repair",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-credit-repair",
+      "id": "831f83df5b6ce9eb24a9762c51d7534309a344c8"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-ghost-stories",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-ghost-stories",
+      "id": "933ba4c5ca7733cbea98910c721a0db31b297ff8"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-insurance",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-insurance",
+      "id": "fbad0eebbd6fd1b3606d6fbabddaf0250ebe2101"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-protection",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-protection",
+      "id": "a0a9168ef21c7efd79a689cec564b4a1950b33e4"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-protection-vs-credit-monitoring",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-protection-vs-credit-monitoring",
+      "id": "605d37f36978c168264319f0aac455cac6eb551f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-targets",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-targets",
+      "id": "7d18a3c93a14d260011fff8235cc72d06a0e5fee"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-victim",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-victim",
+      "id": "3ea3d72629de463639eb1636cf179d21571762a3"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/identity-theft-vs-identity-fraud-whats-the-difference",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/identity-theft-vs-identity-fraud-whats-the-difference",
+      "id": "355ded249f54432bffc11e4bd0efacfa989e04ec"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/importance-of-identity-protection-while-enjoying-your-travel-this-summer",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/importance-of-identity-protection-while-enjoying-your-travel-this-summer",
+      "id": "5b68bcbee492aef1403bf471443efff627ac123d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/irs-tax-scams-to-watch-out-for",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/irs-tax-scams-to-watch-out-for",
+      "id": "06ffdae378b5d92c5e28df623c665739ca414161"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/is-identity-theft-protection-worth-it",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/is-identity-theft-protection-worth-it",
+      "id": "403b1ab798be64522d038422be45cb46dd028bd3"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/is-it-safe-to-sign-in-with-facebook-or-google",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/is-it-safe-to-sign-in-with-facebook-or-google",
+      "id": "aab0015991d89686b2716dbc995cff5d4e310356"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/kinds-of-id-theft-using-social-security-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/kinds-of-id-theft-using-social-security-number",
+      "id": "50dd27ce86342ad07fc7fd247801784c3c0e65b2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/lasting-effects-of-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/lasting-effects-of-identity-theft",
+      "id": "44fea0b772a4905025d1ead90d2b25722650c730"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/lose-wallet",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/lose-wallet",
+      "id": "7045746311d8ab2dfdc0c5fd2e168cb31519d7f6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/lost-social-security-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/lost-social-security-card",
+      "id": "755f45cc29cca538b434a745aafe6573964bc304"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/medical-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/medical-identity-theft",
+      "id": "bd5a4e6d9a6617c5041d43572cd0f280346e2b90"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/military-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/military-identity-theft",
+      "id": "b5aff54ca09b85102694f218afd9e6e0522e1312"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/million-dollar-protection",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/million-dollar-protection",
+      "id": "38d84d89c3fdade5d7e4152e29f07225abb2e22d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/misdelivered-mail-could-be-signs-of-a-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/misdelivered-mail-could-be-signs-of-a-scam",
+      "id": "403afe3f4406006a862219c0580df77c3e70b4ea"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/not-anonymous",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/not-anonymous",
+      "id": "94ac4d890a798929a6a801b4408036d8741b997f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/online-identity-theft-what-it-is-how-it-happens",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/online-identity-theft-what-it-is-how-it-happens",
+      "id": "cf61acb3f3d3642089679319fe403a4abf8a58c6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/parental-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/parental-identity-theft",
+      "id": "367ff7ee6d1a31362917d43071a31f6cb4434c5f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/passport-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/passport-scams",
+      "id": "908f4df5ed817ec439eb0e964a2d556736b0434f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/personal-information-public",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/personal-information-public",
+      "id": "f880308d2d4867bb5ddce4830ae9abf65232d87c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/potential-spam",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/potential-spam",
+      "id": "eb13cee57e4458ee946c2fa35d74d5fc99d6e7ed"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/protection-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/protection-topics",
+      "id": "c37fb5c245485a3b55a61bb64177426161610afe"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/recovery-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/recovery-topics",
+      "id": "3bf543a311e4421f69328ebe0e7f5418404869f7"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/remove-personal-information-from-the-internet",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/remove-personal-information-from-the-internet",
+      "id": "40add17592b2da8cb1a7bb52cb48e1a3423c6041"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/restoration-specialists",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/restoration-specialists",
+      "id": "b160c4f4145510e2f29f5129dc6f54a6dd440e91"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/safety-advice-kids",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/safety-advice-kids",
+      "id": "a5faa40684eac5dd18dca648ebc3068f0a60a4fc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/scammed-four-words",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/scammed-four-words",
+      "id": "8216d87624a6ce93e9f587538ea3181f7676f141"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/signs-of-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/signs-of-identity-theft",
+      "id": "8383fd41101c12c001ab7196e16efaf4be59b572"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/small-business-big-target-identity-thieves",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/small-business-big-target-identity-thieves",
+      "id": "bbbbf91c6e77ac0e3de7e5464b3f4eeb7eb87fdc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/someone-took-out-a-loan-in-my-name",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/someone-took-out-a-loan-in-my-name",
+      "id": "3dba980a78bdb1b6d2592424bb78e0513efeb78b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/spousal-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/spousal-identity-theft",
+      "id": "8d1e8bfe928be1c03a3d109800c364e430a9d1b3"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/stolen-social-security-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/stolen-social-security-number",
+      "id": "993ef6f39e5a1fd9b930a8b2e22f67fe6b25f4a8"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/student-loan-scam",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/student-loan-scam",
+      "id": "a6de96bed2e98a7c6b26976f54982a8a3ffa8cd6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/synthetic-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/synthetic-identity-theft",
+      "id": "b8005acbf8ab1a144f7eaf6d2047e35f9bec9007"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/talking-to-scammer",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/talking-to-scammer",
+      "id": "e303f6528796a89af155b65c7bc4af985b14b1e9"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/tax-related-identity-theft-social-media",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/tax-related-identity-theft-social-media",
+      "id": "3104228993c9b9f122d8fc9a9bbe1d16806dbb27"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/teens-risk-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/teens-risk-identity-theft",
+      "id": "9d2c2858a9a9dfe0759a614f73047eaf2bc40b12"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/things-identity-thieves-do-with-your-information",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/things-identity-thieves-do-with-your-information",
+      "id": "51411fb0015001e88164724ab97988141dca09b9"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/things-to-know-about-your-new-medicare-card",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/things-to-know-about-your-new-medicare-card",
+      "id": "15669a3cf009c8827431385a78174abc0f784e4b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/threat-report-q1-2025",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/threat-report-q1-2025",
+      "id": "62a94b9d3fa8680d8b0fcbfc059ed650221db7aa"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/threat-report-q2-2024",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/threat-report-q2-2024",
+      "id": "bdc81b90180c24356b12d29ab53a8424ea47951e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/tips-to-help-protect-your-social-security-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/tips-to-help-protect-your-social-security-number",
+      "id": "393d931246d1784bbd6d4672975da17171143e94"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/tips-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/tips-topics",
+      "id": "09228e8fdaf709e4ba287d8d26515c4982e03664"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/types-of-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/types-of-identity-theft",
+      "id": "01793e1098a59c1b48ff713a0255416b35184f04"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/types-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/types-topics",
+      "id": "5f2a84a71d753cd41fbf0e1107f6136a2b8eabd0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/veteran-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/veteran-scams",
+      "id": "7a708951673fe89af091b06efd688485d304e118"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/w-2-phishing-scam-what-it-is-and-how-to-help-protect-against-it",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/w-2-phishing-scam-what-it-is-and-how-to-help-protect-against-it",
+      "id": "6e56d5f17fd2f90ad7c892742fa1621025af3a84"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/ways-identity-theft-happen-can-happen",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/ways-identity-theft-happen-can-happen",
+      "id": "f08fd6a150e7aed05fb7340e28197de8baa74f35"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-can-someone-do-with-your-passport-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-can-someone-do-with-your-passport-number",
+      "id": "0abcd3964e8dfc26f80d12a610fabedd11f02849"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-can-someone-do-with-your-social-security-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-can-someone-do-with-your-social-security-number",
+      "id": "1e920006db1b4013cf66c7c7d0083a719dd4b1db"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-carding",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-carding",
+      "id": "669e52a92cce6c21dfa42afe19798c56135a998c"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-child-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-child-identity-theft",
+      "id": "d24fb5a6e9866def6a710bfe57744311835dd23f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-criminal-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-criminal-identity-theft",
+      "id": "84812dd18deb91de2b2befa4ec2e0484d8dc7ec0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-ghosting-one-more-form-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-ghosting-one-more-form-identity-theft",
+      "id": "9d83240ec8ba5983e1cd1a90328cc7da01c73833"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-mail-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-mail-theft",
+      "id": "7cd04271837656e3ca9222cc41ed8509eab3e517"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-personally-identifiable-information",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-personally-identifiable-information",
+      "id": "dc13a8843387c54f94a608957c69e2c4c4e97925"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-is-shoulder-surfing",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-is-shoulder-surfing",
+      "id": "f02bc49695faa05d792d8e15e74a01eadf5d26c9"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-to-do-if-a-scammer-has-your-phone-number",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-to-do-if-a-scammer-has-your-phone-number",
+      "id": "e3dc232e43b1cee9d34896181434309425ac5753"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-to-do-if-you-lose-your-passport",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-to-do-if-you-lose-your-passport",
+      "id": "48422bfda08ebdfad37400ba259efb89c53d31ef"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/what-to-do-if-your-identity-is-stolen",
+      "source": "CRAWL",
+      "targetPath": "/learn/identity-theft-resources/what-to-do-if-your-identity-is-stolen",
+      "id": "747257e9da118533e3f20012cf96f32f97e5005e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security",
+      "id": "3d1bc8142ae6beb72d0a76edffe33b1efa3d72d5"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/accidentally-opened-spam-email",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/accidentally-opened-spam-email",
+      "id": "26da8d0c169c7573643a02d2a1649dcda65d70b2"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/account-security-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/account-security-topics",
+      "id": "d60d101c53fb324a725196f28c31d41b76af9812"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/ai-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/ai-scams",
+      "id": "a68a5eaf2d27ae02d8de6d5462be516c7afa7a55"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/can-someone-steal-your-identity-with-your-id",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/can-someone-steal-your-identity-with-your-id",
+      "id": "66843b57b6cd01e831e95d16856e3c1ef07d2feb"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/concern-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/concern-identity-theft",
+      "id": "f53c6ffc8f89e3a97d18dc06c6482f25cbb0c615"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/craigslist-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/craigslist-scams",
+      "id": "669ea201d81f9c5f37388b0fd92c55316e771e07"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/credential-stuffing",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/credential-stuffing",
+      "id": "232de673a73ff7d94a9ef8126279d0c08e83eb73"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/dark-web",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/dark-web",
+      "id": "f71ff3f9d36dd8edc21ea7846052fa7c0fcb9f0e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/dark-web-monitoring",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/dark-web-monitoring",
+      "id": "dc87f29ea2b3e7f0a976806dea2accfe8cabe25a"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/dark-web-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/dark-web-topics",
+      "id": "ab4a2bb94963e682fd76ccea1e43fded2f491384"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/dark-web-websites",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/dark-web-websites",
+      "id": "6de73d3d18800f31609efe93eb9455f8fc133ccc"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/data-leak",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/data-leak",
+      "id": "4591c4779297125464079d2bcb62c197f64bb628"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/data-privacy-laws",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/data-privacy-laws",
+      "id": "d1f06e01cafecbb4e65d7addf4e35fd6d3c94a0b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/delayed-at-the-airport",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/delayed-at-the-airport",
+      "id": "92b6823fdaacf1be5b87dad2ecda627803136ea8"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/elderly-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/elderly-scams",
+      "id": "cd6ed4d9f112e17276e2baefb3962143701f3337"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/email-found-on-dark-web",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/email-found-on-dark-web",
+      "id": "e23c23d6de3dc1bbf248469f57bb8f0f7bbbb381"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/encryption-what-you-need-to-know",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/encryption-what-you-need-to-know",
+      "id": "97d3faea0bb50ae12684188d0c4fecd64b195920"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/holiday-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/holiday-identity-theft",
+      "id": "9dfe10d456ebc4abb7415fcc630f31e2bd43b0a1"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/how-much-data-do-you-share-online",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/how-much-data-do-you-share-online",
+      "id": "e6951c373cd5a7d9825895c1d32e403542bb9290"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/how-to-identify-a-fake-text-message",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/how-to-identify-a-fake-text-message",
+      "id": "5454736e619a7178965dfcac1aeeb27cdac5c0e6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/how-to-protect-your-digital-footprint",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/how-to-protect-your-digital-footprint",
+      "id": "f6f9fbfcdbd85478ee514d3597b5bebae7ad6973"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/how-to-use-apple-pay",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/how-to-use-apple-pay",
+      "id": "aedb1b532915a1bc0f7cc2f66c13fd959353f877"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/internet-safety-games",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/internet-safety-games",
+      "id": "ea5546c3d490a013027e6139e66e0a619f09848f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/is-a-password-manager-right-for-you",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/is-a-password-manager-right-for-you",
+      "id": "98877cf511585a3f20e74bbecc83ce1e5585788d"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/is-chatgpt-safe",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/is-chatgpt-safe",
+      "id": "0793d64182bd31b0d8bd869e31d7bef1f42101dd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/is-venmo-safe",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/is-venmo-safe",
+      "id": "b92ed9b68c1e7d82b0b494517a8a32653fbd0371"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/its-easy-to-stay-safe-online",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/its-easy-to-stay-safe-online",
+      "id": "837ed712a53fe76f7f712c5a826a1d0aa8247113"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/job-application-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/job-application-scams",
+      "id": "dad3a73fb8ecdd76300c27ca726e6fdb596b20bb"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/linkedin-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/linkedin-scams",
+      "id": "ec0bad28ab96ac953f432e204f28f1dee068f048"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/mobile-are-digital-wallets-safe",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/mobile-are-digital-wallets-safe",
+      "id": "245e07f7642f23f3eb812dd5366ea18540e17c92"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/netflix-email-scam-targets-110-million-subscribers-heres-what-to-do",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/netflix-email-scam-targets-110-million-subscribers-heres-what-to-do",
+      "id": "cafa074e8821ce1b9ab6a3a3d44ac5831955881e"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/password-security",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/password-security",
+      "id": "ba6d9a9f7982d52c69b1f8629a5cc27a91a7fb09"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/remove-yourself-from-data-broker-sites",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/remove-yourself-from-data-broker-sites",
+      "id": "b8a1a108cdb6a76f13cf9f7cc3647bc99e3f27a8"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/safe-online-shopping",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/safe-online-shopping",
+      "id": "c93673d9a68d2adc1487f6772b083c6c2af6a12b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/safer-internet-day",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/safer-internet-day",
+      "id": "dbedd0844c9555981ee2e0e36e9c70d59fdbf7a3"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/safest-way-to-pay-a-bill-online-while-traveling",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/safest-way-to-pay-a-bill-online-while-traveling",
+      "id": "f7e6585323d112b4c67ed67f47c3e1eba292e492"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/scams-census-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/scams-census-scams",
+      "id": "85c4ca726c1f5ee4ac135c1c7cbcf8e0895f5265"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/scams-charity-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/scams-charity-scams",
+      "id": "77c1774b84018648ebd846dacb2cc24f1ecd9783"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/sensitive-data",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/sensitive-data",
+      "id": "acc6f9f67379e4030a91c3d35009ec2c49e1359f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/silk-road",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/silk-road",
+      "id": "8f46c51ed1a62f94c3c54cc83e85429de0fcb36b"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/social-engineering",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/social-engineering",
+      "id": "ccfc2446cc7117b4e26ab695696796877e6a8c47"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/social-media-behavior-leads-identity-theft",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/social-media-behavior-leads-identity-theft",
+      "id": "e9c4a103a3ba380a76955681d6be19dc1fb6de57"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/social-media-hackers",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/social-media-hackers",
+      "id": "67186eec94fca09c9bf84b4e4bc8c4c6fd881dfd"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/social-security-number-on-dark-web",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/social-security-number-on-dark-web",
+      "id": "4105e434b8bb75a7e2f127cb5dfac34c0e7c4df0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/telegram-scams",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/telegram-scams",
+      "id": "6fc786d6938e2b214a65f110a38e128ad6d8161f"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/tips-topics",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/tips-topics",
+      "id": "e8860361b502aa560a5614c19762b1590339e1f0"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/ways-to-help-protect-your-personal-information-online",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/ways-to-help-protect-your-personal-information-online",
+      "id": "465088c2446da5206966fcaa9352071ac1e6b4b4"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/what-is-a-cross-site-request-forgery-csrf",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/what-is-a-cross-site-request-forgery-csrf",
+      "id": "7ba201cfe800d8d72a52b0e139c5ee6be6905464"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/what-is-smishing",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/what-is-smishing",
+      "id": "eb909923d971b4eaa3b383c318d1fc70b0cb0503"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/what-to-do-if-a-scammer-has-your-email-address",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/what-to-do-if-a-scammer-has-your-email-address",
+      "id": "3bc5c6f28bf6b9068542b199a7b33fe6d04b0ad6"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security/what-to-do-if-your-phone-is-stolen",
+      "source": "CRAWL",
+      "targetPath": "/learn/internet-security/what-to-do-if-your-phone-is-stolen",
+      "id": "6fc257683a3cf92e1d5050b698732b0c2e738b56"
+    },
+    {
+      "url": "https://lifelock.norton.com/legal/refundpolicy",
+      "source": "CRAWL",
+      "targetPath": "/legal/refundpolicy",
+      "id": "97bf1ab5176989516d6ce2ed6e53ba514e8498a0"
+    },
+    {
+      "url": "https://lifelock.norton.com/offers",
+      "source": "CRAWL",
+      "targetPath": "/offers",
+      "id": "2d5daa2f5dc41685fc2b619a3f406d6372e254be"
+    },
+    {
+      "url": "https://lifelock.norton.com/products",
+      "source": "CRAWL",
+      "targetPath": "/products",
+      "id": "81e7ac036ad2bcaf153111e8d476376dc533fad7"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/best-protection",
+      "source": "CRAWL",
+      "targetPath": "/products/best-protection",
+      "id": "9a8e2d02035d4b14939854cfc7702eeb1554f9d2"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/best-protection?inid=lifelock-home_hero_best-protection",
+      "source": "CRAWL",
+      "targetPath": "/products/best-protection",
+      "id": "22e1fdde3be3b89e5051f4e5dfeaaa5386ab5783"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/best-protection?inid=lifelock-home_ribbon_best-protection",
+      "source": "CRAWL",
+      "targetPath": "/products/best-protection",
+      "id": "6b42fd85a7f54828d065c066ec5a0e710ef84508"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/budget-friendly",
+      "source": "CRAWL",
+      "targetPath": "/products/budget-friendly",
+      "id": "4ce8962f203b541620414c9edbba534adffb226d"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/budget-friendly?inid=lifelock-home_ribbon_budget-friendly-plans",
+      "source": "CRAWL",
+      "targetPath": "/products/budget-friendly",
+      "id": "3b9f1de56422e523fb9b4837a1f68f86f541d466"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/cyber-safety-plans",
+      "source": "CRAWL",
+      "targetPath": "/products/cyber-safety-plans",
+      "id": "8329aa93282dca399c1c74d198ce37776917190a"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/cyber-safety-plans?inid=lifelock-home_ribbon_cyber-safety-plans",
+      "source": "CRAWL",
+      "targetPath": "/products/cyber-safety-plans",
+      "id": "d9663522c9ae65a8cac3a2ef31b450d170445c44"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/lifelock-advantage",
+      "source": "CRAWL",
+      "targetPath": "/products/lifelock-advantage",
+      "id": "d42e7dde94e13fc35bad2ff965c970fcb313396c"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/lifelock-identity-advisor",
+      "source": "CRAWL",
+      "targetPath": "/products/lifelock-identity-advisor",
+      "id": "844b4a57d9c4c9dc3b6dacb9b93767b4864e63ea"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/lifelock-junior",
+      "source": "CRAWL",
+      "targetPath": "/products/lifelock-junior",
+      "id": "d6f6e5848f8e922f761357e582785a56b61c27d6"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/lifelock-standard",
+      "source": "CRAWL",
+      "targetPath": "/products/lifelock-standard",
+      "id": "6824617a80ff714d476f85e512fa0e6dbba30f67"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/lifelock-ultimate-plus",
+      "source": "CRAWL",
+      "targetPath": "/products/lifelock-ultimate-plus",
+      "id": "894c51014c0b6ec491f88cc74d4935f98f3f5d6d"
+    },
+    {
+      "url": "https://lifelock.norton.com/reviews",
+      "source": "CRAWL",
+      "targetPath": "/reviews",
+      "id": "5c175672eac979f5991b2538a203894fe90c41ab"
+    },
+    {
+      "url": "https://lifelock.norton.com/reviews/lifelock-advantage",
+      "source": "CRAWL",
+      "targetPath": "/reviews/lifelock-advantage",
+      "id": "9aa84569bc71e128d01b9814fff3bb1303cc8bdf"
+    },
+    {
+      "url": "https://lifelock.norton.com/reviews/lifelock-standard",
+      "source": "CRAWL",
+      "targetPath": "/reviews/lifelock-standard",
+      "id": "3bd1739fa84f5257e1dd9ec6396d17ffd0f838b0"
+    },
+    {
+      "url": "https://lifelock.norton.com/reviews/lifelock-ultimate-plus",
+      "source": "CRAWL",
+      "targetPath": "/reviews/lifelock-ultimate-plus",
+      "id": "25578877a254f6a6fa337b1e1c92fedbb6f1e21f"
+    },
+    {
+      "url": "https://lifelock.norton.com/site-map",
+      "source": "CRAWL",
+      "targetPath": "/site-map",
+      "id": "6b3bc61d3c4c1debf648a0c274e0e2934f6ae772"
     }
   ],
   "crawlOptions": {
     "timeout": 64800000,
-    "inclusionPatterns": [
-      "/learn",
-      "/learn/**"
-    ],
+    "inclusionPatterns": [],
     "exclusionPatterns": [],
     "limit": -1,
     "sameDomain": true,
@@ -25,5 +1912,90 @@
       "CRAWL"
     ]
   },
-  "extractionErrors": []
+  "extractionErrors": [
+    {
+      "url": "https://lifelock.norton.com/blog/privacy/what-is-2fa",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/"
+    },
+    {
+      "url": "https://lifelock.norton.com/blog/privacy/public-wifi",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/"
+    },
+    {
+      "url": "https://lifelock.norton.com/products/norton-vpn",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/how-to-freeze-your-credit",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/credit-finance/credit-freeze"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/credit-finance/ordering-free-credit-reports",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/credit-finance/free-credit-report-score-check"
+    },
+    {
+      "url": "https://lifelock.norton.com/breach-detection",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/data-breaches/breach-detection"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/types-of-social-security-fraud",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/fraud/social-security-fraud"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/social-security",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/fraud/social-security-topics"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/facts-you-have-to-know-about-identity-theft",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/how-common-is-identity-theft"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/help-protect-yourself-identity-theft",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/how-to-prevent-identity-theft"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security-ways-to-avoid-identity-theft",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/how-to-prevent-identity-theft"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/how-long-does-it-take-to-recover-from-identity-theft",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/how-to-recover-from-identity-theft"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/fraud/tax-fraud",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/irs-tax-scams-to-watch-out-for"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/is-identity-theft-protection-worth-it-or-not",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/is-identity-theft-protection-worth-it"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/warning-signs-of-identity-theft",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/signs-of-identity-theft"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/identity-theft-resources/child-identity-theft-by-a-parent",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/identity-theft-resources/what-is-child-identity-theft"
+    },
+    {
+      "url": "https://lifelock.norton.com/learn/internet-security-password-security",
+      "status": "301 Moved Permanently Redirect: https://lifelock.norton.com/learn/internet-security/password-security"
+    },
+    {
+      "url": "https://lifelock.norton.com/legal/pricing",
+      "status": "301 Moved Permanently Redirect: https://www.norton.com/pricing"
+    },
+    {
+      "url": "https://lifelock.norton.com/legal/pricing/",
+      "status": "301 Moved Permanently Redirect: https://www.norton.com/pricing"
+    },
+    {
+      "url": "https://lifelock.norton.com/riskscan",
+      "status": "302 Moved Temporarily Redirect: https://lifelock.norton.com/exposurescan"
+    }
+  ]
 }
